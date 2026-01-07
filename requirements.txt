@@ -1,0 +1,28 @@
+# ===== Core Python Utilities =====
+python-dotenv==1.0.1
+pandas==2.2.2
+numpy==1.26.4
+pyyaml==6.0.1
+
+# ===== SQL Server Connectivity =====
+pyodbc==5.1.0   # last version with stable Windows wheels
+
+# ===== dbt (SQL Server / TSQL) =====
+dbt-core>=1.8.0
+dbt-sqlserver>=1.8.0
+
+# ===== Apache Airflow (for WSL2 / Linux) =====
+apache-airflow>=2.8.0
+apache-airflow-providers-microsoft-mssql>=3.0.0
+apache-airflow-providers-slack>=8.0.0
+
+# ===== API & Ingestion =====
+requests==2.32.3
+
+# ===== Testing & Quality =====
+pytest==8.2.1
+pytest-dotenv==0.5.2
+
+# ===== Utility =====
+python-slugify==8.0.4
+tqdm==4.66.4
