@@ -18,24 +18,24 @@ MetroRetail is an end-to-end retail analytics & data engineering project that de
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
-MetroRetail/
-├── dags/ # Airflow DAGs
-├── pipelines/ # Python ingestion scripts
-├── dbt/metro_dbt/ # dbt models (staging, silver, gold)
-├── sqlserver/ # SQL Server DDL scripts
-├── data/sample/ # Sample CSV files
-├── Report/
-│ └── MetroRetail.pbix # Power BI report
-├── airflow_home/
-├── logs/
-├── requirements.txt
-├── .env.sample
-└── README.md
+📁 MetroRetail  
+├── 📁 dags               # Airflow DAGs  
+├── 📁 pipelines          # Python ingestion scripts  
+├── 📁 dbt/metro_dbt      # dbt models (staging, silver, gold)  
+├── 📁 sqlserver          # SQL Server DDL scripts  
+├── 📁 data  
+│   └── 📁 sample         # Sample CSV files  
+├── 📁 Report  
+│   └── 📄 MetroRetail.pbix  # Power BI report  
+├── 📁 airflow_home  
+├── 📁 logs  
+├── 📄 requirements.txt  
+├── 📄 .env.sample  
+└── 📄 README.md
 
-yaml
-Copy code
+
 
 ---
 
@@ -104,6 +104,7 @@ pip install -r requirements.txt
 .\start_airflow_wsl2.ps1
 ```
 <img width="1486" height="633" alt="image" src="https://github.com/user-attachments/assets/49e31db0-21e1-4d4a-90b6-bbf2d99f170c" />
+
 
 
 
