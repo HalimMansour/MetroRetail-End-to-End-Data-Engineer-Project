@@ -1,0 +1,638 @@
+version: 2
+
+models:
+  - name: erp_stores_clean
+    description: "Silver layer table - Cleaned and deduplicated ERP stores data with quality validation and manager parsing"
+    columns:
+      - name: Store_ID
+        description: "Unique identifier for the store"
+        data_tests:
+          - not_null
+          - unique
+
+      - name: Store_Name
+        description: "Name of the store"
+        data_tests:
+          - not_null
+
+      - name: City
+        description: "City where store is located (proper case format)"
+        data_tests:
+          - not_null
+
+      - name: Region
+        description: "Region code for store (uppercase format)"
+        data_tests:
+          - not_null
+
+      - name: Store_Manager
+        description: "Primary store manager name (first manager if multiple were listed)"
+
+      - name: Store_Area_sqm
+        description: "Store area in square meters (must be positive)"
+        data_tests:
+          - not_null
+          - dbt_utils.expression_is_true:
+              expression: "Store_Area_sqm > 0"
+
+      - name: Open_Date
+        description: "Date when store opened"
+        data_tests:
+          - not_null
+
+      - name: Has_Multiple_Managers
+        description: "Flag indicating if store manager was multi-value (0 or 1)"
+        data_tests:
+          - not_null
+          - accepted_values:
+              values: [0, 1]
+
+      - name: Is_Valid
+        description: "Flag indicating if record passed all quality checks (always 1 in Silver)"
+        data_tests:
+          - not_null
+          - accepted_values:
+              values: [1]
+
+      - name: DQ_Score
+        description: "Data quality score (0-100)"
+        data_tests:
+          - not_null
+
+      - name: Batch_ID
+        description: "Batch identifier for load tracking"
+        data_tests:
+          - not_null
+
+      - name: Source_File
+        description: "Source file name for this record"
+        data_tests:
+          - not_null
+
+      - name: Created_TS
+        description: "Timestamp when record was created"
+        data_tests:
+          - not_null
+
+      - name: Updated_TS
+        description: "Timestamp when record was last updated"
+        data_tests:
+          - not_null
+
+  - name: api_weather_clean
+    description: "Silver layer table - Cleaned weather API data with temperature imputation and outlier handling"
+    columns:
+      - name: Raw_ID
+        description: "Source system record identifier"
+        data_tests:
+          - not_null
+
+      - name: Weather_Date
+        description: "Date of weather observation"
+        data_tests:
+          - not_null
+
+      - name: Retail_Location_ID
+        description: "Retail location ID from weather source"
+        data_tests:
+          - not_null
+
+      - name: Temperature_C
+        description: "Temperature in Celsius (imputed where missing)"
+        data_tests:
+          - not_null
+
+      - name: Precipitation_mm
+        description: "Precipitation in millimeters"
+        data_tests:
+          - not_null
+          - dbt_utils.expression_is_true:
+              expression: "Precipitation_mm >= 0"
+
+      - name: Weather_Condition
+        description: "Weather condition (normalized uppercase)"
+        data_tests:
+          - not_null
+
+      - name: Has_Missing_Temperature
+        description: "Flag indicating if temperature was imputed (0 or 1)"
+        data_tests:
+          - not_null
+          - accepted_values:
+              values: [0, 1]
+
+      - name: Is_Valid
+        description: "Flag indicating if record passed all quality checks"
+        data_tests:
+          - not_null
+          - accepted_values:
+              values: [1]
+
+      - name: DQ_Score
+        description: "Data quality score (0-100)"
+        data_tests:
+          - not_null
+
+      - name: Batch_ID
+        description: "Batch identifier for load tracking"
+        data_tests:
+          - not_null
+
+      - name: Source_File
+        description: "Source file name"
+        data_tests:
+          - not_null
+
+      - name: Created_TS
+        description: "Timestamp when record was created"
+        data_tests:
+          - not_null
+
+      - name: Updated_TS
+        description: "Timestamp when record was last updated"
+        data_tests:
+          - not_null
+
+  - name: crm_customers_clean
+    description: "Silver layer table - Cleaned and deduplicated CRM customer data with gender and email standardization"
+    columns:
+      - name: Customer_ID
+        description: "Unique customer identifier"
+        data_tests:
+          - not_null
+          - unique
+
+      - name: Full_Name
+        description: "Customer full name"
+        data_tests:
+          - not_null
+
+      - name: Gender
+        description: "Customer gender (M or F)"
+        data_tests:
+          - accepted_values:
+              values: ['M', 'F', 'MALE', 'FEMALE']
+
+      - name: Birthdate
+        description: "Customer birth date"
+
+      - name: Registration_Date
+        description: "Customer registration date"
+        data_tests:
+          - not_null
+
+      - name: Email
+        description: "Customer email (lowercase format)"
+
+      - name: Phone_Number
+        description: "Customer phone number"
+
+      - name: City
+        description: "Customer city of residence"
+
+      - name: Preferred_Channel
+        description: "Customer preferred communication channel (uppercase)"
+        data_tests:
+          - accepted_values:
+              values: ['EMAIL', 'PHONE', 'SMS', 'IN_STORE']
+
+      - name: Is_Valid
+        description: "Flag indicating if record passed all quality checks"
+        data_tests:
+          - not_null
+          - accepted_values:
+              values: [1]
+
+      - name: DQ_Score
+        description: "Data quality score (0-100)"
+        data_tests:
+          - not_null
+
+      - name: Batch_ID
+        description: "Batch identifier for load tracking"
+        data_tests:
+          - not_null
+
+      - name: Source_File
+        description: "Source file name"
+        data_tests:
+          - not_null
+
+      - name: Created_TS
+        description: "Timestamp when record was created"
+        data_tests:
+          - not_null
+
+      - name: Updated_TS
+        description: "Timestamp when record was last updated"
+        data_tests:
+          - not_null
+
+  - name: erp_products_clean
+    description: "Silver layer table - Cleaned ERP product data with category standardization and price validation"
+    columns:
+      - name: Product_SKU
+        description: "Unique product stock keeping unit"
+        data_tests:
+          - not_null
+          - unique
+
+      - name: Product_Name
+        description: "Product name"
+        data_tests:
+          - not_null
+
+      - name: Category
+        description: "Product category (uppercase)"
+        data_tests:
+          - not_null
+          - accepted_values:
+              values: ['ELECTRONICS', 'BEVERAGES', 'GROCERY', 'CLOTHING', 'HOME']
+              config:
+                severity: warn
+
+      - name: Sub_Category
+        description: "Product sub-category (uppercase)"
+        data_tests:
+          - not_null
+
+      - name: Price
+        description: "Selling price in currency"
+        data_tests:
+          - not_null
+          - dbt_utils.expression_is_true:
+              expression: "Price > 0"
+
+      - name: Cost_Price
+        description: "Cost price in currency"
+        data_tests:
+          - not_null
+          - dbt_utils.expression_is_true:
+              expression: "Cost_Price > 0 AND Cost_Price <= Price"
+
+      - name: Supplier_ID
+        description: "Supplier identifier"
+        data_tests:
+          - not_null
+
+      - name: Last_Updated
+        description: "Last product update date"
+        data_tests:
+          - not_null
+
+      - name: Is_Valid
+        description: "Flag indicating if record passed all quality checks"
+        data_tests:
+          - not_null
+          - accepted_values:
+              values: [1]
+
+      - name: DQ_Score
+        description: "Data quality score (0-100)"
+        data_tests:
+          - not_null
+
+      - name: Batch_ID
+        description: "Batch identifier for load tracking"
+        data_tests:
+          - not_null
+
+      - name: Source_File
+        description: "Source file name"
+        data_tests:
+          - not_null
+
+      - name: Created_TS
+        description: "Timestamp when record was created"
+        data_tests:
+          - not_null
+
+      - name: Updated_TS
+        description: "Timestamp when record was last updated"
+        data_tests:
+          - not_null
+
+  - name: erp_inventory_clean
+    description: "Silver layer table - Cleaned ERP inventory snapshots with negative quantity handling"
+    columns:
+      - name: Inventory_ID
+        description: "Unique inventory record identifier"
+        data_tests:
+          - not_null
+          - unique
+
+      - name: Product_SKU
+        description: "Product stock keeping unit"
+        data_tests:
+          - not_null
+
+      - name: Store_ID
+        description: "Store identifier"
+        data_tests:
+          - not_null
+
+      - name: Snapshot_Date
+        description: "Date of inventory snapshot"
+        data_tests:
+          - not_null
+
+      - name: Quantity_On_Hand
+        description: "Quantity in inventory (must be non-negative)"
+        data_tests:
+          - not_null
+          - dbt_utils.expression_is_true:
+              expression: "Quantity_On_Hand >= 0"
+
+      - name: Reorder_Level
+        description: "Minimum reorder level for product"
+        data_tests:
+          - not_null
+          - dbt_utils.expression_is_true:
+              expression: "Reorder_Level >= 0"
+
+      - name: Is_Valid
+        description: "Flag indicating if record passed all quality checks"
+        data_tests:
+          - not_null
+          - accepted_values:
+              values: [1]
+
+      - name: DQ_Score
+        description: "Data quality score (0-100)"
+        data_tests:
+          - not_null
+
+      - name: Batch_ID
+        description: "Batch identifier for load tracking"
+        data_tests:
+          - not_null
+
+      - name: Source_File
+        description: "Source file name"
+        data_tests:
+          - not_null
+
+      - name: Created_TS
+        description: "Timestamp when record was created"
+        data_tests:
+          - not_null
+
+      - name: Updated_TS
+        description: "Timestamp when record was last updated"
+        data_tests:
+          - not_null
+
+  - name: mkt_promotions_clean
+    description: "Silver layer table - Cleaned marketing promotions with date validation and SKU parsing"
+    columns:
+      - name: Promotion_ID
+        description: "Unique promotion identifier"
+        data_tests:
+          - not_null
+          - unique
+
+      - name: Promo_Name
+        description: "Promotion name"
+        data_tests:
+          - not_null
+
+      - name: Promo_Type
+        description: "Type of promotion (uppercase)"
+        data_tests:
+          - not_null
+          - accepted_values:
+              values: ['DISCOUNT', 'BOGO', 'BUNDLED', 'LIMITED_TIME', 'SEASONAL']
+
+      - name: Start_Date
+        description: "Promotion start date"
+        data_tests:
+          - not_null
+
+      - name: End_Date
+        description: "Promotion end date"
+        data_tests:
+          - not_null
+          - dbt_utils.expression_is_true:
+              expression: "End_Date >= Start_Date"
+
+      - name: Promo_Cost
+        description: "Cost of promotion in currency"
+        data_tests:
+          - not_null
+          - dbt_utils.expression_is_true:
+              expression: "Promo_Cost >= 0"
+
+      - name: Eligible_SKUs
+        description: "Pipe-separated list of eligible product SKUs"
+        data_tests:
+          - not_null
+
+      - name: Is_Valid
+        description: "Flag indicating if record passed all quality checks"
+        data_tests:
+          - not_null
+          - accepted_values:
+              values: [1]
+
+      - name: DQ_Score
+        description: "Data quality score (0-100)"
+        data_tests:
+          - not_null
+
+      - name: Batch_ID
+        description: "Batch identifier for load tracking"
+        data_tests:
+          - not_null
+
+      - name: Source_File
+        description: "Source file name"
+        data_tests:
+          - not_null
+
+      - name: Created_TS
+        description: "Timestamp when record was created"
+        data_tests:
+          - not_null
+
+      - name: Updated_TS
+        description: "Timestamp when record was last updated"
+        data_tests:
+          - not_null
+
+  - name: pos_transactions_header_clean
+    description: "Silver layer table - Cleaned POS transaction headers with date standardization and deduplication"
+    columns:
+      - name: Transaction_ID
+        description: "Unique transaction identifier"
+        data_tests:
+          - not_null
+          - unique
+
+      - name: Transaction_Date
+        description: "Date of transaction (normalized)"
+        data_tests:
+          - not_null
+
+      - name: Transaction_TS
+        description: "Timestamp of transaction"
+        data_tests:
+          - not_null
+
+      - name: Store_ID
+        description: "Store where transaction occurred"
+        data_tests:
+          - not_null
+
+      - name: Customer_ID
+        description: "Customer ID (NULL for walk-ins)"
+
+      - name: Payment_Method
+        description: "Payment method used (uppercase)"
+        data_tests:
+          - not_null
+          - accepted_values:
+              values: ['CASH', 'CARD', 'ONLINE', 'GIFT_CARD', 'MOBILE']
+
+      - name: Total_Amount
+        description: "Total transaction amount in currency"
+        data_tests:
+          - not_null
+          - dbt_utils.expression_is_true:
+              expression: "Total_Amount > 0"
+
+      - name: Discount_Percent
+        description: "Applied discount percentage (0-100)"
+        data_tests:
+          - dbt_utils.expression_is_true:
+              expression: "Discount_Percent >= 0 AND Discount_Percent <= 100"
+
+      - name: Is_Valid
+        description: "Flag indicating if record passed all quality checks"
+        data_tests:
+          - not_null
+          - accepted_values:
+              values: [1]
+
+      - name: DQ_Score
+        description: "Data quality score (0-100)"
+        data_tests:
+          - not_null
+
+      - name: Batch_ID
+        description: "Batch identifier for load tracking"
+        data_tests:
+          - not_null
+
+      - name: Source_File
+        description: "Source file name"
+        data_tests:
+          - not_null
+
+      - name: Created_TS
+        description: "Timestamp when record was created"
+        data_tests:
+          - not_null
+
+      - name: Updated_TS
+        description: "Timestamp when record was last updated"
+        data_tests:
+          - not_null
+
+  - name: pos_transactions_lines_clean
+    description: "Silver layer table - Cleaned POS transaction line items with quantity validation and discount handling"
+    columns:
+      - name: Transaction_Line_ID
+        description: "Unique transaction line identifier"
+        data_tests:
+          - not_null
+          - unique
+
+      - name: Transaction_ID
+        description: "Parent transaction identifier"
+        data_tests:
+          - not_null
+
+      - name: Line_Number
+        description: "Line number within transaction"
+        data_tests:
+          - not_null
+          - dbt_utils.expression_is_true:
+              expression: "Line_Number > 0"
+
+      - name: Product_SKU
+        description: "Product stock keeping unit"
+        data_tests:
+          - not_null
+
+      - name: Store_ID
+        description: "Store where line item was sold"
+        data_tests:
+          - not_null
+
+      - name: Quantity
+        description: "Quantity sold (must be positive)"
+        data_tests:
+          - not_null
+          - dbt_utils.expression_is_true:
+              expression: "Quantity > 0"
+
+      - name: Unit_Price
+        description: "Unit price in currency"
+        data_tests:
+          - not_null
+          - dbt_utils.expression_is_true:
+              expression: "Unit_Price > 0"
+
+      - name: Cost_Price
+        description: "Cost price in currency"
+        data_tests:
+          - not_null
+
+      - name: Discount_Amount
+        description: "Line item discount in currency"
+        data_tests:
+          - dbt_utils.expression_is_true:
+              expression: "Discount_Amount >= 0"
+
+      - name: Line_Sales_Amount
+        description: "Net sales amount after discount"
+        data_tests:
+          - not_null
+          - dbt_utils.expression_is_true:
+              expression: "Line_Sales_Amount > 0"
+
+      - name: Promotion_ID
+        description: "Associated promotion ID (NULL if no promotion)"
+
+      - name: Is_Valid
+        description: "Flag indicating if record passed all quality checks"
+        data_tests:
+          - not_null
+          - accepted_values:
+              values: [1]
+
+      - name: DQ_Score
+        description: "Data quality score (0-100)"
+        data_tests:
+          - not_null
+
+      - name: Batch_ID
+        description: "Batch identifier for load tracking"
+        data_tests:
+          - not_null
+
+      - name: Source_File
+        description: "Source file name"
+        data_tests:
+          - not_null
+
+      - name: Created_TS
+        description: "Timestamp when record was created"
+        data_tests:
+          - not_null
+
+      - name: Updated_TS
+        description: "Timestamp when record was last updated"
+        data_tests:
+          - not_null
+  

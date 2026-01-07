@@ -1,0 +1,44 @@
+metro_dbt:
+  target: dev
+  outputs:
+    dev:
+      type: sqlserver
+      driver: 'ODBC Driver 17 for SQL Server'
+      server: 10.255.255.254
+      port: 1433
+      database: MetroRetailDB
+      schema: Staging
+      
+      # SQL Server Authentication (Windows auth from WSL2 doesn't work)
+      authentication: sql
+      user: halim
+      password: Halim@1999!
+      
+      # SSL/Encryption settings for local SQL Express
+      encrypt: false
+      trust_cert: true
+      
+      # Performance settings
+      threads: 8
+      retries: 3
+      login_timeout: 30
+      query_timeout: 300
+
+    # Optional: Production profile with SQL auth
+    prod:
+      type: sqlserver
+      driver: 'ODBC Driver 17 for SQL Server'
+      server: '{{ env_var("SQL_SERVER") }}'
+      port: 1433
+      database: '{{ env_var("SQL_DATABASE") }}'
+      schema: Staging
+      
+      # SQL Server Authentication (for production)
+      authentication: sql
+      user: '{{ env_var("SQL_USER") }}'
+      password: '{{ env_var("SQL_PASSWORD") }}'
+      
+      encrypt: true
+      trust_cert: false
+      threads: 4
+      retries: 3

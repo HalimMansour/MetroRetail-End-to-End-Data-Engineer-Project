@@ -1,0 +1,31 @@
+Store_ID,Store_Name,City,Region,Store_Manager,Store_Area_sqm,Open_Date,Batch_ID,Source_File
+S028,Metro Store 28,Riyadh,North,Amina Hassan,642,2010-05-21,gen_20251127_092715,stores.csv
+S016 ,Metro Store 16,Jeddah,East,David Smith,1239,2019-06-06,gen_20251127_092715,stores.csv
+S024,Metro Store 24,Alexandria,West,Amina Hassan,2205,2020-02-13,gen_20251127_092715,stores.csv
+S018,Metro Store 18,Riyadh,GCC,Mohamed Youssef; Mohamed Youssef,2812,2020-08-06,gen_20251127_092715,stores.csv
+S009,Metro Store 9,Jeddah,West,Fatima Noor,2259,2010-09-18,gen_20251127_092715,stores.csv
+S010,Metro Store 10,Doha,South,Liam Brown; David Smith,979,2015-11-16,gen_20251127_092715,stores.csv
+S029,Metro Store 29,Riyadh,South,Mohamed Youssef,1415,2022-06-09,gen_20251127_092715,stores.csv
+S025,Metro Store 25,Jeddah,North,Fatima Noor,747,2021-07-18,gen_20251127_092715,stores.csv
+S013,Metro Store 13,Alexandria,West,Ahmed Ali,2394,2024-04-30,gen_20251127_092715,stores.csv
+S001,Metro Store 1,Cairo,East,Ahmed Ali,848,2010-11-09,gen_20251127_092715,stores.csv
+S005,Metro Store 5,Cairo,North,Ahmed Ali; Mohamed Youssef,1152,2019-08-29,gen_20251127_092715,stores.csv
+S017,Metro Store 17,Cairo,Central,Liam Brown; Ahmed Ali,2823,2022-01-07,gen_20251127_092715,stores.csv
+S006,Metro Store 6,Giza,West,Mohamed Youssef,2490,2021-09-13,gen_20251127_092715,stores.csv
+S014,Metro Store 14,Dubai,GCC,Sarah Johnson,1116,2013-06-13,gen_20251127_092715,stores.csv
+S012,Metro Store 12,Cairo,South,Mohamed Youssef,1443,2010-04-16,gen_20251127_092715,stores.csv
+S023,Metro Store 23,Riyadh,North,Liam Brown,938,2019-09-11,gen_20251127_092715,stores.csv
+S002,Metro Store 2,Riyadh,East,Sarah Johnson; Mohamed Youssef,2098,2022-08-01,gen_20251127_092715,stores.csv
+S003,Metro Store 3,Alexandria,South,,1669,2011-12-19,gen_20251127_092715,stores.csv
+S026,Metro Store 26,Giza,Central,Sarah Johnson,1117,2022-10-15,gen_20251127_092715,stores.csv
+S004,Metro Store 4,Dubai,North,NA,596,2020-01-21,gen_20251127_092715,stores.csv
+S022,Metro Store 22,Jeddah,East,Sarah Johnson,2394,2021-12-31,gen_20251127_092715,stores.csv
+S027,Metro Store 27,Giza,Central,Mohamed Youssef,2044,2018-12-06,gen_20251127_092715,stores.csv
+S019,Metro Store 19,Riyadh,East,David Smith; Sarah Johnson,2102,2019-05-26,gen_20251127_092715,stores.csv
+S030,Metro Store 30,Jeddah,Central,Liam Brown,982,2018-12-08,gen_20251127_092715,stores.csv
+S021,Metro Store 21,Doha,North,Mohamed Youssef,1942,2013-04-12,gen_20251127_092715,stores.csv
+S008,Metro Store 8,Jeddah,GCC,David Smith,1242,2024-12-14,gen_20251127_092715,stores.csv
+S011,Metro Store 11,Giza,Central,Liam Brown; Liam Brown,1092,2022-11-09,gen_20251127_092715,stores.csv
+S015,Metro Store 15,Dubai,West,Sarah Johnson; Liam Brown,1233,2014-05-02,gen_20251127_092715,stores.csv
+S020,Metro Store 20,Jeddah,GCC,David Smith,1731,2011-10-05,gen_20251127_092715,stores.csv
+S007,Metro Store 7,Alexandria,Central,Mohamed Youssef,200,2010-04-13,gen_20251127_092715,stores.csv

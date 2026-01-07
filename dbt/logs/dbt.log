@@ -1,0 +1,29 @@
+[0m10:35:04.761078 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F170A06180>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F16D022330>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F16DF814F0>]}
+
+
+============================== 10:35:04.771465 | 7e8d1b9b-1157-4e46-a244-39ae3c074c0f ==============================
+[0m10:35:04.771465 [info ] [MainThread]: Running with dbt=1.10.15
+[0m10:35:04.773138 [debug] [MainThread]: running dbt with arguments {'profiles_dir': 'C:\\Users\\halim\\.dbt', 'invocation_command': 'dbt init metro_dbt', 'write_json': 'True', 'cache_selected_only': 'False', 'no_print': 'None', 'warn_error': 'None', 'log_path': 'logs', 'fail_fast': 'False', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True', 'partial_parse': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'version_check': 'True', 'introspect': 'True', 'quiet': 'False', 'empty': 'None', 'log_cache_events': 'False', 'debug': 'False', 'log_format': 'default', 'use_colors': 'True', 'printer_width': '80', 'target_path': 'None'}
+[0m10:35:04.832833 [debug] [MainThread]: Starter project path: C:\Work\Projects\MetroRetail\.venv\Lib\site-packages\dbt\include\starter_project
+[0m10:35:04.871697 [info ] [MainThread]: 
+Your new dbt project "metro_dbt" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m10:35:04.871697 [info ] [MainThread]: Setting up your profile.
+[0m10:36:52.815853 [info ] [MainThread]: Profile metro_dbt written to C:\Users\halim\.dbt\profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m10:36:52.888445 [debug] [MainThread]: Command `dbt init` succeeded at 10:36:52.887445 after 108.53 seconds
+[0m10:36:52.894631 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F16F9E0D40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F1723C85C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F17298BF80>]}
+[0m10:36:52.899627 [debug] [MainThread]: Flushing usage events
+[0m10:36:54.241101 [debug] [MainThread]: An error was encountered while trying to flush usage events

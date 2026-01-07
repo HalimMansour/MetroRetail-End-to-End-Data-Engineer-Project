@@ -1,0 +1,43 @@
+version: 2
+
+models:
+  - name: stg_erp_products
+    description: "Staging table for ERP product master data with type conversion and data quality flags"
+    columns:
+      - name: Raw_ID
+        description: "Foreign key to Raw.erp_products table"
+        data_tests:
+          - not_null
+      
+      - name: Product_SKU
+        description: "Product Stock Keeping Unit (business key)"
+        data_tests:
+          - not_null
+      
+      - name: Product_Name
+        description: "Product display name"
+      
+      - name: Category
+        description: "Product category (e.g., Electronics, Beverages)"
+      
+      - name: Sub_Category
+        description: "Product sub-category"
+      
+      - name: Price
+        description: "Retail price in local currency"
+      
+      - name: Cost_Price
+        description: "Cost price from supplier"
+      
+      - name: Supplier_ID
+        description: "Supplier identifier"
+      
+      - name: Last_Updated
+        description: "Date product record was last updated in ERP"
+      
+      - name: DQ_Is_Valid
+        description: "Overall data quality flag (1 = all validations passed)"
+        data_tests:
+          - accepted_values:
+              arguments:
+                values: [0, 1]
