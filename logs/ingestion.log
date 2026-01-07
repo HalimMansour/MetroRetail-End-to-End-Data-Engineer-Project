@@ -1,0 +1,1907 @@
+2025-11-30 09:36:38,142 - INFO - 
+======================================================================
+2025-11-30 09:36:38,142 - INFO - BULK INGESTION - ALL CSV FILES
+2025-11-30 09:36:38,143 - INFO - ======================================================================
+2025-11-30 09:36:38,143 - INFO - ======================================================================
+2025-11-30 09:36:38,143 - INFO - Starting ingestion: pos_transactions_header.csv
+2025-11-30 09:36:38,144 - INFO - ======================================================================
+2025-11-30 09:36:38,144 - INFO - Batch ID: pos_transactions_header_20251130_093638
+2025-11-30 09:36:38,145 - INFO - Target table: Raw.pos_transactions_header
+2025-11-30 09:36:39,025 - INFO - Reading CSV: C:\Work\Projects\MetroRetail\data\sample\pos_transactions_header.csv
+2025-11-30 09:36:39,085 - INFO -   Rows read: 20,200
+2025-11-30 09:36:39,085 - INFO -   Columns: Transaction_ID, Transaction_Date, Transaction_TS, Store_ID, Customer_ID, Payment_Method, Total_Amount, Total_Discount, Line_Count, Batch_ID, Source_File
+2025-11-30 09:36:39,089 - INFO - Truncating table: Raw.pos_transactions_header
+2025-11-30 09:36:39,132 - INFO - Inserting data into Raw.pos_transactions_header...
+2025-11-30 09:36:39,267 - INFO - Database connection closed
+2025-11-30 09:36:39,267 - INFO - ======================================================================
+2025-11-30 09:36:39,270 - INFO - ======================================================================
+2025-11-30 09:36:39,270 - INFO - Starting ingestion: pos_transactions_lines.csv
+2025-11-30 09:36:39,270 - INFO - ======================================================================
+2025-11-30 09:36:39,270 - INFO - Batch ID: pos_transactions_lines_20251130_093639
+2025-11-30 09:36:39,271 - INFO - Target table: Raw.pos_transactions_lines
+2025-11-30 09:36:39,282 - INFO - Reading CSV: C:\Work\Projects\MetroRetail\data\sample\pos_transactions_lines.csv
+2025-11-30 09:36:39,526 - INFO -   Rows read: 103,530
+2025-11-30 09:36:39,527 - INFO -   Columns: Transaction_Line_ID, Transaction_ID, Line_Number, Product_SKU, Store_ID, Quantity, Unit_Price, Cost_Price, Discount_Amount, Line_Sales_Amount, Promotion_ID, Batch_ID, Source_File
+2025-11-30 09:36:39,530 - INFO - Truncating table: Raw.pos_transactions_lines
+2025-11-30 09:36:39,542 - INFO - Inserting data into Raw.pos_transactions_lines...
+2025-11-30 09:36:39,739 - INFO - Database connection closed
+2025-11-30 09:36:39,739 - INFO - ======================================================================
+2025-11-30 09:36:39,745 - INFO - ======================================================================
+2025-11-30 09:36:39,745 - INFO - Starting ingestion: erp_products.csv
+2025-11-30 09:36:39,745 - INFO - ======================================================================
+2025-11-30 09:36:39,746 - INFO - Batch ID: erp_products_20251130_093639
+2025-11-30 09:36:39,746 - INFO - Target table: Raw.erp_products
+2025-11-30 09:36:39,763 - INFO - Reading CSV: C:\Work\Projects\MetroRetail\data\sample\erp_products.csv
+2025-11-30 09:36:39,793 - INFO -   Rows read: 206
+2025-11-30 09:36:39,793 - INFO -   Columns: Product_SKU, Product_Name, Category, Sub_Category, Price, Cost_Price, Supplier_ID, Last_Updated, Batch_ID, Source_File
+2025-11-30 09:36:39,794 - INFO - Truncating table: Raw.erp_products
+2025-11-30 09:36:39,804 - INFO - Inserting data into Raw.erp_products...
+2025-11-30 09:36:40,169 - INFO - Database connection closed
+2025-11-30 09:36:40,169 - INFO - ======================================================================
+2025-11-30 09:36:40,170 - INFO - ======================================================================
+2025-11-30 09:36:40,170 - INFO - Starting ingestion: erp_stores.csv
+2025-11-30 09:36:40,170 - INFO - ======================================================================
+2025-11-30 09:36:40,171 - INFO - Batch ID: erp_stores_20251130_093640
+2025-11-30 09:36:40,171 - INFO - Target table: Raw.erp_stores
+2025-11-30 09:36:40,187 - INFO - Reading CSV: C:\Work\Projects\MetroRetail\data\sample\erp_stores.csv
+2025-11-30 09:36:40,193 - INFO -   Rows read: 30
+2025-11-30 09:36:40,193 - INFO -   Columns: Store_ID, Store_Name, City, Region, Store_Manager, Store_Area_sqm, Open_Date, Batch_ID, Source_File
+2025-11-30 09:36:40,193 - INFO - Truncating table: Raw.erp_stores
+2025-11-30 09:36:40,206 - INFO - Inserting data into Raw.erp_stores...
+2025-11-30 09:36:40,292 - INFO - Database connection closed
+2025-11-30 09:36:40,292 - INFO - ======================================================================
+2025-11-30 09:36:40,292 - INFO - ======================================================================
+2025-11-30 09:36:40,292 - INFO - Starting ingestion: erp_inventory.csv
+2025-11-30 09:36:40,294 - INFO - ======================================================================
+2025-11-30 09:36:40,294 - INFO - Batch ID: erp_inventory_20251130_093640
+2025-11-30 09:36:40,294 - INFO - Target table: Raw.erp_inventory
+2025-11-30 09:36:40,306 - INFO - Reading CSV: C:\Work\Projects\MetroRetail\data\sample\erp_inventory.csv
+2025-11-30 09:36:40,406 - INFO -   Rows read: 63,000
+2025-11-30 09:36:40,407 - INFO -   Columns: Inventory_ID, Product_SKU, Store_ID, Snapshot_Date, Quantity_On_Hand, Reorder_Level, Batch_ID, Source_File
+2025-11-30 09:36:40,408 - INFO - Truncating table: Raw.erp_inventory
+2025-11-30 09:36:40,423 - INFO - Inserting data into Raw.erp_inventory...
+2025-11-30 09:36:49,690 - INFO -   Inserted 10,000 rows...
+2025-11-30 09:37:03,802 - INFO -   Inserted 20,000 rows...
+2025-11-30 09:39:55,080 - INFO -   Inserted 30,000 rows...
+2025-11-30 09:40:57,750 - INFO -   Inserted 40,000 rows...
+2025-11-30 09:44:30,176 - INFO -   Inserted 50,000 rows...
+2025-11-30 09:50:12,721 - INFO -   Inserted 60,000 rows...
+2025-11-30 09:50:13,982 - INFO -   Rows inserted: 63,000
+2025-11-30 09:50:13,984 - INFO -   Table total: 63,000
+2025-11-30 09:50:13,995 - INFO - Database connection closed
+2025-11-30 09:50:13,999 - INFO - ======================================================================
+2025-11-30 09:50:14,059 - INFO - ======================================================================
+2025-11-30 09:50:14,076 - INFO - Starting ingestion: crm_customers.csv
+2025-11-30 09:50:14,076 - INFO - ======================================================================
+2025-11-30 09:50:14,092 - INFO - Batch ID: crm_customers_20251130_095014
+2025-11-30 09:50:14,092 - INFO - Target table: Raw.crm_customers
+2025-11-30 09:50:14,145 - INFO - Reading CSV: C:\Work\Projects\MetroRetail\data\sample\crm_customers.csv
+2025-11-30 09:50:14,419 - INFO -   Rows read: 5,000
+2025-11-30 09:50:14,419 - INFO -   Columns: Customer_ID, Full_Name, Gender, Birthdate, Registration_Date, Email, Phone_Number, City, Preferred_Channel, Batch_ID, Source_File
+2025-11-30 09:50:14,435 - INFO - Truncating table: Raw.crm_customers
+2025-11-30 09:50:14,460 - INFO - Inserting data into Raw.crm_customers...
+2025-11-30 09:50:14,565 - INFO - Database connection closed
+2025-11-30 09:50:14,565 - INFO - ======================================================================
+2025-11-30 09:50:14,565 - INFO - ======================================================================
+2025-11-30 09:50:14,565 - INFO - Starting ingestion: mkt_promotions.csv
+2025-11-30 09:50:14,565 - INFO - ======================================================================
+2025-11-30 09:50:14,565 - INFO - Batch ID: mkt_promotions_20251130_095014
+2025-11-30 09:50:14,565 - INFO - Target table: Raw.mkt_promotions
+2025-11-30 09:50:14,595 - INFO - Reading CSV: C:\Work\Projects\MetroRetail\data\sample\mkt_promotions.csv
+2025-11-30 09:50:14,669 - INFO -   Rows read: 50
+2025-11-30 09:50:14,669 - INFO -   Columns: Promotion_ID, Promo_Name, Promo_Type, Start_Date, End_Date, Promo_Cost, Eligible_SKUs, Batch_ID, Source_File
+2025-11-30 09:50:14,680 - INFO - Truncating table: Raw.mkt_promotions
+2025-11-30 09:50:14,700 - INFO - Inserting data into Raw.mkt_promotions...
+2025-11-30 09:50:14,730 - INFO - Database connection closed
+2025-11-30 09:50:14,733 - INFO - ======================================================================
+2025-11-30 09:50:14,733 - INFO - ======================================================================
+2025-11-30 09:50:14,733 - INFO - Starting ingestion: api_weather.csv
+2025-11-30 09:50:14,734 - INFO - ======================================================================
+2025-11-30 09:50:14,734 - INFO - Batch ID: api_weather_20251130_095014
+2025-11-30 09:50:14,735 - INFO - Target table: Raw.api_weather
+2025-11-30 09:50:14,754 - INFO - Reading CSV: C:\Work\Projects\MetroRetail\data\sample\api_weather.csv
+2025-11-30 09:50:14,910 - INFO -   Rows read: 28,755
+2025-11-30 09:50:14,910 - INFO -   Columns: Weather_Date, Store_ID, Temperature_C, Precipitation_mm, Weather_Condition, Batch_ID, Source_File
+2025-11-30 09:50:14,923 - INFO - Truncating table: Raw.api_weather
+2025-11-30 09:50:14,939 - INFO - Inserting data into Raw.api_weather...
+2025-11-30 09:50:15,057 - INFO - Database connection closed
+2025-11-30 09:50:15,064 - INFO - ======================================================================
+2025-11-30 09:50:15,065 - INFO - 
+======================================================================
+2025-11-30 09:50:15,065 - INFO - INGESTION SUMMARY
+2025-11-30 09:50:15,065 - INFO - ======================================================================
+2025-11-30 09:50:15,080 - INFO - ----------------------------------------------------------------------
+2025-11-30 09:50:15,080 - INFO - Total files: 8
+2025-11-30 09:50:15,080 - INFO - Successful: 1
+2025-11-30 09:50:15,080 - INFO - Failed: 7
+2025-11-30 09:50:15,080 - INFO - ======================================================================
+2025-11-30 10:43:45,310 - INFO - 
+======================================================================
+2025-11-30 10:43:45,310 - INFO - BULK INGESTION - ALL CSV FILES
+2025-11-30 10:43:45,310 - INFO - ======================================================================
+2025-11-30 10:43:45,310 - INFO - ======================================================================
+2025-11-30 10:43:45,310 - INFO - Starting ingestion: pos_transactions_header.csv
+2025-11-30 10:43:45,310 - INFO - ======================================================================
+2025-11-30 10:43:45,310 - INFO - Batch ID: pos_transactions_header_20251130_104345
+2025-11-30 10:43:45,310 - INFO - Target table: Raw.pos_transactions_header
+2025-11-30 10:43:46,056 - INFO - Reading CSV: C:\Work\Projects\MetroRetail\data\sample\pos_transactions_header.csv
+2025-11-30 10:43:46,128 - INFO -   Rows read: 20,200
+2025-11-30 10:43:46,128 - INFO -   Columns: Transaction_ID, Transaction_Date, Transaction_TS, Store_ID, Customer_ID, Payment_Method, Total_Amount, Total_Discount, Line_Count, Batch_ID, Source_File
+2025-11-30 10:43:46,130 - INFO - Truncating table: Raw.pos_transactions_header
+2025-11-30 10:43:46,190 - INFO - Inserting data into Raw.pos_transactions_header...
+2025-11-30 10:43:46,698 - INFO - Database connection closed
+2025-11-30 10:43:46,700 - INFO - ======================================================================
+2025-11-30 10:43:46,706 - INFO - ======================================================================
+2025-11-30 10:43:46,707 - INFO - Starting ingestion: pos_transactions_lines.csv
+2025-11-30 10:43:46,708 - INFO - ======================================================================
+2025-11-30 10:43:46,710 - INFO - Batch ID: pos_transactions_lines_20251130_104346
+2025-11-30 10:43:46,710 - INFO - Target table: Raw.pos_transactions_lines
+2025-11-30 10:43:46,744 - INFO - Reading CSV: C:\Work\Projects\MetroRetail\data\sample\pos_transactions_lines.csv
+2025-11-30 10:43:47,010 - INFO -   Rows read: 103,530
+2025-11-30 10:43:47,010 - INFO -   Columns: Transaction_Line_ID, Transaction_ID, Line_Number, Product_SKU, Store_ID, Quantity, Unit_Price, Cost_Price, Discount_Amount, Line_Sales_Amount, Promotion_ID, Batch_ID, Source_File
+2025-11-30 10:43:47,010 - INFO - Truncating table: Raw.pos_transactions_lines
+2025-11-30 10:43:47,026 - INFO - Inserting data into Raw.pos_transactions_lines...
+2025-11-30 10:43:47,185 - INFO - Database connection closed
+2025-11-30 10:43:47,185 - INFO - ======================================================================
+2025-11-30 10:43:47,190 - INFO - ======================================================================
+2025-11-30 10:43:47,191 - INFO - Starting ingestion: erp_products.csv
+2025-11-30 10:43:47,191 - INFO - ======================================================================
+2025-11-30 10:43:47,192 - INFO - Batch ID: erp_products_20251130_104347
+2025-11-30 10:43:47,192 - INFO - Target table: Raw.erp_products
+2025-11-30 10:43:47,207 - INFO - Reading CSV: C:\Work\Projects\MetroRetail\data\sample\erp_products.csv
+2025-11-30 10:43:47,209 - INFO -   Rows read: 206
+2025-11-30 10:43:47,210 - INFO -   Columns: Product_SKU, Product_Name, Category, Sub_Category, Price, Cost_Price, Supplier_ID, Last_Updated, Batch_ID, Source_File
+2025-11-30 10:43:47,210 - INFO - Truncating table: Raw.erp_products
+2025-11-30 10:43:47,226 - INFO - Inserting data into Raw.erp_products...
+2025-11-30 10:43:47,893 - INFO - Database connection closed
+2025-11-30 10:43:47,893 - INFO - ======================================================================
+2025-11-30 10:43:47,893 - INFO - ======================================================================
+2025-11-30 10:43:47,893 - INFO - Starting ingestion: erp_stores.csv
+2025-11-30 10:43:47,893 - INFO - ======================================================================
+2025-11-30 10:43:47,893 - INFO - Batch ID: erp_stores_20251130_104347
+2025-11-30 10:43:47,893 - INFO - Target table: Raw.erp_stores
+2025-11-30 10:43:47,910 - INFO - Reading CSV: C:\Work\Projects\MetroRetail\data\sample\erp_stores.csv
+2025-11-30 10:43:47,910 - INFO -   Rows read: 30
+2025-11-30 10:43:47,910 - INFO -   Columns: Store_ID, Store_Name, City, Region, Store_Manager, Store_Area_sqm, Open_Date, Batch_ID, Source_File
+2025-11-30 10:43:47,910 - INFO - Truncating table: Raw.erp_stores
+2025-11-30 10:43:47,934 - INFO - Inserting data into Raw.erp_stores...
+2025-11-30 10:43:48,309 - INFO - Database connection closed
+2025-11-30 10:43:48,310 - INFO - ======================================================================
+2025-11-30 10:43:48,310 - INFO - ======================================================================
+2025-11-30 10:43:48,310 - INFO - Starting ingestion: erp_inventory.csv
+2025-11-30 10:43:48,310 - INFO - ======================================================================
+2025-11-30 10:43:48,310 - INFO - Batch ID: erp_inventory_20251130_104348
+2025-11-30 10:43:48,310 - INFO - Target table: Raw.erp_inventory
+2025-11-30 10:43:48,324 - INFO - Reading CSV: C:\Work\Projects\MetroRetail\data\sample\erp_inventory.csv
+2025-11-30 10:43:48,433 - INFO -   Rows read: 63,000
+2025-11-30 10:43:48,434 - INFO -   Columns: Inventory_ID, Product_SKU, Store_ID, Snapshot_Date, Quantity_On_Hand, Reorder_Level, Batch_ID, Source_File
+2025-11-30 10:43:48,437 - INFO - Truncating table: Raw.erp_inventory
+2025-11-30 10:43:48,464 - INFO - Inserting data into Raw.erp_inventory...
+2025-11-30 10:44:47,009 - INFO -   Inserted 10,000 rows...
+2025-11-30 10:46:15,771 - INFO -   Inserted 20,000 rows...
+2025-11-30 10:47:56,506 - INFO -   Inserted 30,000 rows...
+2025-11-30 10:51:11,942 - INFO -   Inserted 40,000 rows...
+2025-11-30 11:03:27,367 - INFO - 
+======================================================================
+2025-11-30 11:03:27,369 - INFO - BULK INGESTION - ALL CSV FILES
+2025-11-30 11:03:27,369 - INFO - ======================================================================
+2025-11-30 11:03:27,369 - INFO - ======================================================================
+2025-11-30 11:03:27,369 - INFO - Starting ingestion: pos_transactions_header.csv
+2025-11-30 11:03:27,369 - INFO - ======================================================================
+2025-11-30 11:03:27,369 - INFO - Batch ID: pos_transactions_header_20251130_110327
+2025-11-30 11:03:27,369 - INFO - Target table: Raw.pos_transactions_header
+2025-11-30 11:06:09,526 - INFO - 
+======================================================================
+2025-11-30 11:06:09,527 - INFO - BULK INGESTION - ALL CSV FILES
+2025-11-30 11:06:09,527 - INFO - ======================================================================
+2025-11-30 11:06:09,527 - INFO - ======================================================================
+2025-11-30 11:06:09,529 - INFO - Starting ingestion: pos_transactions_header.csv
+2025-11-30 11:06:09,529 - INFO - ======================================================================
+2025-11-30 11:06:09,530 - INFO - Batch ID: pos_transactions_header_20251130_110609
+2025-11-30 11:06:09,531 - INFO - Target table: Raw.pos_transactions_header
+2025-11-30 11:06:10,312 - INFO - Reading CSV: C:\Work\Projects\MetroRetail\data\sample\pos_transactions_header.csv
+2025-11-30 11:06:10,544 - INFO -   Rows read: 20,200
+2025-11-30 11:06:10,544 - INFO -   Columns: Transaction_ID, Transaction_Date, Transaction_TS, Store_ID, Customer_ID, Payment_Method, Total_Amount, Total_Discount, Line_Count, Batch_ID, Source_File
+2025-11-30 11:06:10,552 - INFO - Truncating table: Raw.pos_transactions_header
+2025-11-30 11:06:10,573 - INFO - Inserting data into Raw.pos_transactions_header...
+2025-11-30 11:06:10,749 - INFO - Database connection closed
+2025-11-30 11:06:10,751 - INFO - ======================================================================
+2025-11-30 11:06:10,753 - INFO - ======================================================================
+2025-11-30 11:06:10,754 - INFO - Starting ingestion: pos_transactions_lines.csv
+2025-11-30 11:06:10,754 - INFO - ======================================================================
+2025-11-30 11:06:10,755 - INFO - Batch ID: pos_transactions_lines_20251130_110610
+2025-11-30 11:06:10,755 - INFO - Target table: Raw.pos_transactions_lines
+2025-11-30 11:06:10,785 - INFO - Reading CSV: C:\Work\Projects\MetroRetail\data\sample\pos_transactions_lines.csv
+2025-11-30 11:06:11,050 - INFO -   Rows read: 103,530
+2025-11-30 11:06:11,051 - INFO -   Columns: Transaction_Line_ID, Transaction_ID, Line_Number, Product_SKU, Store_ID, Quantity, Unit_Price, Cost_Price, Discount_Amount, Line_Sales_Amount, Promotion_ID, Batch_ID, Source_File
+2025-11-30 11:06:11,055 - INFO - Truncating table: Raw.pos_transactions_lines
+2025-11-30 11:06:11,097 - INFO - Inserting data into Raw.pos_transactions_lines...
+2025-11-30 11:06:11,302 - INFO - Database connection closed
+2025-11-30 11:06:11,302 - INFO - ======================================================================
+2025-11-30 11:06:11,314 - INFO - ======================================================================
+2025-11-30 11:06:11,315 - INFO - Starting ingestion: erp_products.csv
+2025-11-30 11:06:11,315 - INFO - ======================================================================
+2025-11-30 11:06:11,315 - INFO - Batch ID: erp_products_20251130_110611
+2025-11-30 11:06:11,317 - INFO - Target table: Raw.erp_products
+2025-11-30 11:06:11,333 - INFO - Reading CSV: C:\Work\Projects\MetroRetail\data\sample\erp_products.csv
+2025-11-30 11:06:11,338 - INFO -   Rows read: 206
+2025-11-30 11:06:11,339 - INFO -   Columns: Product_SKU, Product_Name, Category, Sub_Category, Price, Cost_Price, Supplier_ID, Last_Updated, Batch_ID, Source_File
+2025-11-30 11:06:11,339 - INFO - Truncating table: Raw.erp_products
+2025-11-30 11:06:11,353 - INFO - Inserting data into Raw.erp_products...
+2025-11-30 11:06:11,680 - INFO - Database connection closed
+2025-11-30 11:06:11,681 - INFO - ======================================================================
+2025-11-30 11:06:11,682 - INFO - ======================================================================
+2025-11-30 11:06:11,682 - INFO - Starting ingestion: erp_stores.csv
+2025-11-30 11:06:11,683 - INFO - ======================================================================
+2025-11-30 11:06:11,683 - INFO - Batch ID: erp_stores_20251130_110611
+2025-11-30 11:06:11,684 - INFO - Target table: Raw.erp_stores
+2025-11-30 11:06:11,701 - INFO - Reading CSV: C:\Work\Projects\MetroRetail\data\sample\erp_stores.csv
+2025-11-30 11:06:11,707 - INFO -   Rows read: 30
+2025-11-30 11:06:11,708 - INFO -   Columns: Store_ID, Store_Name, City, Region, Store_Manager, Store_Area_sqm, Open_Date, Batch_ID, Source_File
+2025-11-30 11:06:11,709 - INFO - Truncating table: Raw.erp_stores
+2025-11-30 11:06:11,725 - INFO - Inserting data into Raw.erp_stores...
+2025-11-30 11:06:11,860 - INFO - Database connection closed
+2025-11-30 11:06:11,860 - INFO - ======================================================================
+2025-11-30 11:06:11,861 - INFO - ======================================================================
+2025-11-30 11:06:11,861 - INFO - Starting ingestion: erp_inventory.csv
+2025-11-30 11:06:11,861 - INFO - ======================================================================
+2025-11-30 11:06:11,862 - INFO - Batch ID: erp_inventory_20251130_110611
+2025-11-30 11:06:11,863 - INFO - Target table: Raw.erp_inventory
+2025-11-30 11:06:11,880 - INFO - Reading CSV: C:\Work\Projects\MetroRetail\data\sample\erp_inventory.csv
+2025-11-30 11:06:11,984 - INFO -   Rows read: 63,000
+2025-11-30 11:06:11,984 - INFO -   Columns: Inventory_ID, Product_SKU, Store_ID, Snapshot_Date, Quantity_On_Hand, Reorder_Level, Batch_ID, Source_File
+2025-11-30 11:06:11,986 - INFO - Truncating table: Raw.erp_inventory
+2025-11-30 11:06:11,993 - INFO - Inserting data into Raw.erp_inventory...
+2025-11-30 11:06:16,982 - INFO -   Inserted 10,000 rows...
+2025-11-30 11:06:22,134 - INFO -   Inserted 20,000 rows...
+2025-11-30 11:06:26,948 - INFO -   Inserted 30,000 rows...
+2025-11-30 11:06:32,157 - INFO -   Inserted 40,000 rows...
+2025-11-30 11:06:36,750 - INFO -   Inserted 50,000 rows...
+2025-11-30 11:06:45,810 - INFO -   Inserted 60,000 rows...
+2025-11-30 11:09:36,081 - INFO -   Rows inserted: 63,000
+2025-11-30 11:09:36,083 - INFO -   Table total: 63,000
+2025-11-30 11:09:36,088 - INFO - Database connection closed
+2025-11-30 11:09:36,088 - INFO - ======================================================================
+2025-11-30 11:09:36,138 - INFO - ======================================================================
+2025-11-30 11:09:36,138 - INFO - Starting ingestion: crm_customers.csv
+2025-11-30 11:09:36,138 - INFO - ======================================================================
+2025-11-30 11:09:36,150 - INFO - Batch ID: crm_customers_20251130_110936
+2025-11-30 11:09:36,150 - INFO - Target table: Raw.crm_customers
+2025-11-30 11:09:36,308 - INFO - Reading CSV: C:\Work\Projects\MetroRetail\data\sample\crm_customers.csv
+2025-11-30 11:09:36,400 - INFO -   Rows read: 5,000
+2025-11-30 11:09:36,403 - INFO -   Columns: Customer_ID, Full_Name, Gender, Birthdate, Registration_Date, Email, Phone_Number, City, Preferred_Channel, Batch_ID, Source_File
+2025-11-30 11:09:36,412 - INFO - Truncating table: Raw.crm_customers
+2025-11-30 11:09:36,436 - INFO - Inserting data into Raw.crm_customers...
+2025-11-30 11:09:36,531 - INFO - Database connection closed
+2025-11-30 11:09:36,531 - INFO - ======================================================================
+2025-11-30 11:09:36,532 - INFO - ======================================================================
+2025-11-30 11:09:36,532 - INFO - Starting ingestion: mkt_promotions.csv
+2025-11-30 11:09:36,532 - INFO - ======================================================================
+2025-11-30 11:09:36,533 - INFO - Batch ID: mkt_promotions_20251130_110936
+2025-11-30 11:09:36,533 - INFO - Target table: Raw.mkt_promotions
+2025-11-30 11:09:36,543 - INFO - Reading CSV: C:\Work\Projects\MetroRetail\data\sample\mkt_promotions.csv
+2025-11-30 11:09:36,548 - INFO -   Rows read: 50
+2025-11-30 11:09:36,548 - INFO -   Columns: Promotion_ID, Promo_Name, Promo_Type, Start_Date, End_Date, Promo_Cost, Eligible_SKUs, Batch_ID, Source_File
+2025-11-30 11:09:36,548 - INFO - Truncating table: Raw.mkt_promotions
+2025-11-30 11:09:36,552 - INFO - Inserting data into Raw.mkt_promotions...
+2025-11-30 11:09:36,570 - INFO - Database connection closed
+2025-11-30 11:09:36,570 - INFO - ======================================================================
+2025-11-30 11:09:36,570 - INFO - ======================================================================
+2025-11-30 11:09:36,570 - INFO - Starting ingestion: api_weather.csv
+2025-11-30 11:09:36,570 - INFO - ======================================================================
+2025-11-30 11:09:36,570 - INFO - Batch ID: api_weather_20251130_110936
+2025-11-30 11:09:36,570 - INFO - Target table: Raw.api_weather
+2025-11-30 11:09:36,578 - INFO - Reading CSV: C:\Work\Projects\MetroRetail\data\sample\api_weather.csv
+2025-11-30 11:09:36,611 - INFO -   Rows read: 28,755
+2025-11-30 11:09:36,612 - INFO -   Columns: Weather_Date, Store_ID, Temperature_C, Precipitation_mm, Weather_Condition, Batch_ID, Source_File
+2025-11-30 11:09:36,621 - INFO - Truncating table: Raw.api_weather
+2025-11-30 11:09:36,625 - INFO - Inserting data into Raw.api_weather...
+2025-11-30 11:09:36,673 - INFO - Database connection closed
+2025-11-30 11:09:36,678 - INFO - ======================================================================
+2025-11-30 11:09:36,678 - INFO - 
+======================================================================
+2025-11-30 11:09:36,678 - INFO - INGESTION SUMMARY
+2025-11-30 11:09:36,678 - INFO - ======================================================================
+2025-11-30 11:09:36,688 - INFO - ----------------------------------------------------------------------
+2025-11-30 11:09:36,688 - INFO - Total files: 8
+2025-11-30 11:09:36,688 - INFO - Successful: 1
+2025-11-30 11:09:36,698 - INFO - Failed: 7
+2025-11-30 11:09:36,698 - INFO - ======================================================================
+2025-11-30 11:21:32,861 - INFO - 
+======================================================================
+2025-11-30 11:21:32,862 - INFO - BULK INGESTION - ALL CSV FILES
+2025-11-30 11:21:32,863 - INFO - ======================================================================
+2025-11-30 11:21:32,863 - INFO - ======================================================================
+2025-11-30 11:21:32,863 - INFO - Starting ingestion: pos_transactions_header.csv
+2025-11-30 11:21:32,864 - INFO - ======================================================================
+2025-11-30 11:21:32,864 - INFO - Batch ID: pos_transactions_header_20251130_112132
+2025-11-30 11:21:32,866 - INFO - Target table: Raw.pos_transactions_header
+2025-11-30 11:21:33,671 - INFO - [OK] Database connection established
+2025-11-30 11:21:33,852 - INFO - [OK] Manifest entry created: pos_transactions_header_20251130_112132
+2025-11-30 11:21:33,853 - INFO - Reading CSV: C:\Work\Projects\MetroRetail\data\sample\pos_transactions_header.csv
+2025-11-30 11:21:34,019 - INFO -   Rows read: 20,200
+2025-11-30 11:21:34,019 - INFO -   Columns: Transaction_ID, Transaction_Date, Transaction_TS, Store_ID, Customer_ID, Payment_Method, Total_Amount, Total_Discount, Line_Count, Batch_ID, Source_File
+2025-11-30 11:21:34,029 - INFO - Truncating table: Raw.pos_transactions_header
+2025-11-30 11:21:34,042 - INFO - [OK] Table truncated: Raw.pos_transactions_header
+2025-11-30 11:21:34,042 - INFO - Inserting data into Raw.pos_transactions_header...
+2025-11-30 11:22:12,307 - INFO -   Inserted 10,000 rows...
+2025-11-30 11:22:51,454 - INFO -   Inserted 20,000 rows...
+2025-11-30 11:22:52,162 - INFO - [OK] Bulk insert completed: 20,200 rows into Raw.pos_transactions_header
+2025-11-30 11:22:52,274 - INFO - [OK] Manifest updated: pos_transactions_header_20251130_112132 - COMPLETED
+2025-11-30 11:23:25,355 - INFO -   Rows inserted: 20,200
+2025-11-30 11:23:25,357 - INFO -   Table total: 20,200
+2025-11-30 11:23:25,386 - INFO - Database connection closed
+2025-11-30 11:23:25,388 - INFO - ======================================================================
+2025-11-30 11:23:25,445 - INFO - ======================================================================
+2025-11-30 11:23:25,447 - INFO - Starting ingestion: pos_transactions_lines.csv
+2025-11-30 11:23:25,449 - INFO - ======================================================================
+2025-11-30 11:23:25,449 - INFO - Batch ID: pos_transactions_lines_20251130_112325
+2025-11-30 11:23:25,449 - INFO - Target table: Raw.pos_transactions_lines
+2025-11-30 11:23:25,477 - INFO - [OK] Database connection established
+2025-11-30 11:23:25,509 - INFO - [OK] Manifest entry created: pos_transactions_lines_20251130_112325
+2025-11-30 11:23:25,510 - INFO - Reading CSV: C:\Work\Projects\MetroRetail\data\sample\pos_transactions_lines.csv
+2025-11-30 11:23:25,955 - INFO -   Rows read: 103,530
+2025-11-30 11:23:25,955 - INFO -   Columns: Transaction_Line_ID, Transaction_ID, Line_Number, Product_SKU, Store_ID, Quantity, Unit_Price, Cost_Price, Discount_Amount, Line_Sales_Amount, Promotion_ID, Batch_ID, Source_File
+2025-11-30 11:23:25,980 - INFO - Truncating table: Raw.pos_transactions_lines
+2025-11-30 11:23:26,010 - INFO - [OK] Table truncated: Raw.pos_transactions_lines
+2025-11-30 11:23:26,010 - INFO - Inserting data into Raw.pos_transactions_lines...
+2025-11-30 11:24:10,085 - INFO -   Inserted 10,000 rows...
+2025-11-30 11:24:55,393 - INFO -   Inserted 20,000 rows...
+2025-11-30 11:25:32,315 - INFO -   Inserted 30,000 rows...
+2025-11-30 11:25:38,894 - INFO -   Inserted 40,000 rows...
+2025-11-30 11:25:43,110 - INFO -   Inserted 50,000 rows...
+2025-11-30 11:25:51,879 - INFO -   Inserted 60,000 rows...
+2025-11-30 11:26:43,920 - INFO -   Inserted 70,000 rows...
+2025-11-30 11:27:26,011 - INFO -   Inserted 80,000 rows...
+2025-11-30 11:29:32,832 - INFO -   Inserted 90,000 rows...
+2025-11-30 11:30:09,160 - INFO -   Inserted 100,000 rows...
+2025-11-30 11:30:23,150 - INFO - [OK] Bulk insert completed: 103,530 rows into Raw.pos_transactions_lines
+2025-11-30 11:30:24,018 - INFO - [OK] Manifest updated: pos_transactions_lines_20251130_112325 - COMPLETED
+2025-11-30 11:30:35,496 - INFO -   Rows inserted: 103,530
+2025-11-30 11:30:35,499 - INFO -   Table total: 103,530
+2025-11-30 11:30:35,512 - INFO - Database connection closed
+2025-11-30 11:30:35,513 - INFO - ======================================================================
+2025-11-30 11:30:35,700 - INFO - ======================================================================
+2025-11-30 11:30:35,703 - INFO - Starting ingestion: erp_products.csv
+2025-11-30 11:30:35,704 - INFO - ======================================================================
+2025-11-30 11:30:35,712 - INFO - Batch ID: erp_products_20251130_113035
+2025-11-30 11:30:35,714 - INFO - Target table: Raw.erp_products
+2025-11-30 11:30:35,742 - INFO - [OK] Database connection established
+2025-11-30 11:30:35,769 - INFO - [OK] Manifest entry created: erp_products_20251130_113035
+2025-11-30 11:30:35,769 - INFO - Reading CSV: C:\Work\Projects\MetroRetail\data\sample\erp_products.csv
+2025-11-30 11:30:35,842 - INFO -   Rows read: 206
+2025-11-30 11:30:35,842 - INFO -   Columns: Product_SKU, Product_Name, Category, Sub_Category, Price, Cost_Price, Supplier_ID, Last_Updated, Batch_ID, Source_File
+2025-11-30 11:30:35,855 - INFO - Truncating table: Raw.erp_products
+2025-11-30 11:30:35,874 - INFO - [OK] Table truncated: Raw.erp_products
+2025-11-30 11:30:35,876 - INFO - Inserting data into Raw.erp_products...
+2025-11-30 11:30:36,456 - INFO - [OK] Bulk insert completed: 206 rows into Raw.erp_products
+2025-11-30 11:30:36,483 - INFO - [OK] Manifest updated: erp_products_20251130_113035 - COMPLETED
+2025-11-30 11:30:36,686 - INFO -   Rows inserted: 206
+2025-11-30 11:30:36,692 - INFO -   Table total: 206
+2025-11-30 11:30:36,705 - INFO - Database connection closed
+2025-11-30 11:30:36,705 - INFO - ======================================================================
+2025-11-30 11:30:36,708 - INFO - ======================================================================
+2025-11-30 11:30:36,710 - INFO - Starting ingestion: erp_stores.csv
+2025-11-30 11:30:36,710 - INFO - ======================================================================
+2025-11-30 11:30:36,714 - INFO - Batch ID: erp_stores_20251130_113036
+2025-11-30 11:30:36,806 - INFO - Target table: Raw.erp_stores
+2025-11-30 11:30:36,823 - INFO - [OK] Database connection established
+2025-11-30 11:30:36,856 - INFO - [OK] Manifest entry created: erp_stores_20251130_113036
+2025-11-30 11:30:36,857 - INFO - Reading CSV: C:\Work\Projects\MetroRetail\data\sample\erp_stores.csv
+2025-11-30 11:30:37,092 - INFO -   Rows read: 30
+2025-11-30 11:30:37,093 - INFO -   Columns: Store_ID, Store_Name, City, Region, Store_Manager, Store_Area_sqm, Open_Date, Batch_ID, Source_File
+2025-11-30 11:30:37,096 - INFO - Truncating table: Raw.erp_stores
+2025-11-30 11:30:37,105 - INFO - [OK] Table truncated: Raw.erp_stores
+2025-11-30 11:30:37,106 - INFO - Inserting data into Raw.erp_stores...
+2025-11-30 11:30:37,246 - INFO - [OK] Bulk insert completed: 30 rows into Raw.erp_stores
+2025-11-30 11:30:37,255 - INFO - [OK] Manifest updated: erp_stores_20251130_113036 - COMPLETED
+2025-11-30 11:30:37,270 - INFO -   Rows inserted: 30
+2025-11-30 11:30:37,270 - INFO -   Table total: 30
+2025-11-30 11:30:37,271 - INFO - Database connection closed
+2025-11-30 11:30:37,271 - INFO - ======================================================================
+2025-11-30 11:30:37,271 - INFO - ======================================================================
+2025-11-30 11:30:37,273 - INFO - Starting ingestion: erp_inventory.csv
+2025-11-30 11:30:37,275 - INFO - ======================================================================
+2025-11-30 11:30:37,275 - INFO - Batch ID: erp_inventory_20251130_113037
+2025-11-30 11:30:37,276 - INFO - Target table: Raw.erp_inventory
+2025-11-30 11:30:37,280 - INFO - [OK] Database connection established
+2025-11-30 11:30:37,285 - INFO - [OK] Manifest entry created: erp_inventory_20251130_113037
+2025-11-30 11:30:37,286 - INFO - Reading CSV: C:\Work\Projects\MetroRetail\data\sample\erp_inventory.csv
+2025-11-30 11:30:37,496 - INFO -   Rows read: 63,000
+2025-11-30 11:30:37,536 - INFO -   Columns: Inventory_ID, Product_SKU, Store_ID, Snapshot_Date, Quantity_On_Hand, Reorder_Level, Batch_ID, Source_File
+2025-11-30 11:30:37,588 - INFO - Truncating table: Raw.erp_inventory
+2025-11-30 11:30:37,591 - INFO - [OK] Table truncated: Raw.erp_inventory
+2025-11-30 11:30:37,595 - INFO - Inserting data into Raw.erp_inventory...
+2025-11-30 11:30:42,793 - INFO -   Inserted 10,000 rows...
+2025-11-30 11:30:46,122 - INFO -   Inserted 20,000 rows...
+2025-11-30 11:30:50,789 - INFO -   Inserted 30,000 rows...
+2025-11-30 11:30:55,411 - INFO -   Inserted 40,000 rows...
+2025-11-30 11:31:00,206 - INFO -   Inserted 50,000 rows...
+2025-11-30 11:31:05,456 - INFO -   Inserted 60,000 rows...
+2025-11-30 11:31:07,067 - INFO - [OK] Bulk insert completed: 63,000 rows into Raw.erp_inventory
+2025-11-30 11:31:07,127 - INFO - [OK] Manifest updated: erp_inventory_20251130_113037 - COMPLETED
+2025-11-30 11:31:07,360 - INFO -   Rows inserted: 63,000
+2025-11-30 11:31:07,362 - INFO -   Table total: 63,000
+2025-11-30 11:31:07,365 - INFO - Database connection closed
+2025-11-30 11:31:07,365 - INFO - ======================================================================
+2025-11-30 11:31:07,525 - INFO - ======================================================================
+2025-11-30 11:31:07,530 - INFO - Starting ingestion: crm_customers.csv
+2025-11-30 11:31:07,532 - INFO - ======================================================================
+2025-11-30 11:31:07,539 - INFO - Batch ID: crm_customers_20251130_113107
+2025-11-30 11:31:07,539 - INFO - Target table: Raw.crm_customers
+2025-11-30 11:31:07,546 - INFO - [OK] Database connection established
+2025-11-30 11:31:07,609 - INFO - [OK] Manifest entry created: crm_customers_20251130_113107
+2025-11-30 11:31:07,625 - INFO - Reading CSV: C:\Work\Projects\MetroRetail\data\sample\crm_customers.csv
+2025-11-30 11:31:07,770 - INFO -   Rows read: 5,000
+2025-11-30 11:31:07,778 - INFO -   Columns: Customer_ID, Full_Name, Gender, Birthdate, Registration_Date, Email, Phone_Number, City, Preferred_Channel, Batch_ID, Source_File
+2025-11-30 11:31:07,806 - INFO - Truncating table: Raw.crm_customers
+2025-11-30 11:31:07,820 - INFO - [OK] Table truncated: Raw.crm_customers
+2025-11-30 11:31:07,820 - INFO - Inserting data into Raw.crm_customers...
+2025-11-30 11:31:33,226 - INFO - [OK] Bulk insert completed: 5,000 rows into Raw.crm_customers
+2025-11-30 11:31:33,238 - INFO - [OK] Manifest updated: crm_customers_20251130_113107 - COMPLETED
+2025-11-30 11:31:33,246 - INFO -   Rows inserted: 5,000
+2025-11-30 11:31:33,246 - INFO -   Table total: 5,000
+2025-11-30 11:31:33,252 - INFO - Database connection closed
+2025-11-30 11:31:33,256 - INFO - ======================================================================
+2025-11-30 11:31:33,256 - INFO - ======================================================================
+2025-11-30 11:31:33,258 - INFO - Starting ingestion: mkt_promotions.csv
+2025-11-30 11:31:33,258 - INFO - ======================================================================
+2025-11-30 11:31:33,260 - INFO - Batch ID: mkt_promotions_20251130_113133
+2025-11-30 11:31:33,260 - INFO - Target table: Raw.mkt_promotions
+2025-11-30 11:31:33,260 - INFO - [OK] Database connection established
+2025-11-30 11:31:33,272 - INFO - [OK] Manifest entry created: mkt_promotions_20251130_113133
+2025-11-30 11:31:33,272 - INFO - Reading CSV: C:\Work\Projects\MetroRetail\data\sample\mkt_promotions.csv
+2025-11-30 11:31:33,284 - INFO -   Rows read: 50
+2025-11-30 11:31:33,285 - INFO -   Columns: Promotion_ID, Promo_Name, Promo_Type, Start_Date, End_Date, Promo_Cost, Eligible_SKUs, Batch_ID, Source_File
+2025-11-30 11:31:33,286 - INFO - Truncating table: Raw.mkt_promotions
+2025-11-30 11:31:33,289 - INFO - [OK] Table truncated: Raw.mkt_promotions
+2025-11-30 11:31:33,289 - INFO - Inserting data into Raw.mkt_promotions...
+2025-11-30 11:31:33,518 - INFO - [OK] Bulk insert completed: 50 rows into Raw.mkt_promotions
+2025-11-30 11:31:33,527 - INFO - [OK] Manifest updated: mkt_promotions_20251130_113133 - COMPLETED
+2025-11-30 11:31:33,532 - INFO -   Rows inserted: 50
+2025-11-30 11:31:33,532 - INFO -   Table total: 50
+2025-11-30 11:31:33,538 - INFO - Database connection closed
+2025-11-30 11:31:33,538 - INFO - ======================================================================
+2025-11-30 11:31:33,540 - INFO - ======================================================================
+2025-11-30 11:31:33,540 - INFO - Starting ingestion: api_weather.csv
+2025-11-30 11:31:33,540 - INFO - ======================================================================
+2025-11-30 11:31:33,541 - INFO - Batch ID: api_weather_20251130_113133
+2025-11-30 11:31:33,543 - INFO - Target table: Raw.api_weather
+2025-11-30 11:31:33,546 - INFO - [OK] Database connection established
+2025-11-30 11:31:33,551 - INFO - [OK] Manifest entry created: api_weather_20251130_113133
+2025-11-30 11:31:33,551 - INFO - Reading CSV: C:\Work\Projects\MetroRetail\data\sample\api_weather.csv
+2025-11-30 11:31:33,654 - INFO -   Rows read: 28,755
+2025-11-30 11:31:33,655 - INFO -   Columns: Weather_Date, Store_ID, Temperature_C, Precipitation_mm, Weather_Condition, Batch_ID, Source_File
+2025-11-30 11:31:33,683 - INFO - Truncating table: Raw.api_weather
+2025-11-30 11:31:33,690 - INFO - [OK] Table truncated: Raw.api_weather
+2025-11-30 11:31:33,690 - INFO - Inserting data into Raw.api_weather...
+2025-11-30 11:31:41,339 - INFO -   Inserted 10,000 rows...
+2025-11-30 11:31:49,011 - INFO -   Inserted 20,000 rows...
+2025-11-30 11:31:55,286 - INFO - [OK] Bulk insert completed: 28,755 rows into Raw.api_weather
+2025-11-30 11:31:55,407 - INFO - [OK] Manifest updated: api_weather_20251130_113133 - COMPLETED
+2025-11-30 11:32:24,611 - INFO -   Rows inserted: 28,755
+2025-11-30 11:32:24,615 - INFO -   Table total: 28,755
+2025-11-30 11:32:24,629 - INFO - Database connection closed
+2025-11-30 11:32:24,629 - INFO - ======================================================================
+2025-11-30 11:32:24,631 - INFO - 
+======================================================================
+2025-11-30 11:32:24,633 - INFO - INGESTION SUMMARY
+2025-11-30 11:32:24,635 - INFO - ======================================================================
+2025-11-30 11:32:25,081 - INFO - ----------------------------------------------------------------------
+2025-11-30 11:32:25,082 - INFO - Total files: 8
+2025-11-30 11:32:25,082 - INFO - Successful: 8
+2025-11-30 11:32:25,082 - INFO - Failed: 0
+2025-11-30 11:32:25,084 - INFO - ======================================================================
+2025-11-30 12:18:50,114 - INFO - 
+======================================================================
+2025-11-30 12:18:50,129 - INFO - BULK INGESTION - ALL CSV FILES
+2025-11-30 12:18:50,129 - INFO - ======================================================================
+2025-11-30 12:18:50,129 - INFO - ======================================================================
+2025-11-30 12:18:50,129 - INFO - Starting ingestion: pos_transactions_header.csv
+2025-11-30 12:18:50,129 - INFO - ======================================================================
+2025-11-30 12:18:50,129 - INFO - Batch ID: pos_transactions_header_20251130_121850
+2025-11-30 12:18:50,129 - INFO - Target table: Raw.pos_transactions_header
+2025-11-30 12:18:50,567 - INFO - [OK] Database connection established
+2025-11-30 12:18:50,760 - INFO - [OK] Manifest entry created: pos_transactions_header_20251130_121850
+2025-11-30 12:18:50,760 - INFO - Reading CSV: C:\Work\Projects\MetroRetail\data\sample\pos_transactions_header.csv
+2025-11-30 12:18:50,885 - INFO -   Rows read: 20,200
+2025-11-30 12:18:50,885 - INFO -   Columns: Transaction_ID, Transaction_Date, Transaction_TS, Store_ID, Customer_ID, Payment_Method, Total_Amount, Total_Discount, Line_Count, Batch_ID, Source_File
+2025-11-30 12:18:50,889 - INFO - Truncating table: Raw.pos_transactions_header
+2025-11-30 12:18:50,924 - INFO - [OK] Table truncated: Raw.pos_transactions_header
+2025-11-30 12:18:50,924 - INFO - Inserting data into Raw.pos_transactions_header...
+2025-11-30 12:19:29,787 - INFO -   Inserted 10,000 rows...
+2025-11-30 12:20:08,648 - INFO -   Inserted 20,000 rows...
+2025-11-30 12:20:09,422 - INFO - [OK] Bulk insert completed: 20,200 rows into Raw.pos_transactions_header
+2025-11-30 12:20:09,738 - INFO - [OK] Manifest updated: pos_transactions_header_20251130_121850 - COMPLETED
+2025-11-30 12:20:31,409 - INFO - [OK] Ingestion complete!
+2025-11-30 12:20:31,412 - INFO -   Rows inserted: 20,200
+2025-11-30 12:20:31,413 - INFO -   Table total: 20,200
+2025-11-30 12:20:31,427 - INFO - Database connection closed
+2025-11-30 12:20:31,427 - INFO - ======================================================================
+2025-11-30 12:20:31,496 - INFO - ======================================================================
+2025-11-30 12:20:31,497 - INFO - Starting ingestion: pos_transactions_lines.csv
+2025-11-30 12:20:31,497 - INFO - ======================================================================
+2025-11-30 12:20:31,540 - INFO - Batch ID: pos_transactions_lines_20251130_122031
+2025-11-30 12:20:31,541 - INFO - Target table: Raw.pos_transactions_lines
+2025-11-30 12:20:31,597 - INFO - [OK] Database connection established
+2025-11-30 12:20:31,682 - INFO - [OK] Manifest entry created: pos_transactions_lines_20251130_122031
+2025-11-30 12:20:31,684 - INFO - Reading CSV: C:\Work\Projects\MetroRetail\data\sample\pos_transactions_lines.csv
+2025-11-30 12:20:32,660 - INFO -   Rows read: 103,530
+2025-11-30 12:20:32,661 - INFO -   Columns: Transaction_Line_ID, Transaction_ID, Line_Number, Product_SKU, Store_ID, Quantity, Unit_Price, Cost_Price, Discount_Amount, Line_Sales_Amount, Promotion_ID, Batch_ID, Source_File
+2025-11-30 12:20:32,698 - INFO - Truncating table: Raw.pos_transactions_lines
+2025-11-30 12:20:32,735 - INFO - [OK] Table truncated: Raw.pos_transactions_lines
+2025-11-30 12:20:32,737 - INFO - Inserting data into Raw.pos_transactions_lines...
+2025-11-30 12:21:16,004 - INFO -   Inserted 10,000 rows...
+2025-11-30 12:22:01,595 - INFO -   Inserted 20,000 rows...
+2025-11-30 12:22:43,452 - INFO -   Inserted 30,000 rows...
+2025-11-30 12:23:40,161 - INFO -   Inserted 40,000 rows...
+2025-11-30 12:24:37,211 - INFO -   Inserted 50,000 rows...
+2025-11-30 12:25:21,757 - INFO -   Inserted 60,000 rows...
+2025-11-30 12:26:05,340 - INFO -   Inserted 70,000 rows...
+2025-11-30 12:26:48,963 - INFO -   Inserted 80,000 rows...
+2025-11-30 12:27:32,950 - INFO -   Inserted 90,000 rows...
+2025-11-30 12:28:13,011 - INFO -   Inserted 100,000 rows...
+2025-11-30 12:28:17,699 - INFO - [OK] Bulk insert completed: 103,530 rows into Raw.pos_transactions_lines
+2025-11-30 12:28:18,674 - INFO - [OK] Manifest updated: pos_transactions_lines_20251130_122031 - COMPLETED
+2025-11-30 12:28:18,911 - INFO - [OK] Ingestion complete!
+2025-11-30 12:28:18,913 - INFO -   Rows inserted: 103,530
+2025-11-30 12:28:18,915 - INFO -   Table total: 103,530
+2025-11-30 12:28:18,930 - INFO - Database connection closed
+2025-11-30 12:28:18,932 - INFO - ======================================================================
+2025-11-30 12:28:19,002 - INFO - ======================================================================
+2025-11-30 12:28:19,003 - INFO - Starting ingestion: erp_products.csv
+2025-11-30 12:28:19,004 - INFO - ======================================================================
+2025-11-30 12:28:19,029 - INFO - Batch ID: erp_products_20251130_122819
+2025-11-30 12:28:19,030 - INFO - Target table: Raw.erp_products
+2025-11-30 12:28:19,078 - INFO - [OK] Database connection established
+2025-11-30 12:28:19,109 - INFO - [OK] Manifest entry created: erp_products_20251130_122819
+2025-11-30 12:28:19,111 - INFO - Reading CSV: C:\Work\Projects\MetroRetail\data\sample\erp_products.csv
+2025-11-30 12:28:19,467 - INFO -   Rows read: 206
+2025-11-30 12:28:19,469 - INFO -   Columns: Product_SKU, Product_Name, Category, Sub_Category, Price, Cost_Price, Supplier_ID, Last_Updated, Batch_ID, Source_File
+2025-11-30 12:28:19,497 - INFO - Truncating table: Raw.erp_products
+2025-11-30 12:28:19,572 - INFO - [OK] Table truncated: Raw.erp_products
+2025-11-30 12:28:19,573 - INFO - Inserting data into Raw.erp_products...
+2025-11-30 12:28:20,856 - INFO - [OK] Bulk insert completed: 206 rows into Raw.erp_products
+2025-11-30 12:28:20,868 - INFO - [OK] Manifest updated: erp_products_20251130_122819 - COMPLETED
+2025-11-30 12:28:20,875 - INFO - [OK] Ingestion complete!
+2025-11-30 12:28:20,875 - INFO -   Rows inserted: 206
+2025-11-30 12:28:20,876 - INFO -   Table total: 206
+2025-11-30 12:28:20,878 - INFO - Database connection closed
+2025-11-30 12:28:20,878 - INFO - ======================================================================
+2025-11-30 12:28:20,878 - INFO - ======================================================================
+2025-11-30 12:28:20,879 - INFO - Starting ingestion: erp_stores.csv
+2025-11-30 12:28:20,880 - INFO - ======================================================================
+2025-11-30 12:28:20,888 - INFO - Batch ID: erp_stores_20251130_122820
+2025-11-30 12:28:20,888 - INFO - Target table: Raw.erp_stores
+2025-11-30 12:28:20,890 - INFO - [OK] Database connection established
+2025-11-30 12:28:20,898 - INFO - [OK] Manifest entry created: erp_stores_20251130_122820
+2025-11-30 12:28:20,899 - INFO - Reading CSV: C:\Work\Projects\MetroRetail\data\sample\erp_stores.csv
+2025-11-30 12:28:20,925 - INFO -   Rows read: 30
+2025-11-30 12:28:20,925 - INFO -   Columns: Store_ID, Store_Name, City, Region, Store_Manager, Store_Area_sqm, Open_Date, Batch_ID, Source_File
+2025-11-30 12:28:20,928 - INFO - Truncating table: Raw.erp_stores
+2025-11-30 12:28:20,940 - INFO - [OK] Table truncated: Raw.erp_stores
+2025-11-30 12:28:20,941 - INFO - Inserting data into Raw.erp_stores...
+2025-11-30 12:28:21,145 - INFO - [OK] Bulk insert completed: 30 rows into Raw.erp_stores
+2025-11-30 12:28:21,175 - INFO - [OK] Manifest updated: erp_stores_20251130_122820 - COMPLETED
+2025-11-30 12:28:21,181 - INFO - [OK] Ingestion complete!
+2025-11-30 12:28:21,182 - INFO -   Rows inserted: 30
+2025-11-30 12:28:21,183 - INFO -   Table total: 30
+2025-11-30 12:28:21,185 - INFO - Database connection closed
+2025-11-30 12:28:21,186 - INFO - ======================================================================
+2025-11-30 12:28:21,188 - INFO - ======================================================================
+2025-11-30 12:28:21,190 - INFO - Starting ingestion: erp_inventory.csv
+2025-11-30 12:28:21,193 - INFO - ======================================================================
+2025-11-30 12:28:21,196 - INFO - Batch ID: erp_inventory_20251130_122821
+2025-11-30 12:28:21,196 - INFO - Target table: Raw.erp_inventory
+2025-11-30 12:28:21,199 - INFO - [OK] Database connection established
+2025-11-30 12:28:21,212 - INFO - [OK] Manifest entry created: erp_inventory_20251130_122821
+2025-11-30 12:28:21,212 - INFO - Reading CSV: C:\Work\Projects\MetroRetail\data\sample\erp_inventory.csv
+2025-11-30 12:28:21,606 - INFO -   Rows read: 63,000
+2025-11-30 12:28:21,607 - INFO -   Columns: Inventory_ID, Product_SKU, Store_ID, Snapshot_Date, Quantity_On_Hand, Reorder_Level, Batch_ID, Source_File
+2025-11-30 12:28:21,610 - INFO - Truncating table: Raw.erp_inventory
+2025-11-30 12:28:21,621 - INFO - [OK] Table truncated: Raw.erp_inventory
+2025-11-30 12:28:21,624 - INFO - Inserting data into Raw.erp_inventory...
+2025-11-30 12:28:34,068 - INFO -   Inserted 10,000 rows...
+2025-11-30 12:28:39,613 - INFO -   Inserted 20,000 rows...
+2025-11-30 12:28:46,221 - INFO -   Inserted 30,000 rows...
+2025-11-30 12:28:51,590 - INFO -   Inserted 40,000 rows...
+2025-11-30 12:28:57,635 - INFO -   Inserted 50,000 rows...
+2025-11-30 12:29:03,284 - INFO -   Inserted 60,000 rows...
+2025-11-30 12:29:04,921 - INFO - [OK] Bulk insert completed: 63,000 rows into Raw.erp_inventory
+2025-11-30 12:29:04,982 - INFO - [OK] Manifest updated: erp_inventory_20251130_122821 - COMPLETED
+2025-11-30 12:36:37,578 - ERROR - [ERROR] Failed to get table count: ('42000', '[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]There is insufficient memory available in the buffer pool. (802) (SQLExecDirectW)')
+2025-11-30 12:36:38,277 - INFO - [OK] Ingestion complete!
+2025-11-30 12:36:38,287 - INFO -   Rows inserted: 63,000
+2025-11-30 12:36:38,290 - INFO -   Table total: -1
+2025-11-30 12:36:38,429 - INFO - Database connection closed
+2025-11-30 12:36:38,440 - INFO - ======================================================================
+2025-11-30 12:36:38,850 - INFO - ======================================================================
+2025-11-30 12:36:38,852 - INFO - Starting ingestion: crm_customers.csv
+2025-11-30 12:36:38,855 - INFO - ======================================================================
+2025-11-30 12:36:38,920 - INFO - Batch ID: crm_customers_20251130_123638
+2025-11-30 12:36:38,921 - INFO - Target table: Raw.crm_customers
+2025-11-30 12:36:39,180 - INFO - [OK] Database connection established
+2025-11-30 12:36:42,081 - INFO - [OK] Manifest entry created: crm_customers_20251130_123638
+2025-11-30 12:36:42,083 - INFO - Reading CSV: C:\Work\Projects\MetroRetail\data\sample\crm_customers.csv
+2025-11-30 12:36:42,931 - INFO -   Rows read: 5,000
+2025-11-30 12:36:42,934 - INFO -   Columns: Customer_ID, Full_Name, Gender, Birthdate, Registration_Date, Email, Phone_Number, City, Preferred_Channel, Batch_ID, Source_File
+2025-11-30 12:36:43,016 - INFO - Truncating table: Raw.crm_customers
+2025-11-30 12:36:43,224 - INFO - [OK] Table truncated: Raw.crm_customers
+2025-11-30 12:36:43,225 - INFO - Inserting data into Raw.crm_customers...
+2025-11-30 12:37:29,306 - INFO - [OK] Bulk insert completed: 5,000 rows into Raw.crm_customers
+2025-11-30 12:37:29,552 - INFO - [OK] Manifest updated: crm_customers_20251130_123638 - COMPLETED
+2025-11-30 12:37:29,589 - INFO - [OK] Ingestion complete!
+2025-11-30 12:37:29,591 - INFO -   Rows inserted: 5,000
+2025-11-30 12:37:29,593 - INFO -   Table total: 5,000
+2025-11-30 12:37:29,606 - INFO - Database connection closed
+2025-11-30 12:37:29,607 - INFO - ======================================================================
+2025-11-30 12:37:29,638 - INFO - ======================================================================
+2025-11-30 12:37:29,639 - INFO - Starting ingestion: mkt_promotions.csv
+2025-11-30 12:37:29,640 - INFO - ======================================================================
+2025-11-30 12:37:29,664 - INFO - Batch ID: mkt_promotions_20251130_123729
+2025-11-30 12:37:29,665 - INFO - Target table: Raw.mkt_promotions
+2025-11-30 12:37:29,698 - INFO - [OK] Database connection established
+2025-11-30 12:37:29,711 - INFO - [OK] Manifest entry created: mkt_promotions_20251130_123729
+2025-11-30 12:37:29,712 - INFO - Reading CSV: C:\Work\Projects\MetroRetail\data\sample\mkt_promotions.csv
+2025-11-30 12:37:30,079 - INFO -   Rows read: 50
+2025-11-30 12:37:30,081 - INFO -   Columns: Promotion_ID, Promo_Name, Promo_Type, Start_Date, End_Date, Promo_Cost, Eligible_SKUs, Batch_ID, Source_File
+2025-11-30 12:37:30,111 - INFO - Truncating table: Raw.mkt_promotions
+2025-11-30 12:37:30,202 - INFO - [OK] Table truncated: Raw.mkt_promotions
+2025-11-30 12:37:30,204 - INFO - Inserting data into Raw.mkt_promotions...
+2025-11-30 12:37:32,591 - INFO - [OK] Bulk insert completed: 50 rows into Raw.mkt_promotions
+2025-11-30 12:37:32,706 - INFO - [OK] Manifest updated: mkt_promotions_20251130_123729 - COMPLETED
+2025-11-30 12:37:32,713 - INFO - [OK] Ingestion complete!
+2025-11-30 12:37:32,714 - INFO -   Rows inserted: 50
+2025-11-30 12:37:32,715 - INFO -   Table total: 50
+2025-11-30 12:37:32,728 - INFO - Database connection closed
+2025-11-30 12:37:32,729 - INFO - ======================================================================
+2025-11-30 12:37:32,731 - INFO - ======================================================================
+2025-11-30 12:37:32,732 - INFO - Starting ingestion: api_weather.csv
+2025-11-30 12:37:32,733 - INFO - ======================================================================
+2025-11-30 12:37:32,736 - INFO - Batch ID: api_weather_20251130_123732
+2025-11-30 12:37:32,737 - INFO - Target table: Raw.api_weather
+2025-11-30 12:37:32,747 - INFO - [OK] Database connection established
+2025-11-30 12:37:32,898 - INFO - [OK] Manifest entry created: api_weather_20251130_123732
+2025-11-30 12:37:32,903 - INFO - Reading CSV: C:\Work\Projects\MetroRetail\data\sample\api_weather.csv
+2025-11-30 12:37:33,594 - INFO -   Rows read: 28,755
+2025-11-30 12:37:33,601 - INFO -   Columns: Weather_Date, Store_ID, Temperature_C, Precipitation_mm, Weather_Condition, Batch_ID, Source_File
+2025-11-30 12:37:33,829 - INFO - Truncating table: Raw.api_weather
+2025-11-30 12:37:34,065 - INFO - [OK] Table truncated: Raw.api_weather
+2025-11-30 12:37:34,068 - INFO - Inserting data into Raw.api_weather...
+2025-11-30 12:38:01,931 - INFO -   Inserted 10,000 rows...
+2025-11-30 12:38:15,390 - INFO -   Inserted 20,000 rows...
+2025-11-30 12:38:25,928 - INFO - [OK] Bulk insert completed: 28,755 rows into Raw.api_weather
+2025-11-30 12:38:26,288 - INFO - [OK] Manifest updated: api_weather_20251130_123732 - COMPLETED
+2025-11-30 12:39:04,482 - INFO - [OK] Ingestion complete!
+2025-11-30 12:39:04,497 - INFO -   Rows inserted: 28,755
+2025-11-30 12:39:04,498 - INFO -   Table total: 28,755
+2025-11-30 12:39:04,498 - INFO - Database connection closed
+2025-11-30 12:39:04,498 - INFO - ======================================================================
+2025-11-30 12:39:04,513 - INFO - 
+======================================================================
+2025-11-30 12:39:04,513 - INFO - INGESTION SUMMARY
+2025-11-30 12:39:04,527 - INFO - ======================================================================
+2025-11-30 12:39:04,527 - INFO -   [OK] SUCCESS: pos_transactions_header.csv
+2025-11-30 12:39:04,528 - INFO -   [OK] SUCCESS: pos_transactions_lines.csv
+2025-11-30 12:39:04,528 - INFO -   [OK] SUCCESS: erp_products.csv
+2025-11-30 12:39:04,529 - INFO -   [OK] SUCCESS: erp_stores.csv
+2025-11-30 12:39:04,529 - INFO -   [OK] SUCCESS: erp_inventory.csv
+2025-11-30 12:39:04,529 - INFO -   [OK] SUCCESS: crm_customers.csv
+2025-11-30 12:39:04,529 - INFO -   [OK] SUCCESS: mkt_promotions.csv
+2025-11-30 12:39:04,529 - INFO -   [OK] SUCCESS: api_weather.csv
+2025-11-30 12:39:04,529 - INFO - ----------------------------------------------------------------------
+2025-11-30 12:39:04,529 - INFO - Total files: 8
+2025-11-30 12:39:04,529 - INFO - Successful: 8
+2025-11-30 12:39:04,529 - INFO - Failed: 0
+2025-11-30 12:39:04,529 - INFO - ======================================================================
+2026-01-07 08:56:57,118 - INFO - 
+======================================================================
+2026-01-07 08:56:57,119 - INFO - BULK INGESTION - ALL CSV FILES
+2026-01-07 08:56:57,120 - INFO - ======================================================================
+2026-01-07 08:56:57,121 - INFO - ======================================================================
+2026-01-07 08:56:57,122 - INFO - Starting ingestion: pos_transactions_header.csv
+2026-01-07 08:56:57,122 - INFO - ======================================================================
+2026-01-07 08:56:57,127 - INFO - Batch ID: pos_transactions_header_20260107_085657
+2026-01-07 08:56:57,128 - INFO - Target table: Raw.pos_transactions_header
+2026-01-07 08:56:57,139 - ERROR - [ERROR] Database connection failed: ('01000', "[01000] [unixODBC][Driver Manager]Can't open lib 'ODBC Driver 17 for SQL Server' : file not found (0) (SQLDriverConnect)")
+2026-01-07 08:56:57,140 - INFO - ======================================================================
+2026-01-07 08:56:57,140 - INFO - Starting ingestion: pos_transactions_lines.csv
+2026-01-07 08:56:57,141 - INFO - ======================================================================
+2026-01-07 08:56:57,144 - INFO - Batch ID: pos_transactions_lines_20260107_085657
+2026-01-07 08:56:57,144 - INFO - Target table: Raw.pos_transactions_lines
+2026-01-07 08:56:57,145 - ERROR - [ERROR] Database connection failed: ('01000', "[01000] [unixODBC][Driver Manager]Can't open lib 'ODBC Driver 17 for SQL Server' : file not found (0) (SQLDriverConnect)")
+2026-01-07 08:56:57,146 - INFO - ======================================================================
+2026-01-07 08:56:57,146 - INFO - Starting ingestion: erp_products.csv
+2026-01-07 08:56:57,146 - INFO - ======================================================================
+2026-01-07 08:56:57,149 - INFO - Batch ID: erp_products_20260107_085657
+2026-01-07 08:56:57,149 - INFO - Target table: Raw.erp_products
+2026-01-07 08:56:57,150 - ERROR - [ERROR] Database connection failed: ('01000', "[01000] [unixODBC][Driver Manager]Can't open lib 'ODBC Driver 17 for SQL Server' : file not found (0) (SQLDriverConnect)")
+2026-01-07 08:56:57,150 - INFO - ======================================================================
+2026-01-07 08:56:57,151 - INFO - Starting ingestion: erp_stores.csv
+2026-01-07 08:56:57,151 - INFO - ======================================================================
+2026-01-07 08:56:57,153 - INFO - Batch ID: erp_stores_20260107_085657
+2026-01-07 08:56:57,154 - INFO - Target table: Raw.erp_stores
+2026-01-07 08:56:57,154 - ERROR - [ERROR] Database connection failed: ('01000', "[01000] [unixODBC][Driver Manager]Can't open lib 'ODBC Driver 17 for SQL Server' : file not found (0) (SQLDriverConnect)")
+2026-01-07 08:56:57,154 - INFO - ======================================================================
+2026-01-07 08:56:57,155 - INFO - Starting ingestion: erp_inventory.csv
+2026-01-07 08:56:57,155 - INFO - ======================================================================
+2026-01-07 08:56:57,157 - INFO - Batch ID: erp_inventory_20260107_085657
+2026-01-07 08:56:57,158 - INFO - Target table: Raw.erp_inventory
+2026-01-07 08:56:57,158 - ERROR - [ERROR] Database connection failed: ('01000', "[01000] [unixODBC][Driver Manager]Can't open lib 'ODBC Driver 17 for SQL Server' : file not found (0) (SQLDriverConnect)")
+2026-01-07 08:56:57,158 - INFO - ======================================================================
+2026-01-07 08:56:57,159 - INFO - Starting ingestion: crm_customers.csv
+2026-01-07 08:56:57,159 - INFO - ======================================================================
+2026-01-07 08:56:57,161 - INFO - Batch ID: crm_customers_20260107_085657
+2026-01-07 08:56:57,161 - INFO - Target table: Raw.crm_customers
+2026-01-07 08:56:57,162 - ERROR - [ERROR] Database connection failed: ('01000', "[01000] [unixODBC][Driver Manager]Can't open lib 'ODBC Driver 17 for SQL Server' : file not found (0) (SQLDriverConnect)")
+2026-01-07 08:56:57,162 - INFO - ======================================================================
+2026-01-07 08:56:57,162 - INFO - Starting ingestion: mkt_promotions.csv
+2026-01-07 08:56:57,162 - INFO - ======================================================================
+2026-01-07 08:56:57,164 - INFO - Batch ID: mkt_promotions_20260107_085657
+2026-01-07 08:56:57,164 - INFO - Target table: Raw.mkt_promotions
+2026-01-07 08:56:57,164 - ERROR - [ERROR] Database connection failed: ('01000', "[01000] [unixODBC][Driver Manager]Can't open lib 'ODBC Driver 17 for SQL Server' : file not found (0) (SQLDriverConnect)")
+2026-01-07 08:56:57,165 - INFO - ======================================================================
+2026-01-07 08:56:57,165 - INFO - Starting ingestion: api_weather.csv
+2026-01-07 08:56:57,165 - INFO - ======================================================================
+2026-01-07 08:56:57,167 - INFO - Batch ID: api_weather_20260107_085657
+2026-01-07 08:56:57,168 - INFO - Target table: Raw.api_weather
+2026-01-07 08:56:57,168 - ERROR - [ERROR] Database connection failed: ('01000', "[01000] [unixODBC][Driver Manager]Can't open lib 'ODBC Driver 17 for SQL Server' : file not found (0) (SQLDriverConnect)")
+2026-01-07 08:56:57,168 - INFO - 
+======================================================================
+2026-01-07 08:56:57,168 - INFO - INGESTION SUMMARY
+2026-01-07 08:56:57,169 - INFO - ======================================================================
+2026-01-07 08:56:57,169 - INFO -   [ERROR] FAILED: pos_transactions_header.csv
+2026-01-07 08:56:57,169 - INFO -   [ERROR] FAILED: pos_transactions_lines.csv
+2026-01-07 08:56:57,169 - INFO -   [ERROR] FAILED: erp_products.csv
+2026-01-07 08:56:57,169 - INFO -   [ERROR] FAILED: erp_stores.csv
+2026-01-07 08:56:57,170 - INFO -   [ERROR] FAILED: erp_inventory.csv
+2026-01-07 08:56:57,170 - INFO -   [ERROR] FAILED: crm_customers.csv
+2026-01-07 08:56:57,170 - INFO -   [ERROR] FAILED: mkt_promotions.csv
+2026-01-07 08:56:57,170 - INFO -   [ERROR] FAILED: api_weather.csv
+2026-01-07 08:56:57,170 - INFO - ----------------------------------------------------------------------
+2026-01-07 08:56:57,171 - INFO - Total files: 8
+2026-01-07 08:56:57,171 - INFO - Successful: 0
+2026-01-07 08:56:57,171 - INFO - Failed: 8
+2026-01-07 08:56:57,171 - INFO - ======================================================================
+2026-01-07 09:03:00,823 - INFO - 
+======================================================================
+2026-01-07 09:03:00,825 - INFO - BULK INGESTION - ALL CSV FILES
+2026-01-07 09:03:00,826 - INFO - ======================================================================
+2026-01-07 09:03:00,826 - INFO - ======================================================================
+2026-01-07 09:03:00,827 - INFO - Starting ingestion: pos_transactions_header.csv
+2026-01-07 09:03:00,828 - INFO - ======================================================================
+2026-01-07 09:03:00,832 - INFO - Batch ID: pos_transactions_header_20260107_090300
+2026-01-07 09:03:00,833 - INFO - Target table: Raw.pos_transactions_header
+2026-01-07 09:03:00,836 - ERROR - [ERROR] Database connection failed: ('01000', "[01000] [unixODBC][Driver Manager]Can't open lib 'ODBC Driver 17 for SQL Server' : file not found (0) (SQLDriverConnect)")
+2026-01-07 09:03:00,837 - INFO - ======================================================================
+2026-01-07 09:03:00,837 - INFO - Starting ingestion: pos_transactions_lines.csv
+2026-01-07 09:03:00,838 - INFO - ======================================================================
+2026-01-07 09:03:00,843 - INFO - Batch ID: pos_transactions_lines_20260107_090300
+2026-01-07 09:03:00,843 - INFO - Target table: Raw.pos_transactions_lines
+2026-01-07 09:03:00,844 - ERROR - [ERROR] Database connection failed: ('01000', "[01000] [unixODBC][Driver Manager]Can't open lib 'ODBC Driver 17 for SQL Server' : file not found (0) (SQLDriverConnect)")
+2026-01-07 09:03:00,845 - INFO - ======================================================================
+2026-01-07 09:03:00,845 - INFO - Starting ingestion: erp_products.csv
+2026-01-07 09:03:00,846 - INFO - ======================================================================
+2026-01-07 09:03:00,850 - INFO - Batch ID: erp_products_20260107_090300
+2026-01-07 09:03:00,850 - INFO - Target table: Raw.erp_products
+2026-01-07 09:03:00,851 - ERROR - [ERROR] Database connection failed: ('01000', "[01000] [unixODBC][Driver Manager]Can't open lib 'ODBC Driver 17 for SQL Server' : file not found (0) (SQLDriverConnect)")
+2026-01-07 09:03:00,852 - INFO - ======================================================================
+2026-01-07 09:03:00,853 - INFO - Starting ingestion: erp_stores.csv
+2026-01-07 09:03:00,853 - INFO - ======================================================================
+2026-01-07 09:03:00,858 - INFO - Batch ID: erp_stores_20260107_090300
+2026-01-07 09:03:00,859 - INFO - Target table: Raw.erp_stores
+2026-01-07 09:03:00,859 - ERROR - [ERROR] Database connection failed: ('01000', "[01000] [unixODBC][Driver Manager]Can't open lib 'ODBC Driver 17 for SQL Server' : file not found (0) (SQLDriverConnect)")
+2026-01-07 09:03:00,860 - INFO - ======================================================================
+2026-01-07 09:03:00,861 - INFO - Starting ingestion: erp_inventory.csv
+2026-01-07 09:03:00,862 - INFO - ======================================================================
+2026-01-07 09:03:00,868 - INFO - Batch ID: erp_inventory_20260107_090300
+2026-01-07 09:03:00,868 - INFO - Target table: Raw.erp_inventory
+2026-01-07 09:03:00,869 - ERROR - [ERROR] Database connection failed: ('01000', "[01000] [unixODBC][Driver Manager]Can't open lib 'ODBC Driver 17 for SQL Server' : file not found (0) (SQLDriverConnect)")
+2026-01-07 09:03:00,870 - INFO - ======================================================================
+2026-01-07 09:03:00,870 - INFO - Starting ingestion: crm_customers.csv
+2026-01-07 09:03:00,871 - INFO - ======================================================================
+2026-01-07 09:03:00,879 - INFO - Batch ID: crm_customers_20260107_090300
+2026-01-07 09:03:00,879 - INFO - Target table: Raw.crm_customers
+2026-01-07 09:03:00,881 - ERROR - [ERROR] Database connection failed: ('01000', "[01000] [unixODBC][Driver Manager]Can't open lib 'ODBC Driver 17 for SQL Server' : file not found (0) (SQLDriverConnect)")
+2026-01-07 09:03:00,882 - INFO - ======================================================================
+2026-01-07 09:03:00,882 - INFO - Starting ingestion: mkt_promotions.csv
+2026-01-07 09:03:00,883 - INFO - ======================================================================
+2026-01-07 09:03:00,888 - INFO - Batch ID: mkt_promotions_20260107_090300
+2026-01-07 09:03:00,889 - INFO - Target table: Raw.mkt_promotions
+2026-01-07 09:03:00,890 - ERROR - [ERROR] Database connection failed: ('01000', "[01000] [unixODBC][Driver Manager]Can't open lib 'ODBC Driver 17 for SQL Server' : file not found (0) (SQLDriverConnect)")
+2026-01-07 09:03:00,891 - INFO - ======================================================================
+2026-01-07 09:03:00,891 - INFO - Starting ingestion: api_weather.csv
+2026-01-07 09:03:00,892 - INFO - ======================================================================
+2026-01-07 09:03:00,897 - INFO - Batch ID: api_weather_20260107_090300
+2026-01-07 09:03:00,898 - INFO - Target table: Raw.api_weather
+2026-01-07 09:03:00,899 - ERROR - [ERROR] Database connection failed: ('01000', "[01000] [unixODBC][Driver Manager]Can't open lib 'ODBC Driver 17 for SQL Server' : file not found (0) (SQLDriverConnect)")
+2026-01-07 09:03:00,900 - INFO - 
+======================================================================
+2026-01-07 09:03:00,901 - INFO - INGESTION SUMMARY
+2026-01-07 09:03:00,901 - INFO - ======================================================================
+2026-01-07 09:03:00,902 - INFO -   [ERROR] FAILED: pos_transactions_header.csv
+2026-01-07 09:03:00,903 - INFO -   [ERROR] FAILED: pos_transactions_lines.csv
+2026-01-07 09:03:00,904 - INFO -   [ERROR] FAILED: erp_products.csv
+2026-01-07 09:03:00,905 - INFO -   [ERROR] FAILED: erp_stores.csv
+2026-01-07 09:03:00,905 - INFO -   [ERROR] FAILED: erp_inventory.csv
+2026-01-07 09:03:00,906 - INFO -   [ERROR] FAILED: crm_customers.csv
+2026-01-07 09:03:00,907 - INFO -   [ERROR] FAILED: mkt_promotions.csv
+2026-01-07 09:03:00,907 - INFO -   [ERROR] FAILED: api_weather.csv
+2026-01-07 09:03:00,908 - INFO - ----------------------------------------------------------------------
+2026-01-07 09:03:00,909 - INFO - Total files: 8
+2026-01-07 09:03:00,909 - INFO - Successful: 0
+2026-01-07 09:03:00,910 - INFO - Failed: 8
+2026-01-07 09:03:00,913 - INFO - ======================================================================
+2026-01-07 09:07:48,020 - INFO - 
+======================================================================
+2026-01-07 09:07:48,021 - INFO - BULK INGESTION - ALL CSV FILES
+2026-01-07 09:07:48,022 - INFO - ======================================================================
+2026-01-07 09:07:48,024 - INFO - ======================================================================
+2026-01-07 09:07:48,025 - INFO - Starting ingestion: pos_transactions_header.csv
+2026-01-07 09:07:48,026 - INFO - ======================================================================
+2026-01-07 09:07:48,031 - INFO - Batch ID: pos_transactions_header_20260107_090748
+2026-01-07 09:07:48,032 - INFO - Target table: Raw.pos_transactions_header
+2026-01-07 09:07:48,034 - ERROR - [ERROR] Database connection failed: ('01000', "[01000] [unixODBC][Driver Manager]Can't open lib 'ODBC Driver 17 for SQL Server' : file not found (0) (SQLDriverConnect)")
+2026-01-07 09:07:48,034 - INFO - ======================================================================
+2026-01-07 09:07:48,035 - INFO - Starting ingestion: pos_transactions_lines.csv
+2026-01-07 09:07:48,036 - INFO - ======================================================================
+2026-01-07 09:07:48,041 - INFO - Batch ID: pos_transactions_lines_20260107_090748
+2026-01-07 09:07:48,041 - INFO - Target table: Raw.pos_transactions_lines
+2026-01-07 09:07:48,042 - ERROR - [ERROR] Database connection failed: ('01000', "[01000] [unixODBC][Driver Manager]Can't open lib 'ODBC Driver 17 for SQL Server' : file not found (0) (SQLDriverConnect)")
+2026-01-07 09:07:48,043 - INFO - ======================================================================
+2026-01-07 09:07:48,043 - INFO - Starting ingestion: erp_products.csv
+2026-01-07 09:07:48,043 - INFO - ======================================================================
+2026-01-07 09:07:48,046 - INFO - Batch ID: erp_products_20260107_090748
+2026-01-07 09:07:48,047 - INFO - Target table: Raw.erp_products
+2026-01-07 09:07:48,048 - ERROR - [ERROR] Database connection failed: ('01000', "[01000] [unixODBC][Driver Manager]Can't open lib 'ODBC Driver 17 for SQL Server' : file not found (0) (SQLDriverConnect)")
+2026-01-07 09:07:48,048 - INFO - ======================================================================
+2026-01-07 09:07:48,049 - INFO - Starting ingestion: erp_stores.csv
+2026-01-07 09:07:48,049 - INFO - ======================================================================
+2026-01-07 09:07:48,053 - INFO - Batch ID: erp_stores_20260107_090748
+2026-01-07 09:07:48,054 - INFO - Target table: Raw.erp_stores
+2026-01-07 09:07:48,056 - ERROR - [ERROR] Database connection failed: ('01000', "[01000] [unixODBC][Driver Manager]Can't open lib 'ODBC Driver 17 for SQL Server' : file not found (0) (SQLDriverConnect)")
+2026-01-07 09:07:48,056 - INFO - ======================================================================
+2026-01-07 09:07:48,057 - INFO - Starting ingestion: erp_inventory.csv
+2026-01-07 09:07:48,057 - INFO - ======================================================================
+2026-01-07 09:07:48,063 - INFO - Batch ID: erp_inventory_20260107_090748
+2026-01-07 09:07:48,063 - INFO - Target table: Raw.erp_inventory
+2026-01-07 09:07:48,064 - ERROR - [ERROR] Database connection failed: ('01000', "[01000] [unixODBC][Driver Manager]Can't open lib 'ODBC Driver 17 for SQL Server' : file not found (0) (SQLDriverConnect)")
+2026-01-07 09:07:48,065 - INFO - ======================================================================
+2026-01-07 09:07:48,066 - INFO - Starting ingestion: crm_customers.csv
+2026-01-07 09:07:48,066 - INFO - ======================================================================
+2026-01-07 09:07:48,072 - INFO - Batch ID: crm_customers_20260107_090748
+2026-01-07 09:07:48,073 - INFO - Target table: Raw.crm_customers
+2026-01-07 09:07:48,074 - ERROR - [ERROR] Database connection failed: ('01000', "[01000] [unixODBC][Driver Manager]Can't open lib 'ODBC Driver 17 for SQL Server' : file not found (0) (SQLDriverConnect)")
+2026-01-07 09:07:48,075 - INFO - ======================================================================
+2026-01-07 09:07:48,075 - INFO - Starting ingestion: mkt_promotions.csv
+2026-01-07 09:07:48,076 - INFO - ======================================================================
+2026-01-07 09:07:48,081 - INFO - Batch ID: mkt_promotions_20260107_090748
+2026-01-07 09:07:48,082 - INFO - Target table: Raw.mkt_promotions
+2026-01-07 09:07:48,082 - ERROR - [ERROR] Database connection failed: ('01000', "[01000] [unixODBC][Driver Manager]Can't open lib 'ODBC Driver 17 for SQL Server' : file not found (0) (SQLDriverConnect)")
+2026-01-07 09:07:48,083 - INFO - ======================================================================
+2026-01-07 09:07:48,084 - INFO - Starting ingestion: api_weather.csv
+2026-01-07 09:07:48,084 - INFO - ======================================================================
+2026-01-07 09:07:48,089 - INFO - Batch ID: api_weather_20260107_090748
+2026-01-07 09:07:48,090 - INFO - Target table: Raw.api_weather
+2026-01-07 09:07:48,091 - ERROR - [ERROR] Database connection failed: ('01000', "[01000] [unixODBC][Driver Manager]Can't open lib 'ODBC Driver 17 for SQL Server' : file not found (0) (SQLDriverConnect)")
+2026-01-07 09:07:48,092 - INFO - 
+======================================================================
+2026-01-07 09:07:48,092 - INFO - INGESTION SUMMARY
+2026-01-07 09:07:48,093 - INFO - ======================================================================
+2026-01-07 09:07:48,094 - INFO -   [ERROR] FAILED: pos_transactions_header.csv
+2026-01-07 09:07:48,094 - INFO -   [ERROR] FAILED: pos_transactions_lines.csv
+2026-01-07 09:07:48,095 - INFO -   [ERROR] FAILED: erp_products.csv
+2026-01-07 09:07:48,096 - INFO -   [ERROR] FAILED: erp_stores.csv
+2026-01-07 09:07:48,096 - INFO -   [ERROR] FAILED: erp_inventory.csv
+2026-01-07 09:07:48,097 - INFO -   [ERROR] FAILED: crm_customers.csv
+2026-01-07 09:07:48,097 - INFO -   [ERROR] FAILED: mkt_promotions.csv
+2026-01-07 09:07:48,098 - INFO -   [ERROR] FAILED: api_weather.csv
+2026-01-07 09:07:48,099 - INFO - ----------------------------------------------------------------------
+2026-01-07 09:07:48,099 - INFO - Total files: 8
+2026-01-07 09:07:48,100 - INFO - Successful: 0
+2026-01-07 09:07:48,100 - INFO - Failed: 8
+2026-01-07 09:07:48,101 - INFO - ======================================================================
+2026-01-07 09:09:10,038 - INFO - 
+======================================================================
+2026-01-07 09:09:10,039 - INFO - BULK INGESTION - ALL CSV FILES
+2026-01-07 09:09:10,040 - INFO - ======================================================================
+2026-01-07 09:09:10,041 - INFO - ======================================================================
+2026-01-07 09:09:10,042 - INFO - Starting ingestion: pos_transactions_header.csv
+2026-01-07 09:09:10,042 - INFO - ======================================================================
+2026-01-07 09:09:10,048 - INFO - Batch ID: pos_transactions_header_20260107_090910
+2026-01-07 09:09:10,049 - INFO - Target table: Raw.pos_transactions_header
+2026-01-07 09:09:10,052 - ERROR - [ERROR] Database connection failed: ('01000', "[01000] [unixODBC][Driver Manager]Can't open lib 'ODBC Driver 17 for SQL Server' : file not found (0) (SQLDriverConnect)")
+2026-01-07 09:09:10,053 - INFO - ======================================================================
+2026-01-07 09:09:10,054 - INFO - Starting ingestion: pos_transactions_lines.csv
+2026-01-07 09:09:10,055 - INFO - ======================================================================
+2026-01-07 09:09:10,061 - INFO - Batch ID: pos_transactions_lines_20260107_090910
+2026-01-07 09:09:10,062 - INFO - Target table: Raw.pos_transactions_lines
+2026-01-07 09:09:10,063 - ERROR - [ERROR] Database connection failed: ('01000', "[01000] [unixODBC][Driver Manager]Can't open lib 'ODBC Driver 17 for SQL Server' : file not found (0) (SQLDriverConnect)")
+2026-01-07 09:09:10,064 - INFO - ======================================================================
+2026-01-07 09:09:10,064 - INFO - Starting ingestion: erp_products.csv
+2026-01-07 09:09:10,065 - INFO - ======================================================================
+2026-01-07 09:09:10,072 - INFO - Batch ID: erp_products_20260107_090910
+2026-01-07 09:09:10,072 - INFO - Target table: Raw.erp_products
+2026-01-07 09:09:10,073 - ERROR - [ERROR] Database connection failed: ('01000', "[01000] [unixODBC][Driver Manager]Can't open lib 'ODBC Driver 17 for SQL Server' : file not found (0) (SQLDriverConnect)")
+2026-01-07 09:09:10,074 - INFO - ======================================================================
+2026-01-07 09:09:10,075 - INFO - Starting ingestion: erp_stores.csv
+2026-01-07 09:09:10,076 - INFO - ======================================================================
+2026-01-07 09:09:10,081 - INFO - Batch ID: erp_stores_20260107_090910
+2026-01-07 09:09:10,082 - INFO - Target table: Raw.erp_stores
+2026-01-07 09:09:10,084 - ERROR - [ERROR] Database connection failed: ('01000', "[01000] [unixODBC][Driver Manager]Can't open lib 'ODBC Driver 17 for SQL Server' : file not found (0) (SQLDriverConnect)")
+2026-01-07 09:09:10,085 - INFO - ======================================================================
+2026-01-07 09:09:10,086 - INFO - Starting ingestion: erp_inventory.csv
+2026-01-07 09:09:10,086 - INFO - ======================================================================
+2026-01-07 09:09:10,091 - INFO - Batch ID: erp_inventory_20260107_090910
+2026-01-07 09:09:10,092 - INFO - Target table: Raw.erp_inventory
+2026-01-07 09:09:10,093 - ERROR - [ERROR] Database connection failed: ('01000', "[01000] [unixODBC][Driver Manager]Can't open lib 'ODBC Driver 17 for SQL Server' : file not found (0) (SQLDriverConnect)")
+2026-01-07 09:09:10,093 - INFO - ======================================================================
+2026-01-07 09:09:10,094 - INFO - Starting ingestion: crm_customers.csv
+2026-01-07 09:09:10,094 - INFO - ======================================================================
+2026-01-07 09:09:10,100 - INFO - Batch ID: crm_customers_20260107_090910
+2026-01-07 09:09:10,100 - INFO - Target table: Raw.crm_customers
+2026-01-07 09:09:10,101 - ERROR - [ERROR] Database connection failed: ('01000', "[01000] [unixODBC][Driver Manager]Can't open lib 'ODBC Driver 17 for SQL Server' : file not found (0) (SQLDriverConnect)")
+2026-01-07 09:09:10,102 - INFO - ======================================================================
+2026-01-07 09:09:10,102 - INFO - Starting ingestion: mkt_promotions.csv
+2026-01-07 09:09:10,103 - INFO - ======================================================================
+2026-01-07 09:09:10,108 - INFO - Batch ID: mkt_promotions_20260107_090910
+2026-01-07 09:09:10,109 - INFO - Target table: Raw.mkt_promotions
+2026-01-07 09:09:10,110 - ERROR - [ERROR] Database connection failed: ('01000', "[01000] [unixODBC][Driver Manager]Can't open lib 'ODBC Driver 17 for SQL Server' : file not found (0) (SQLDriverConnect)")
+2026-01-07 09:09:10,110 - INFO - ======================================================================
+2026-01-07 09:09:10,111 - INFO - Starting ingestion: api_weather.csv
+2026-01-07 09:09:10,112 - INFO - ======================================================================
+2026-01-07 09:09:10,117 - INFO - Batch ID: api_weather_20260107_090910
+2026-01-07 09:09:10,118 - INFO - Target table: Raw.api_weather
+2026-01-07 09:09:10,118 - ERROR - [ERROR] Database connection failed: ('01000', "[01000] [unixODBC][Driver Manager]Can't open lib 'ODBC Driver 17 for SQL Server' : file not found (0) (SQLDriverConnect)")
+2026-01-07 09:09:10,119 - INFO - 
+======================================================================
+2026-01-07 09:09:10,119 - INFO - INGESTION SUMMARY
+2026-01-07 09:09:10,120 - INFO - ======================================================================
+2026-01-07 09:09:10,121 - INFO -   [ERROR] FAILED: pos_transactions_header.csv
+2026-01-07 09:09:10,121 - INFO -   [ERROR] FAILED: pos_transactions_lines.csv
+2026-01-07 09:09:10,122 - INFO -   [ERROR] FAILED: erp_products.csv
+2026-01-07 09:09:10,122 - INFO -   [ERROR] FAILED: erp_stores.csv
+2026-01-07 09:09:10,123 - INFO -   [ERROR] FAILED: erp_inventory.csv
+2026-01-07 09:09:10,123 - INFO -   [ERROR] FAILED: crm_customers.csv
+2026-01-07 09:09:10,124 - INFO -   [ERROR] FAILED: mkt_promotions.csv
+2026-01-07 09:09:10,124 - INFO -   [ERROR] FAILED: api_weather.csv
+2026-01-07 09:09:10,125 - INFO - ----------------------------------------------------------------------
+2026-01-07 09:09:10,125 - INFO - Total files: 8
+2026-01-07 09:09:10,126 - INFO - Successful: 0
+2026-01-07 09:09:10,126 - INFO - Failed: 8
+2026-01-07 09:09:10,127 - INFO - ======================================================================
+2026-01-07 09:18:59,601 - INFO - 
+======================================================================
+2026-01-07 09:18:59,602 - INFO - BULK INGESTION - ALL CSV FILES
+2026-01-07 09:18:59,603 - INFO - ======================================================================
+2026-01-07 09:18:59,603 - INFO - ======================================================================
+2026-01-07 09:18:59,603 - INFO - Starting ingestion: pos_transactions_header.csv
+2026-01-07 09:18:59,604 - INFO - ======================================================================
+2026-01-07 09:18:59,608 - INFO - Batch ID: pos_transactions_header_20260107_091859
+2026-01-07 09:18:59,608 - INFO - Target table: Raw.pos_transactions_header
+2026-01-07 09:18:59,614 - ERROR - [ERROR] Database connection failed: ('01000', "[01000] [unixODBC][Driver Manager]Can't open lib 'ODBC Driver 17 for SQL Server' : file not found (0) (SQLDriverConnect)")
+2026-01-07 09:18:59,614 - INFO - ======================================================================
+2026-01-07 09:18:59,614 - INFO - Starting ingestion: pos_transactions_lines.csv
+2026-01-07 09:18:59,615 - INFO - ======================================================================
+2026-01-07 09:18:59,618 - INFO - Batch ID: pos_transactions_lines_20260107_091859
+2026-01-07 09:18:59,618 - INFO - Target table: Raw.pos_transactions_lines
+2026-01-07 09:18:59,619 - ERROR - [ERROR] Database connection failed: ('01000', "[01000] [unixODBC][Driver Manager]Can't open lib 'ODBC Driver 17 for SQL Server' : file not found (0) (SQLDriverConnect)")
+2026-01-07 09:18:59,619 - INFO - ======================================================================
+2026-01-07 09:18:59,620 - INFO - Starting ingestion: erp_products.csv
+2026-01-07 09:18:59,620 - INFO - ======================================================================
+2026-01-07 09:18:59,623 - INFO - Batch ID: erp_products_20260107_091859
+2026-01-07 09:18:59,624 - INFO - Target table: Raw.erp_products
+2026-01-07 09:18:59,625 - ERROR - [ERROR] Database connection failed: ('01000', "[01000] [unixODBC][Driver Manager]Can't open lib 'ODBC Driver 17 for SQL Server' : file not found (0) (SQLDriverConnect)")
+2026-01-07 09:18:59,625 - INFO - ======================================================================
+2026-01-07 09:18:59,625 - INFO - Starting ingestion: erp_stores.csv
+2026-01-07 09:18:59,626 - INFO - ======================================================================
+2026-01-07 09:18:59,630 - INFO - Batch ID: erp_stores_20260107_091859
+2026-01-07 09:18:59,630 - INFO - Target table: Raw.erp_stores
+2026-01-07 09:18:59,631 - ERROR - [ERROR] Database connection failed: ('01000', "[01000] [unixODBC][Driver Manager]Can't open lib 'ODBC Driver 17 for SQL Server' : file not found (0) (SQLDriverConnect)")
+2026-01-07 09:18:59,631 - INFO - ======================================================================
+2026-01-07 09:18:59,631 - INFO - Starting ingestion: erp_inventory.csv
+2026-01-07 09:18:59,632 - INFO - ======================================================================
+2026-01-07 09:18:59,635 - INFO - Batch ID: erp_inventory_20260107_091859
+2026-01-07 09:18:59,636 - INFO - Target table: Raw.erp_inventory
+2026-01-07 09:18:59,636 - ERROR - [ERROR] Database connection failed: ('01000', "[01000] [unixODBC][Driver Manager]Can't open lib 'ODBC Driver 17 for SQL Server' : file not found (0) (SQLDriverConnect)")
+2026-01-07 09:18:59,636 - INFO - ======================================================================
+2026-01-07 09:18:59,637 - INFO - Starting ingestion: crm_customers.csv
+2026-01-07 09:18:59,637 - INFO - ======================================================================
+2026-01-07 09:18:59,642 - INFO - Batch ID: crm_customers_20260107_091859
+2026-01-07 09:18:59,642 - INFO - Target table: Raw.crm_customers
+2026-01-07 09:18:59,643 - ERROR - [ERROR] Database connection failed: ('01000', "[01000] [unixODBC][Driver Manager]Can't open lib 'ODBC Driver 17 for SQL Server' : file not found (0) (SQLDriverConnect)")
+2026-01-07 09:18:59,643 - INFO - ======================================================================
+2026-01-07 09:18:59,644 - INFO - Starting ingestion: mkt_promotions.csv
+2026-01-07 09:18:59,644 - INFO - ======================================================================
+2026-01-07 09:18:59,648 - INFO - Batch ID: mkt_promotions_20260107_091859
+2026-01-07 09:18:59,648 - INFO - Target table: Raw.mkt_promotions
+2026-01-07 09:18:59,648 - ERROR - [ERROR] Database connection failed: ('01000', "[01000] [unixODBC][Driver Manager]Can't open lib 'ODBC Driver 17 for SQL Server' : file not found (0) (SQLDriverConnect)")
+2026-01-07 09:18:59,649 - INFO - ======================================================================
+2026-01-07 09:18:59,649 - INFO - Starting ingestion: api_weather.csv
+2026-01-07 09:18:59,650 - INFO - ======================================================================
+2026-01-07 09:18:59,653 - INFO - Batch ID: api_weather_20260107_091859
+2026-01-07 09:18:59,653 - INFO - Target table: Raw.api_weather
+2026-01-07 09:18:59,653 - ERROR - [ERROR] Database connection failed: ('01000', "[01000] [unixODBC][Driver Manager]Can't open lib 'ODBC Driver 17 for SQL Server' : file not found (0) (SQLDriverConnect)")
+2026-01-07 09:18:59,654 - INFO - 
+======================================================================
+2026-01-07 09:18:59,654 - INFO - INGESTION SUMMARY
+2026-01-07 09:18:59,655 - INFO - ======================================================================
+2026-01-07 09:18:59,656 - INFO -   [ERROR] FAILED: pos_transactions_header.csv
+2026-01-07 09:18:59,657 - INFO -   [ERROR] FAILED: pos_transactions_lines.csv
+2026-01-07 09:18:59,658 - INFO -   [ERROR] FAILED: erp_products.csv
+2026-01-07 09:18:59,659 - INFO -   [ERROR] FAILED: erp_stores.csv
+2026-01-07 09:18:59,659 - INFO -   [ERROR] FAILED: erp_inventory.csv
+2026-01-07 09:18:59,659 - INFO -   [ERROR] FAILED: crm_customers.csv
+2026-01-07 09:18:59,659 - INFO -   [ERROR] FAILED: mkt_promotions.csv
+2026-01-07 09:18:59,660 - INFO -   [ERROR] FAILED: api_weather.csv
+2026-01-07 09:18:59,660 - INFO - ----------------------------------------------------------------------
+2026-01-07 09:18:59,660 - INFO - Total files: 8
+2026-01-07 09:18:59,661 - INFO - Successful: 0
+2026-01-07 09:18:59,661 - INFO - Failed: 8
+2026-01-07 09:18:59,661 - INFO - ======================================================================
+2026-01-07 09:20:13,827 - INFO - 
+======================================================================
+2026-01-07 09:20:13,829 - INFO - BULK INGESTION - ALL CSV FILES
+2026-01-07 09:20:13,829 - INFO - ======================================================================
+2026-01-07 09:20:13,830 - INFO - ======================================================================
+2026-01-07 09:20:13,830 - INFO - Starting ingestion: pos_transactions_header.csv
+2026-01-07 09:20:13,831 - INFO - ======================================================================
+2026-01-07 09:20:13,834 - INFO - Batch ID: pos_transactions_header_20260107_092013
+2026-01-07 09:20:13,835 - INFO - Target table: Raw.pos_transactions_header
+2026-01-07 09:20:13,838 - ERROR - [ERROR] Database connection failed: ('01000', "[01000] [unixODBC][Driver Manager]Can't open lib 'ODBC Driver 17 for SQL Server' : file not found (0) (SQLDriverConnect)")
+2026-01-07 09:20:13,839 - INFO - ======================================================================
+2026-01-07 09:20:13,840 - INFO - Starting ingestion: pos_transactions_lines.csv
+2026-01-07 09:20:13,840 - INFO - ======================================================================
+2026-01-07 09:20:13,843 - INFO - Batch ID: pos_transactions_lines_20260107_092013
+2026-01-07 09:20:13,844 - INFO - Target table: Raw.pos_transactions_lines
+2026-01-07 09:20:13,845 - ERROR - [ERROR] Database connection failed: ('01000', "[01000] [unixODBC][Driver Manager]Can't open lib 'ODBC Driver 17 for SQL Server' : file not found (0) (SQLDriverConnect)")
+2026-01-07 09:20:13,845 - INFO - ======================================================================
+2026-01-07 09:20:13,846 - INFO - Starting ingestion: erp_products.csv
+2026-01-07 09:20:13,846 - INFO - ======================================================================
+2026-01-07 09:20:13,850 - INFO - Batch ID: erp_products_20260107_092013
+2026-01-07 09:20:13,850 - INFO - Target table: Raw.erp_products
+2026-01-07 09:20:13,851 - ERROR - [ERROR] Database connection failed: ('01000', "[01000] [unixODBC][Driver Manager]Can't open lib 'ODBC Driver 17 for SQL Server' : file not found (0) (SQLDriverConnect)")
+2026-01-07 09:20:13,852 - INFO - ======================================================================
+2026-01-07 09:20:13,852 - INFO - Starting ingestion: erp_stores.csv
+2026-01-07 09:20:13,853 - INFO - ======================================================================
+2026-01-07 09:20:13,857 - INFO - Batch ID: erp_stores_20260107_092013
+2026-01-07 09:20:13,857 - INFO - Target table: Raw.erp_stores
+2026-01-07 09:20:13,858 - ERROR - [ERROR] Database connection failed: ('01000', "[01000] [unixODBC][Driver Manager]Can't open lib 'ODBC Driver 17 for SQL Server' : file not found (0) (SQLDriverConnect)")
+2026-01-07 09:20:13,859 - INFO - ======================================================================
+2026-01-07 09:20:13,859 - INFO - Starting ingestion: erp_inventory.csv
+2026-01-07 09:20:13,860 - INFO - ======================================================================
+2026-01-07 09:20:13,863 - INFO - Batch ID: erp_inventory_20260107_092013
+2026-01-07 09:20:13,864 - INFO - Target table: Raw.erp_inventory
+2026-01-07 09:20:13,865 - ERROR - [ERROR] Database connection failed: ('01000', "[01000] [unixODBC][Driver Manager]Can't open lib 'ODBC Driver 17 for SQL Server' : file not found (0) (SQLDriverConnect)")
+2026-01-07 09:20:13,865 - INFO - ======================================================================
+2026-01-07 09:20:13,866 - INFO - Starting ingestion: crm_customers.csv
+2026-01-07 09:20:13,866 - INFO - ======================================================================
+2026-01-07 09:20:13,871 - INFO - Batch ID: crm_customers_20260107_092013
+2026-01-07 09:20:13,872 - INFO - Target table: Raw.crm_customers
+2026-01-07 09:20:13,872 - ERROR - [ERROR] Database connection failed: ('01000', "[01000] [unixODBC][Driver Manager]Can't open lib 'ODBC Driver 17 for SQL Server' : file not found (0) (SQLDriverConnect)")
+2026-01-07 09:20:13,873 - INFO - ======================================================================
+2026-01-07 09:20:13,874 - INFO - Starting ingestion: mkt_promotions.csv
+2026-01-07 09:20:13,874 - INFO - ======================================================================
+2026-01-07 09:20:13,878 - INFO - Batch ID: mkt_promotions_20260107_092013
+2026-01-07 09:20:13,879 - INFO - Target table: Raw.mkt_promotions
+2026-01-07 09:20:13,879 - ERROR - [ERROR] Database connection failed: ('01000', "[01000] [unixODBC][Driver Manager]Can't open lib 'ODBC Driver 17 for SQL Server' : file not found (0) (SQLDriverConnect)")
+2026-01-07 09:20:13,880 - INFO - ======================================================================
+2026-01-07 09:20:13,880 - INFO - Starting ingestion: api_weather.csv
+2026-01-07 09:20:13,881 - INFO - ======================================================================
+2026-01-07 09:20:13,884 - INFO - Batch ID: api_weather_20260107_092013
+2026-01-07 09:20:13,885 - INFO - Target table: Raw.api_weather
+2026-01-07 09:20:13,887 - ERROR - [ERROR] Database connection failed: ('01000', "[01000] [unixODBC][Driver Manager]Can't open lib 'ODBC Driver 17 for SQL Server' : file not found (0) (SQLDriverConnect)")
+2026-01-07 09:20:13,887 - INFO - 
+======================================================================
+2026-01-07 09:20:13,888 - INFO - INGESTION SUMMARY
+2026-01-07 09:20:13,888 - INFO - ======================================================================
+2026-01-07 09:20:13,889 - INFO -   [ERROR] FAILED: pos_transactions_header.csv
+2026-01-07 09:20:13,890 - INFO -   [ERROR] FAILED: pos_transactions_lines.csv
+2026-01-07 09:20:13,890 - INFO -   [ERROR] FAILED: erp_products.csv
+2026-01-07 09:20:13,891 - INFO -   [ERROR] FAILED: erp_stores.csv
+2026-01-07 09:20:13,891 - INFO -   [ERROR] FAILED: erp_inventory.csv
+2026-01-07 09:20:13,891 - INFO -   [ERROR] FAILED: crm_customers.csv
+2026-01-07 09:20:13,892 - INFO -   [ERROR] FAILED: mkt_promotions.csv
+2026-01-07 09:20:13,892 - INFO -   [ERROR] FAILED: api_weather.csv
+2026-01-07 09:20:13,893 - INFO - ----------------------------------------------------------------------
+2026-01-07 09:20:13,893 - INFO - Total files: 8
+2026-01-07 09:20:13,894 - INFO - Successful: 0
+2026-01-07 09:20:13,894 - INFO - Failed: 8
+2026-01-07 09:20:13,894 - INFO - ======================================================================
+2026-01-07 09:23:31,786 - INFO - 
+======================================================================
+2026-01-07 09:23:31,787 - INFO - BULK INGESTION - ALL CSV FILES
+2026-01-07 09:23:31,788 - INFO - ======================================================================
+2026-01-07 09:23:31,788 - INFO - ======================================================================
+2026-01-07 09:23:31,788 - INFO - Starting ingestion: pos_transactions_header.csv
+2026-01-07 09:23:31,789 - INFO - ======================================================================
+2026-01-07 09:23:31,791 - INFO - Batch ID: pos_transactions_header_20260107_092331
+2026-01-07 09:23:31,792 - INFO - Target table: Raw.pos_transactions_header
+2026-01-07 09:23:31,794 - ERROR - [ERROR] Database connection failed: ('01000', "[01000] [unixODBC][Driver Manager]Can't open lib 'ODBC Driver 17 for SQL Server' : file not found (0) (SQLDriverConnect)")
+2026-01-07 09:23:31,795 - INFO - ======================================================================
+2026-01-07 09:23:31,795 - INFO - Starting ingestion: pos_transactions_lines.csv
+2026-01-07 09:23:31,795 - INFO - ======================================================================
+2026-01-07 09:23:31,799 - INFO - Batch ID: pos_transactions_lines_20260107_092331
+2026-01-07 09:23:31,800 - INFO - Target table: Raw.pos_transactions_lines
+2026-01-07 09:23:31,801 - ERROR - [ERROR] Database connection failed: ('01000', "[01000] [unixODBC][Driver Manager]Can't open lib 'ODBC Driver 17 for SQL Server' : file not found (0) (SQLDriverConnect)")
+2026-01-07 09:23:31,801 - INFO - ======================================================================
+2026-01-07 09:23:31,802 - INFO - Starting ingestion: erp_products.csv
+2026-01-07 09:23:31,802 - INFO - ======================================================================
+2026-01-07 09:23:31,805 - INFO - Batch ID: erp_products_20260107_092331
+2026-01-07 09:23:31,806 - INFO - Target table: Raw.erp_products
+2026-01-07 09:23:31,806 - ERROR - [ERROR] Database connection failed: ('01000', "[01000] [unixODBC][Driver Manager]Can't open lib 'ODBC Driver 17 for SQL Server' : file not found (0) (SQLDriverConnect)")
+2026-01-07 09:23:31,807 - INFO - ======================================================================
+2026-01-07 09:23:31,807 - INFO - Starting ingestion: erp_stores.csv
+2026-01-07 09:23:31,807 - INFO - ======================================================================
+2026-01-07 09:23:31,810 - INFO - Batch ID: erp_stores_20260107_092331
+2026-01-07 09:23:31,811 - INFO - Target table: Raw.erp_stores
+2026-01-07 09:23:31,811 - ERROR - [ERROR] Database connection failed: ('01000', "[01000] [unixODBC][Driver Manager]Can't open lib 'ODBC Driver 17 for SQL Server' : file not found (0) (SQLDriverConnect)")
+2026-01-07 09:23:31,811 - INFO - ======================================================================
+2026-01-07 09:23:31,812 - INFO - Starting ingestion: erp_inventory.csv
+2026-01-07 09:23:31,812 - INFO - ======================================================================
+2026-01-07 09:23:31,815 - INFO - Batch ID: erp_inventory_20260107_092331
+2026-01-07 09:23:31,816 - INFO - Target table: Raw.erp_inventory
+2026-01-07 09:23:31,817 - ERROR - [ERROR] Database connection failed: ('01000', "[01000] [unixODBC][Driver Manager]Can't open lib 'ODBC Driver 17 for SQL Server' : file not found (0) (SQLDriverConnect)")
+2026-01-07 09:23:31,817 - INFO - ======================================================================
+2026-01-07 09:23:31,817 - INFO - Starting ingestion: crm_customers.csv
+2026-01-07 09:23:31,819 - INFO - ======================================================================
+2026-01-07 09:23:31,822 - INFO - Batch ID: crm_customers_20260107_092331
+2026-01-07 09:23:31,822 - INFO - Target table: Raw.crm_customers
+2026-01-07 09:23:31,823 - ERROR - [ERROR] Database connection failed: ('01000', "[01000] [unixODBC][Driver Manager]Can't open lib 'ODBC Driver 17 for SQL Server' : file not found (0) (SQLDriverConnect)")
+2026-01-07 09:23:31,823 - INFO - ======================================================================
+2026-01-07 09:23:31,823 - INFO - Starting ingestion: mkt_promotions.csv
+2026-01-07 09:23:31,824 - INFO - ======================================================================
+2026-01-07 09:23:31,826 - INFO - Batch ID: mkt_promotions_20260107_092331
+2026-01-07 09:23:31,826 - INFO - Target table: Raw.mkt_promotions
+2026-01-07 09:23:31,828 - ERROR - [ERROR] Database connection failed: ('01000', "[01000] [unixODBC][Driver Manager]Can't open lib 'ODBC Driver 17 for SQL Server' : file not found (0) (SQLDriverConnect)")
+2026-01-07 09:23:31,828 - INFO - ======================================================================
+2026-01-07 09:23:31,828 - INFO - Starting ingestion: api_weather.csv
+2026-01-07 09:23:31,828 - INFO - ======================================================================
+2026-01-07 09:23:31,831 - INFO - Batch ID: api_weather_20260107_092331
+2026-01-07 09:23:31,831 - INFO - Target table: Raw.api_weather
+2026-01-07 09:23:31,832 - ERROR - [ERROR] Database connection failed: ('01000', "[01000] [unixODBC][Driver Manager]Can't open lib 'ODBC Driver 17 for SQL Server' : file not found (0) (SQLDriverConnect)")
+2026-01-07 09:23:31,832 - INFO - 
+======================================================================
+2026-01-07 09:23:31,833 - INFO - INGESTION SUMMARY
+2026-01-07 09:23:31,833 - INFO - ======================================================================
+2026-01-07 09:23:31,833 - INFO -   [ERROR] FAILED: pos_transactions_header.csv
+2026-01-07 09:23:31,836 - INFO -   [ERROR] FAILED: pos_transactions_lines.csv
+2026-01-07 09:23:31,836 - INFO -   [ERROR] FAILED: erp_products.csv
+2026-01-07 09:23:31,837 - INFO -   [ERROR] FAILED: erp_stores.csv
+2026-01-07 09:23:31,837 - INFO -   [ERROR] FAILED: erp_inventory.csv
+2026-01-07 09:23:31,837 - INFO -   [ERROR] FAILED: crm_customers.csv
+2026-01-07 09:23:31,838 - INFO -   [ERROR] FAILED: mkt_promotions.csv
+2026-01-07 09:23:31,838 - INFO -   [ERROR] FAILED: api_weather.csv
+2026-01-07 09:23:31,838 - INFO - ----------------------------------------------------------------------
+2026-01-07 09:23:31,839 - INFO - Total files: 8
+2026-01-07 09:23:31,839 - INFO - Successful: 0
+2026-01-07 09:23:31,839 - INFO - Failed: 8
+2026-01-07 09:23:31,840 - INFO - ======================================================================
+2026-01-07 09:25:10,085 - INFO - 
+======================================================================
+2026-01-07 09:25:10,086 - INFO - BULK INGESTION - ALL CSV FILES
+2026-01-07 09:25:10,086 - INFO - ======================================================================
+2026-01-07 09:25:10,086 - INFO - ======================================================================
+2026-01-07 09:25:10,087 - INFO - Starting ingestion: pos_transactions_header.csv
+2026-01-07 09:25:10,087 - INFO - ======================================================================
+2026-01-07 09:25:10,092 - INFO - Batch ID: pos_transactions_header_20260107_092510
+2026-01-07 09:25:10,093 - INFO - Target table: Raw.pos_transactions_header
+2026-01-07 09:25:14,198 - INFO - 
+======================================================================
+2026-01-07 09:25:14,199 - INFO - BULK INGESTION - ALL CSV FILES
+2026-01-07 09:25:14,199 - INFO - ======================================================================
+2026-01-07 09:25:14,199 - INFO - ======================================================================
+2026-01-07 09:25:14,200 - INFO - Starting ingestion: pos_transactions_header.csv
+2026-01-07 09:25:14,200 - INFO - ======================================================================
+2026-01-07 09:25:14,203 - INFO - Batch ID: pos_transactions_header_20260107_092514
+2026-01-07 09:25:14,203 - INFO - Target table: Raw.pos_transactions_header
+2026-01-07 09:25:25,621 - ERROR - [ERROR] Database connection failed: ('HYT00', '[HYT00] [Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired (0) (SQLDriverConnect)')
+2026-01-07 09:25:25,623 - INFO - ======================================================================
+2026-01-07 09:25:25,624 - INFO - Starting ingestion: pos_transactions_lines.csv
+2026-01-07 09:25:25,625 - INFO - ======================================================================
+2026-01-07 09:25:25,638 - INFO - Batch ID: pos_transactions_lines_20260107_092525
+2026-01-07 09:25:25,640 - INFO - Target table: Raw.pos_transactions_lines
+2026-01-07 09:25:30,333 - ERROR - [ERROR] Database connection failed: ('HYT00', '[HYT00] [Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired (0) (SQLDriverConnect)')
+2026-01-07 09:25:30,335 - INFO - ======================================================================
+2026-01-07 09:25:30,336 - INFO - Starting ingestion: pos_transactions_lines.csv
+2026-01-07 09:25:30,338 - INFO - ======================================================================
+2026-01-07 09:25:30,350 - INFO - Batch ID: pos_transactions_lines_20260107_092530
+2026-01-07 09:25:30,351 - INFO - Target table: Raw.pos_transactions_lines
+2026-01-07 09:25:41,769 - ERROR - [ERROR] Database connection failed: ('HYT00', '[HYT00] [Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired (0) (SQLDriverConnect)')
+2026-01-07 09:25:41,770 - INFO - ======================================================================
+2026-01-07 09:25:41,771 - INFO - Starting ingestion: erp_products.csv
+2026-01-07 09:25:41,772 - INFO - ======================================================================
+2026-01-07 09:25:41,778 - INFO - Batch ID: erp_products_20260107_092541
+2026-01-07 09:25:41,780 - INFO - Target table: Raw.erp_products
+2026-01-07 09:25:45,869 - ERROR - [ERROR] Database connection failed: ('HYT00', '[HYT00] [Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired (0) (SQLDriverConnect)')
+2026-01-07 09:25:45,870 - INFO - ======================================================================
+2026-01-07 09:25:45,871 - INFO - Starting ingestion: erp_products.csv
+2026-01-07 09:25:45,872 - INFO - ======================================================================
+2026-01-07 09:25:45,878 - INFO - Batch ID: erp_products_20260107_092545
+2026-01-07 09:25:45,878 - INFO - Target table: Raw.erp_products
+2026-01-07 09:25:57,294 - ERROR - [ERROR] Database connection failed: ('HYT00', '[HYT00] [Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired (0) (SQLDriverConnect)')
+2026-01-07 09:25:57,295 - INFO - ======================================================================
+2026-01-07 09:25:57,296 - INFO - Starting ingestion: erp_stores.csv
+2026-01-07 09:25:57,296 - INFO - ======================================================================
+2026-01-07 09:25:57,301 - INFO - Batch ID: erp_stores_20260107_092557
+2026-01-07 09:25:57,302 - INFO - Target table: Raw.erp_stores
+2026-01-07 09:26:01,394 - ERROR - [ERROR] Database connection failed: ('HYT00', '[HYT00] [Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired (0) (SQLDriverConnect)')
+2026-01-07 09:26:01,394 - INFO - ======================================================================
+2026-01-07 09:26:01,395 - INFO - Starting ingestion: erp_stores.csv
+2026-01-07 09:26:01,396 - INFO - ======================================================================
+2026-01-07 09:26:01,400 - INFO - Batch ID: erp_stores_20260107_092601
+2026-01-07 09:26:01,401 - INFO - Target table: Raw.erp_stores
+2026-01-07 09:26:13,429 - ERROR - [ERROR] Database connection failed: ('HYT00', '[HYT00] [Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired (0) (SQLDriverConnect)')
+2026-01-07 09:26:13,429 - INFO - ======================================================================
+2026-01-07 09:26:13,430 - INFO - Starting ingestion: erp_inventory.csv
+2026-01-07 09:26:13,431 - INFO - ======================================================================
+2026-01-07 09:26:13,438 - INFO - Batch ID: erp_inventory_20260107_092613
+2026-01-07 09:26:13,439 - INFO - Target table: Raw.erp_inventory
+2026-01-07 09:26:17,525 - ERROR - [ERROR] Database connection failed: ('HYT00', '[HYT00] [Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired (0) (SQLDriverConnect)')
+2026-01-07 09:26:17,526 - INFO - ======================================================================
+2026-01-07 09:26:17,526 - INFO - Starting ingestion: erp_inventory.csv
+2026-01-07 09:26:17,527 - INFO - ======================================================================
+2026-01-07 09:26:17,532 - INFO - Batch ID: erp_inventory_20260107_092617
+2026-01-07 09:26:17,532 - INFO - Target table: Raw.erp_inventory
+2026-01-07 09:26:28,953 - ERROR - [ERROR] Database connection failed: ('HYT00', '[HYT00] [Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired (0) (SQLDriverConnect)')
+2026-01-07 09:26:28,954 - INFO - ======================================================================
+2026-01-07 09:26:28,955 - INFO - Starting ingestion: crm_customers.csv
+2026-01-07 09:26:28,955 - INFO - ======================================================================
+2026-01-07 09:26:28,962 - INFO - Batch ID: crm_customers_20260107_092628
+2026-01-07 09:26:28,962 - INFO - Target table: Raw.crm_customers
+2026-01-07 09:26:33,047 - ERROR - [ERROR] Database connection failed: ('HYT00', '[HYT00] [Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired (0) (SQLDriverConnect)')
+2026-01-07 09:26:33,048 - INFO - ======================================================================
+2026-01-07 09:26:33,049 - INFO - Starting ingestion: crm_customers.csv
+2026-01-07 09:26:33,050 - INFO - ======================================================================
+2026-01-07 09:26:33,056 - INFO - Batch ID: crm_customers_20260107_092633
+2026-01-07 09:26:33,057 - INFO - Target table: Raw.crm_customers
+2026-01-07 09:26:44,819 - ERROR - [ERROR] Database connection failed: <class 'pyodbc.Error'> returned a result with an exception set
+2026-01-07 09:26:44,820 - INFO - ======================================================================
+2026-01-07 09:26:44,820 - INFO - Starting ingestion: mkt_promotions.csv
+2026-01-07 09:26:44,820 - INFO - ======================================================================
+2026-01-07 09:26:44,824 - INFO - Batch ID: mkt_promotions_20260107_092644
+2026-01-07 09:26:44,825 - INFO - Target table: Raw.mkt_promotions
+2026-01-07 09:26:49,182 - ERROR - [ERROR] Database connection failed: ('HYT00', '[HYT00] [Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired (0) (SQLDriverConnect)')
+2026-01-07 09:26:49,184 - INFO - ======================================================================
+2026-01-07 09:26:49,185 - INFO - Starting ingestion: mkt_promotions.csv
+2026-01-07 09:26:49,186 - INFO - ======================================================================
+2026-01-07 09:26:49,193 - INFO - Batch ID: mkt_promotions_20260107_092649
+2026-01-07 09:26:49,194 - INFO - Target table: Raw.mkt_promotions
+2026-01-07 09:27:00,010 - ERROR - [ERROR] Database connection failed: <class 'pyodbc.Error'> returned a result with an exception set
+2026-01-07 09:27:00,011 - INFO - ======================================================================
+2026-01-07 09:27:00,011 - INFO - Starting ingestion: api_weather.csv
+2026-01-07 09:27:00,012 - INFO - ======================================================================
+2026-01-07 09:27:00,018 - INFO - Batch ID: api_weather_20260107_092700
+2026-01-07 09:27:00,019 - INFO - Target table: Raw.api_weather
+2026-01-07 09:27:04,707 - ERROR - [ERROR] Database connection failed: ('HYT00', '[HYT00] [Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired (0) (SQLDriverConnect)')
+2026-01-07 09:27:04,707 - INFO - ======================================================================
+2026-01-07 09:27:04,708 - INFO - Starting ingestion: api_weather.csv
+2026-01-07 09:27:04,708 - INFO - ======================================================================
+2026-01-07 09:27:04,713 - INFO - Batch ID: api_weather_20260107_092704
+2026-01-07 09:27:04,713 - INFO - Target table: Raw.api_weather
+2026-01-07 09:27:16,144 - ERROR - [ERROR] Database connection failed: ('HYT00', '[HYT00] [Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired (0) (SQLDriverConnect)')
+2026-01-07 09:27:16,145 - INFO - 
+======================================================================
+2026-01-07 09:27:16,146 - INFO - INGESTION SUMMARY
+2026-01-07 09:27:16,146 - INFO - ======================================================================
+2026-01-07 09:27:16,147 - INFO -   [ERROR] FAILED: pos_transactions_header.csv
+2026-01-07 09:27:16,148 - INFO -   [ERROR] FAILED: pos_transactions_lines.csv
+2026-01-07 09:27:16,148 - INFO -   [ERROR] FAILED: erp_products.csv
+2026-01-07 09:27:16,149 - INFO -   [ERROR] FAILED: erp_stores.csv
+2026-01-07 09:27:16,149 - INFO -   [ERROR] FAILED: erp_inventory.csv
+2026-01-07 09:27:16,150 - INFO -   [ERROR] FAILED: crm_customers.csv
+2026-01-07 09:27:16,151 - INFO -   [ERROR] FAILED: mkt_promotions.csv
+2026-01-07 09:27:16,151 - INFO -   [ERROR] FAILED: api_weather.csv
+2026-01-07 09:27:16,152 - INFO - ----------------------------------------------------------------------
+2026-01-07 09:27:16,152 - INFO - Total files: 8
+2026-01-07 09:27:16,153 - INFO - Successful: 0
+2026-01-07 09:27:16,154 - INFO - Failed: 8
+2026-01-07 09:27:16,154 - INFO - ======================================================================
+2026-01-07 09:27:20,839 - ERROR - [ERROR] Database connection failed: ('HYT00', '[HYT00] [Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired (0) (SQLDriverConnect)')
+2026-01-07 09:27:20,841 - INFO - 
+======================================================================
+2026-01-07 09:27:20,842 - INFO - INGESTION SUMMARY
+2026-01-07 09:27:20,843 - INFO - ======================================================================
+2026-01-07 09:27:20,844 - INFO -   [ERROR] FAILED: pos_transactions_header.csv
+2026-01-07 09:27:20,845 - INFO -   [ERROR] FAILED: pos_transactions_lines.csv
+2026-01-07 09:27:20,846 - INFO -   [ERROR] FAILED: erp_products.csv
+2026-01-07 09:27:20,847 - INFO -   [ERROR] FAILED: erp_stores.csv
+2026-01-07 09:27:20,848 - INFO -   [ERROR] FAILED: erp_inventory.csv
+2026-01-07 09:27:20,849 - INFO -   [ERROR] FAILED: crm_customers.csv
+2026-01-07 09:27:20,851 - INFO -   [ERROR] FAILED: mkt_promotions.csv
+2026-01-07 09:27:20,852 - INFO -   [ERROR] FAILED: api_weather.csv
+2026-01-07 09:27:20,853 - INFO - ----------------------------------------------------------------------
+2026-01-07 09:27:20,854 - INFO - Total files: 8
+2026-01-07 09:27:20,855 - INFO - Successful: 0
+2026-01-07 09:27:20,855 - INFO - Failed: 8
+2026-01-07 09:27:20,856 - INFO - ======================================================================
+2026-01-07 09:27:36,949 - INFO - 
+======================================================================
+2026-01-07 09:27:36,950 - INFO - BULK INGESTION - ALL CSV FILES
+2026-01-07 09:27:36,951 - INFO - ======================================================================
+2026-01-07 09:27:36,951 - INFO - ======================================================================
+2026-01-07 09:27:36,951 - INFO - Starting ingestion: pos_transactions_header.csv
+2026-01-07 09:27:36,952 - INFO - ======================================================================
+2026-01-07 09:27:36,955 - INFO - Batch ID: pos_transactions_header_20260107_092736
+2026-01-07 09:27:36,956 - INFO - Target table: Raw.pos_transactions_header
+2026-01-07 09:27:52,424 - INFO - 
+======================================================================
+2026-01-07 09:27:52,425 - INFO - BULK INGESTION - ALL CSV FILES
+2026-01-07 09:27:52,425 - INFO - ======================================================================
+2026-01-07 09:27:52,426 - INFO - ======================================================================
+2026-01-07 09:27:52,426 - INFO - Starting ingestion: pos_transactions_header.csv
+2026-01-07 09:27:52,427 - INFO - ======================================================================
+2026-01-07 09:27:52,431 - INFO - Batch ID: pos_transactions_header_20260107_092752
+2026-01-07 09:27:52,431 - INFO - Target table: Raw.pos_transactions_header
+2026-01-07 09:27:53,083 - ERROR - [ERROR] Database connection failed: ('HYT00', '[HYT00] [Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired (0) (SQLDriverConnect)')
+2026-01-07 09:27:53,083 - INFO - ======================================================================
+2026-01-07 09:27:53,084 - INFO - Starting ingestion: pos_transactions_lines.csv
+2026-01-07 09:27:53,084 - INFO - ======================================================================
+2026-01-07 09:27:53,087 - INFO - Batch ID: pos_transactions_lines_20260107_092753
+2026-01-07 09:27:53,088 - INFO - Target table: Raw.pos_transactions_lines
+2026-01-07 09:28:07,952 - ERROR - [ERROR] Database connection failed: ('HYT00', '[HYT00] [Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired (0) (SQLDriverConnect)')
+2026-01-07 09:28:07,952 - INFO - ======================================================================
+2026-01-07 09:28:07,953 - INFO - Starting ingestion: pos_transactions_lines.csv
+2026-01-07 09:28:07,953 - INFO - ======================================================================
+2026-01-07 09:28:07,956 - INFO - Batch ID: pos_transactions_lines_20260107_092807
+2026-01-07 09:28:07,957 - INFO - Target table: Raw.pos_transactions_lines
+2026-01-07 09:28:40,683 - INFO - 
+======================================================================
+2026-01-07 09:28:40,684 - INFO - BULK INGESTION - ALL CSV FILES
+2026-01-07 09:28:40,685 - INFO - ======================================================================
+2026-01-07 09:28:40,685 - INFO - ======================================================================
+2026-01-07 09:28:40,687 - INFO - Starting ingestion: pos_transactions_header.csv
+2026-01-07 09:28:40,687 - INFO - ======================================================================
+2026-01-07 09:28:40,692 - INFO - Batch ID: pos_transactions_header_20260107_092840
+2026-01-07 09:28:40,693 - INFO - Target table: Raw.pos_transactions_header
+2026-01-07 09:28:56,818 - ERROR - [ERROR] Database connection failed: ('HYT00', '[HYT00] [Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired (0) (SQLDriverConnect)')
+2026-01-07 09:28:56,818 - INFO - ======================================================================
+2026-01-07 09:28:56,819 - INFO - Starting ingestion: pos_transactions_lines.csv
+2026-01-07 09:28:56,820 - INFO - ======================================================================
+2026-01-07 09:28:56,823 - INFO - Batch ID: pos_transactions_lines_20260107_092856
+2026-01-07 09:28:56,823 - INFO - Target table: Raw.pos_transactions_lines
+2026-01-07 09:29:47,316 - INFO - 
+======================================================================
+2026-01-07 09:29:47,317 - INFO - BULK INGESTION - ALL CSV FILES
+2026-01-07 09:29:47,318 - INFO - ======================================================================
+2026-01-07 09:29:47,319 - INFO - ======================================================================
+2026-01-07 09:29:47,320 - INFO - Starting ingestion: pos_transactions_header.csv
+2026-01-07 09:29:47,321 - INFO - ======================================================================
+2026-01-07 09:29:47,326 - INFO - Batch ID: pos_transactions_header_20260107_092947
+2026-01-07 09:29:47,327 - INFO - Target table: Raw.pos_transactions_header
+2026-01-07 09:29:47,328 - INFO - Reading CSV: /mnt/c/Work/Projects/MetroRetail/data/sample/pos_transactions_header.csv
+2026-01-07 09:29:47,457 - INFO -   Rows read: 20,200
+2026-01-07 09:29:47,457 - INFO -   Columns: Transaction_ID, Transaction_Date, Transaction_TS, Store_ID, Customer_ID, Payment_Method, Total_Amount, Total_Discount, Line_Count, Batch_ID, Source_File
+2026-01-07 09:29:47,459 - INFO - ✓ Successfully processed pos_transactions_header.csv
+2026-01-07 09:29:47,460 - INFO -   Ready for insertion: 20,200 rows
+2026-01-07 09:29:47,460 - INFO - ======================================================================
+2026-01-07 09:29:47,462 - INFO - ======================================================================
+2026-01-07 09:29:47,462 - INFO - Starting ingestion: pos_transactions_lines.csv
+2026-01-07 09:29:47,462 - INFO - ======================================================================
+2026-01-07 09:29:47,467 - INFO - Batch ID: pos_transactions_lines_20260107_092947
+2026-01-07 09:29:47,467 - INFO - Target table: Raw.pos_transactions_lines
+2026-01-07 09:29:47,467 - INFO - Reading CSV: /mnt/c/Work/Projects/MetroRetail/data/sample/pos_transactions_lines.csv
+2026-01-07 09:29:47,835 - INFO -   Rows read: 103,530
+2026-01-07 09:29:47,836 - INFO -   Columns: Transaction_Line_ID, Transaction_ID, Line_Number, Product_SKU, Store_ID, Quantity, Unit_Price, Cost_Price, Discount_Amount, Line_Sales_Amount, Promotion_ID, Batch_ID, Source_File
+2026-01-07 09:29:47,837 - INFO - ✓ Successfully processed pos_transactions_lines.csv
+2026-01-07 09:29:47,838 - INFO -   Ready for insertion: 103,530 rows
+2026-01-07 09:29:47,839 - INFO - ======================================================================
+2026-01-07 09:29:47,844 - INFO - ======================================================================
+2026-01-07 09:29:47,845 - INFO - Starting ingestion: erp_products.csv
+2026-01-07 09:29:47,846 - INFO - ======================================================================
+2026-01-07 09:29:47,850 - INFO - Batch ID: erp_products_20260107_092947
+2026-01-07 09:29:47,851 - INFO - Target table: Raw.erp_products
+2026-01-07 09:29:47,851 - INFO - Reading CSV: /mnt/c/Work/Projects/MetroRetail/data/sample/erp_products.csv
+2026-01-07 09:29:47,891 - INFO -   Rows read: 206
+2026-01-07 09:29:47,893 - INFO -   Columns: Product_SKU, Product_Name, Category, Sub_Category, Price, Cost_Price, Supplier_ID, Last_Updated, Batch_ID, Source_File
+2026-01-07 09:29:47,895 - INFO - ✓ Successfully processed erp_products.csv
+2026-01-07 09:29:47,896 - INFO -   Ready for insertion: 206 rows
+2026-01-07 09:29:47,897 - INFO - ======================================================================
+2026-01-07 09:29:47,898 - INFO - ======================================================================
+2026-01-07 09:29:47,899 - INFO - Starting ingestion: erp_stores.csv
+2026-01-07 09:29:47,900 - INFO - ======================================================================
+2026-01-07 09:29:47,908 - INFO - Batch ID: erp_stores_20260107_092947
+2026-01-07 09:29:47,909 - INFO - Target table: Raw.erp_stores
+2026-01-07 09:29:47,910 - INFO - Reading CSV: /mnt/c/Work/Projects/MetroRetail/data/sample/erp_stores.csv
+2026-01-07 09:29:47,925 - INFO -   Rows read: 30
+2026-01-07 09:29:47,926 - INFO -   Columns: Store_ID, Store_Name, City, Region, Store_Manager, Store_Area_sqm, Open_Date, Batch_ID, Source_File
+2026-01-07 09:29:47,927 - INFO - ✓ Successfully processed erp_stores.csv
+2026-01-07 09:29:47,928 - INFO -   Ready for insertion: 30 rows
+2026-01-07 09:29:47,929 - INFO - ======================================================================
+2026-01-07 09:29:47,930 - INFO - ======================================================================
+2026-01-07 09:29:47,931 - INFO - Starting ingestion: erp_inventory.csv
+2026-01-07 09:29:47,931 - INFO - ======================================================================
+2026-01-07 09:29:47,937 - INFO - Batch ID: erp_inventory_20260107_092947
+2026-01-07 09:29:47,938 - INFO - Target table: Raw.erp_inventory
+2026-01-07 09:29:47,938 - INFO - Reading CSV: /mnt/c/Work/Projects/MetroRetail/data/sample/erp_inventory.csv
+2026-01-07 09:29:48,130 - INFO -   Rows read: 63,000
+2026-01-07 09:29:48,130 - INFO -   Columns: Inventory_ID, Product_SKU, Store_ID, Snapshot_Date, Quantity_On_Hand, Reorder_Level, Batch_ID, Source_File
+2026-01-07 09:29:48,131 - INFO - ✓ Successfully processed erp_inventory.csv
+2026-01-07 09:29:48,131 - INFO -   Ready for insertion: 63,000 rows
+2026-01-07 09:29:48,132 - INFO - ======================================================================
+2026-01-07 09:29:48,133 - INFO - ======================================================================
+2026-01-07 09:29:48,134 - INFO - Starting ingestion: crm_customers.csv
+2026-01-07 09:29:48,135 - INFO - ======================================================================
+2026-01-07 09:29:48,138 - INFO - Batch ID: crm_customers_20260107_092948
+2026-01-07 09:29:48,139 - INFO - Target table: Raw.crm_customers
+2026-01-07 09:29:48,139 - INFO - Reading CSV: /mnt/c/Work/Projects/MetroRetail/data/sample/crm_customers.csv
+2026-01-07 09:29:48,208 - INFO -   Rows read: 5,000
+2026-01-07 09:29:48,208 - INFO -   Columns: Customer_ID, Full_Name, Gender, Birthdate, Registration_Date, Email, Phone_Number, City, Preferred_Channel, Batch_ID, Source_File
+2026-01-07 09:29:48,210 - INFO - ✓ Successfully processed crm_customers.csv
+2026-01-07 09:29:48,210 - INFO -   Ready for insertion: 5,000 rows
+2026-01-07 09:29:48,211 - INFO - ======================================================================
+2026-01-07 09:29:48,212 - INFO - ======================================================================
+2026-01-07 09:29:48,213 - INFO - Starting ingestion: mkt_promotions.csv
+2026-01-07 09:29:48,213 - INFO - ======================================================================
+2026-01-07 09:29:48,219 - INFO - Batch ID: mkt_promotions_20260107_092948
+2026-01-07 09:29:48,219 - INFO - Target table: Raw.mkt_promotions
+2026-01-07 09:29:48,220 - INFO - Reading CSV: /mnt/c/Work/Projects/MetroRetail/data/sample/mkt_promotions.csv
+2026-01-07 09:29:48,261 - INFO -   Rows read: 50
+2026-01-07 09:29:48,262 - INFO -   Columns: Promotion_ID, Promo_Name, Promo_Type, Start_Date, End_Date, Promo_Cost, Eligible_SKUs, Batch_ID, Source_File
+2026-01-07 09:29:48,263 - INFO - ✓ Successfully processed mkt_promotions.csv
+2026-01-07 09:29:48,264 - INFO -   Ready for insertion: 50 rows
+2026-01-07 09:29:48,265 - INFO - ======================================================================
+2026-01-07 09:29:48,266 - INFO - ======================================================================
+2026-01-07 09:29:48,266 - INFO - Starting ingestion: api_weather.csv
+2026-01-07 09:29:48,267 - INFO - ======================================================================
+2026-01-07 09:29:48,273 - INFO - Batch ID: api_weather_20260107_092948
+2026-01-07 09:29:48,273 - INFO - Target table: Raw.api_weather
+2026-01-07 09:29:48,274 - INFO - Reading CSV: /mnt/c/Work/Projects/MetroRetail/data/sample/api_weather.csv
+2026-01-07 09:29:48,343 - INFO -   Rows read: 28,678
+2026-01-07 09:29:48,343 - INFO -   Columns: Weather_Date, Store_ID, Temperature_C, Precipitation_mm, Weather_Condition, Batch_ID, Source_File
+2026-01-07 09:29:48,348 - INFO - ✓ Successfully processed api_weather.csv
+2026-01-07 09:29:48,349 - INFO -   Ready for insertion: 28,678 rows
+2026-01-07 09:29:48,349 - INFO - ======================================================================
+2026-01-07 09:29:48,350 - INFO - 
+======================================================================
+2026-01-07 09:29:48,351 - INFO - INGESTION SUMMARY
+2026-01-07 09:29:48,351 - INFO - ======================================================================
+2026-01-07 09:29:48,352 - INFO -   [OK] SUCCESS: pos_transactions_header.csv
+2026-01-07 09:29:48,352 - INFO -   [OK] SUCCESS: pos_transactions_lines.csv
+2026-01-07 09:29:48,353 - INFO -   [OK] SUCCESS: erp_products.csv
+2026-01-07 09:29:48,353 - INFO -   [OK] SUCCESS: erp_stores.csv
+2026-01-07 09:29:48,354 - INFO -   [OK] SUCCESS: erp_inventory.csv
+2026-01-07 09:29:48,354 - INFO -   [OK] SUCCESS: crm_customers.csv
+2026-01-07 09:29:48,355 - INFO -   [OK] SUCCESS: mkt_promotions.csv
+2026-01-07 09:29:48,355 - INFO -   [OK] SUCCESS: api_weather.csv
+2026-01-07 09:29:48,355 - INFO - ----------------------------------------------------------------------
+2026-01-07 09:29:48,356 - INFO - Total files: 8
+2026-01-07 09:29:48,356 - INFO - Successful: 8
+2026-01-07 09:29:48,357 - INFO - Failed: 0
+2026-01-07 09:29:48,357 - INFO - ======================================================================
+2026-01-07 09:33:38,173 - INFO - 
+======================================================================
+2026-01-07 09:33:38,174 - INFO - BULK INGESTION - ALL CSV FILES
+2026-01-07 09:33:38,175 - INFO - ======================================================================
+2026-01-07 09:33:38,175 - INFO - ======================================================================
+2026-01-07 09:33:38,175 - INFO - Starting ingestion: pos_transactions_header.csv
+2026-01-07 09:33:38,176 - INFO - ======================================================================
+2026-01-07 09:33:38,179 - INFO - Batch ID: pos_transactions_header_20260107_093338
+2026-01-07 09:33:38,180 - INFO - Target table: Raw.pos_transactions_header
+2026-01-07 09:33:38,180 - INFO - Reading CSV: /mnt/c/Work/Projects/MetroRetail/data/sample/pos_transactions_header.csv
+2026-01-07 09:33:38,266 - INFO -   Rows read: 20,200
+2026-01-07 09:33:38,266 - INFO -   Columns: Transaction_ID, Transaction_Date, Transaction_TS, Store_ID, Customer_ID, Payment_Method, Total_Amount, Total_Discount, Line_Count, Batch_ID, Source_File
+2026-01-07 09:33:38,267 - INFO - ✓ Successfully processed pos_transactions_header.csv
+2026-01-07 09:33:38,268 - INFO -   Ready for insertion: 20,200 rows
+2026-01-07 09:33:38,269 - INFO - ======================================================================
+2026-01-07 09:33:38,271 - INFO - ======================================================================
+2026-01-07 09:33:38,271 - INFO - Starting ingestion: pos_transactions_lines.csv
+2026-01-07 09:33:38,272 - INFO - ======================================================================
+2026-01-07 09:33:38,275 - INFO - Batch ID: pos_transactions_lines_20260107_093338
+2026-01-07 09:33:38,276 - INFO - Target table: Raw.pos_transactions_lines
+2026-01-07 09:33:38,276 - INFO - Reading CSV: /mnt/c/Work/Projects/MetroRetail/data/sample/pos_transactions_lines.csv
+2026-01-07 09:33:38,632 - INFO -   Rows read: 103,530
+2026-01-07 09:33:38,633 - INFO -   Columns: Transaction_Line_ID, Transaction_ID, Line_Number, Product_SKU, Store_ID, Quantity, Unit_Price, Cost_Price, Discount_Amount, Line_Sales_Amount, Promotion_ID, Batch_ID, Source_File
+2026-01-07 09:33:38,634 - INFO - ✓ Successfully processed pos_transactions_lines.csv
+2026-01-07 09:33:38,635 - INFO -   Ready for insertion: 103,530 rows
+2026-01-07 09:33:38,636 - INFO - ======================================================================
+2026-01-07 09:33:38,640 - INFO - ======================================================================
+2026-01-07 09:33:38,641 - INFO - Starting ingestion: erp_products.csv
+2026-01-07 09:33:38,642 - INFO - ======================================================================
+2026-01-07 09:33:38,647 - INFO - Batch ID: erp_products_20260107_093338
+2026-01-07 09:33:38,648 - INFO - Target table: Raw.erp_products
+2026-01-07 09:33:38,648 - INFO - Reading CSV: /mnt/c/Work/Projects/MetroRetail/data/sample/erp_products.csv
+2026-01-07 09:33:38,659 - INFO -   Rows read: 206
+2026-01-07 09:33:38,660 - INFO -   Columns: Product_SKU, Product_Name, Category, Sub_Category, Price, Cost_Price, Supplier_ID, Last_Updated, Batch_ID, Source_File
+2026-01-07 09:33:38,662 - INFO - ✓ Successfully processed erp_products.csv
+2026-01-07 09:33:38,663 - INFO -   Ready for insertion: 206 rows
+2026-01-07 09:33:38,664 - INFO - ======================================================================
+2026-01-07 09:33:38,665 - INFO - ======================================================================
+2026-01-07 09:33:38,665 - INFO - Starting ingestion: erp_stores.csv
+2026-01-07 09:33:38,666 - INFO - ======================================================================
+2026-01-07 09:33:38,672 - INFO - Batch ID: erp_stores_20260107_093338
+2026-01-07 09:33:38,673 - INFO - Target table: Raw.erp_stores
+2026-01-07 09:33:38,674 - INFO - Reading CSV: /mnt/c/Work/Projects/MetroRetail/data/sample/erp_stores.csv
+2026-01-07 09:33:38,687 - INFO -   Rows read: 30
+2026-01-07 09:33:38,689 - INFO -   Columns: Store_ID, Store_Name, City, Region, Store_Manager, Store_Area_sqm, Open_Date, Batch_ID, Source_File
+2026-01-07 09:33:38,691 - INFO - ✓ Successfully processed erp_stores.csv
+2026-01-07 09:33:38,692 - INFO -   Ready for insertion: 30 rows
+2026-01-07 09:33:38,693 - INFO - ======================================================================
+2026-01-07 09:33:38,694 - INFO - ======================================================================
+2026-01-07 09:33:38,695 - INFO - Starting ingestion: erp_inventory.csv
+2026-01-07 09:33:38,696 - INFO - ======================================================================
+2026-01-07 09:33:38,703 - INFO - Batch ID: erp_inventory_20260107_093338
+2026-01-07 09:33:38,704 - INFO - Target table: Raw.erp_inventory
+2026-01-07 09:33:38,705 - INFO - Reading CSV: /mnt/c/Work/Projects/MetroRetail/data/sample/erp_inventory.csv
+2026-01-07 09:33:38,886 - INFO -   Rows read: 63,000
+2026-01-07 09:33:38,887 - INFO -   Columns: Inventory_ID, Product_SKU, Store_ID, Snapshot_Date, Quantity_On_Hand, Reorder_Level, Batch_ID, Source_File
+2026-01-07 09:33:38,888 - INFO - ✓ Successfully processed erp_inventory.csv
+2026-01-07 09:33:38,888 - INFO -   Ready for insertion: 63,000 rows
+2026-01-07 09:33:38,889 - INFO - ======================================================================
+2026-01-07 09:33:38,892 - INFO - ======================================================================
+2026-01-07 09:33:38,892 - INFO - Starting ingestion: crm_customers.csv
+2026-01-07 09:33:38,893 - INFO - ======================================================================
+2026-01-07 09:33:38,897 - INFO - Batch ID: crm_customers_20260107_093338
+2026-01-07 09:33:38,898 - INFO - Target table: Raw.crm_customers
+2026-01-07 09:33:38,899 - INFO - Reading CSV: /mnt/c/Work/Projects/MetroRetail/data/sample/crm_customers.csv
+2026-01-07 09:33:38,933 - INFO -   Rows read: 5,000
+2026-01-07 09:33:38,934 - INFO -   Columns: Customer_ID, Full_Name, Gender, Birthdate, Registration_Date, Email, Phone_Number, City, Preferred_Channel, Batch_ID, Source_File
+2026-01-07 09:33:38,934 - INFO - ✓ Successfully processed crm_customers.csv
+2026-01-07 09:33:38,935 - INFO -   Ready for insertion: 5,000 rows
+2026-01-07 09:33:38,935 - INFO - ======================================================================
+2026-01-07 09:33:38,935 - INFO - ======================================================================
+2026-01-07 09:33:38,936 - INFO - Starting ingestion: mkt_promotions.csv
+2026-01-07 09:33:38,936 - INFO - ======================================================================
+2026-01-07 09:33:38,939 - INFO - Batch ID: mkt_promotions_20260107_093338
+2026-01-07 09:33:38,940 - INFO - Target table: Raw.mkt_promotions
+2026-01-07 09:33:38,940 - INFO - Reading CSV: /mnt/c/Work/Projects/MetroRetail/data/sample/mkt_promotions.csv
+2026-01-07 09:33:38,947 - INFO -   Rows read: 50
+2026-01-07 09:33:38,948 - INFO -   Columns: Promotion_ID, Promo_Name, Promo_Type, Start_Date, End_Date, Promo_Cost, Eligible_SKUs, Batch_ID, Source_File
+2026-01-07 09:33:38,948 - INFO - ✓ Successfully processed mkt_promotions.csv
+2026-01-07 09:33:38,948 - INFO -   Ready for insertion: 50 rows
+2026-01-07 09:33:38,949 - INFO - ======================================================================
+2026-01-07 09:33:38,949 - INFO - ======================================================================
+2026-01-07 09:33:38,949 - INFO - Starting ingestion: api_weather.csv
+2026-01-07 09:33:38,950 - INFO - ======================================================================
+2026-01-07 09:33:38,953 - INFO - Batch ID: api_weather_20260107_093338
+2026-01-07 09:33:38,954 - INFO - Target table: Raw.api_weather
+2026-01-07 09:33:38,954 - INFO - Reading CSV: /mnt/c/Work/Projects/MetroRetail/data/sample/api_weather.csv
+2026-01-07 09:33:39,031 - INFO -   Rows read: 28,678
+2026-01-07 09:33:39,031 - INFO -   Columns: Weather_Date, Store_ID, Temperature_C, Precipitation_mm, Weather_Condition, Batch_ID, Source_File
+2026-01-07 09:33:39,036 - INFO - ✓ Successfully processed api_weather.csv
+2026-01-07 09:33:39,037 - INFO -   Ready for insertion: 28,678 rows
+2026-01-07 09:33:39,038 - INFO - ======================================================================
+2026-01-07 09:33:39,039 - INFO - 
+======================================================================
+2026-01-07 09:33:39,040 - INFO - INGESTION SUMMARY
+2026-01-07 09:33:39,040 - INFO - ======================================================================
+2026-01-07 09:33:39,041 - INFO -   [OK] SUCCESS: pos_transactions_header.csv
+2026-01-07 09:33:39,041 - INFO -   [OK] SUCCESS: pos_transactions_lines.csv
+2026-01-07 09:33:39,042 - INFO -   [OK] SUCCESS: erp_products.csv
+2026-01-07 09:33:39,043 - INFO -   [OK] SUCCESS: erp_stores.csv
+2026-01-07 09:33:39,044 - INFO -   [OK] SUCCESS: erp_inventory.csv
+2026-01-07 09:33:39,044 - INFO -   [OK] SUCCESS: crm_customers.csv
+2026-01-07 09:33:39,045 - INFO -   [OK] SUCCESS: mkt_promotions.csv
+2026-01-07 09:33:39,046 - INFO -   [OK] SUCCESS: api_weather.csv
+2026-01-07 09:33:39,047 - INFO - ----------------------------------------------------------------------
+2026-01-07 09:33:39,047 - INFO - Total files: 8
+2026-01-07 09:33:39,048 - INFO - Successful: 8
+2026-01-07 09:33:39,049 - INFO - Failed: 0
+2026-01-07 09:33:39,049 - INFO - ======================================================================
+2026-01-07 10:36:04,390 - INFO - 
+======================================================================
+2026-01-07 10:36:04,394 - INFO - 
+======================================================================
+2026-01-07 10:36:04,396 - INFO - BULK INGESTION - ALL CSV FILES
+2026-01-07 10:36:04,409 - INFO - BULK INGESTION - ALL CSV FILES
+2026-01-07 10:36:04,409 - INFO - ======================================================================
+2026-01-07 10:36:04,410 - INFO - ======================================================================
+2026-01-07 10:36:04,410 - INFO - ======================================================================
+2026-01-07 10:36:04,411 - INFO - ======================================================================
+2026-01-07 10:36:04,411 - INFO - Starting ingestion: pos_transactions_header.csv
+2026-01-07 10:36:04,412 - INFO - Starting ingestion: pos_transactions_header.csv
+2026-01-07 10:36:04,412 - INFO - ======================================================================
+2026-01-07 10:36:04,414 - INFO - ======================================================================
+2026-01-07 10:36:04,417 - INFO - Batch ID: pos_transactions_header_20260107_103604
+2026-01-07 10:36:04,418 - INFO - Target table: Raw.pos_transactions_header
+2026-01-07 10:36:04,420 - INFO - Batch ID: pos_transactions_header_20260107_103604
+2026-01-07 10:36:04,421 - INFO - Reading CSV: /mnt/c/Work/Projects/MetroRetail/data/sample/pos_transactions_header.csv
+2026-01-07 10:36:04,421 - INFO - Target table: Raw.pos_transactions_header
+2026-01-07 10:36:04,422 - INFO - Reading CSV: /mnt/c/Work/Projects/MetroRetail/data/sample/pos_transactions_header.csv
+2026-01-07 10:36:04,641 - INFO -   Rows read: 20,200
+2026-01-07 10:36:04,642 - INFO -   Columns: Transaction_ID, Transaction_Date, Transaction_TS, Store_ID, Customer_ID, Payment_Method, Total_Amount, Total_Discount, Line_Count, Batch_ID, Source_File
+2026-01-07 10:36:04,642 - INFO -   Rows read: 20,200
+2026-01-07 10:36:04,643 - INFO -   Columns: Transaction_ID, Transaction_Date, Transaction_TS, Store_ID, Customer_ID, Payment_Method, Total_Amount, Total_Discount, Line_Count, Batch_ID, Source_File
+2026-01-07 10:36:04,646 - INFO - ✓ Successfully processed pos_transactions_header.csv
+2026-01-07 10:36:04,646 - INFO - ✓ Successfully processed pos_transactions_header.csv
+2026-01-07 10:36:04,646 - INFO -   Ready for insertion: 20,200 rows
+2026-01-07 10:36:04,646 - INFO -   Ready for insertion: 20,200 rows
+2026-01-07 10:36:04,647 - INFO - ======================================================================
+2026-01-07 10:36:04,647 - INFO - ======================================================================
+2026-01-07 10:36:04,649 - INFO - ======================================================================
+2026-01-07 10:36:04,649 - INFO - ======================================================================
+2026-01-07 10:36:04,650 - INFO - Starting ingestion: pos_transactions_lines.csv
+2026-01-07 10:36:04,651 - INFO - Starting ingestion: pos_transactions_lines.csv
+2026-01-07 10:36:04,652 - INFO - ======================================================================
+2026-01-07 10:36:04,652 - INFO - ======================================================================
+2026-01-07 10:36:04,656 - INFO - Batch ID: pos_transactions_lines_20260107_103604
+2026-01-07 10:36:04,657 - INFO - Target table: Raw.pos_transactions_lines
+2026-01-07 10:36:04,657 - INFO - Batch ID: pos_transactions_lines_20260107_103604
+2026-01-07 10:36:04,657 - INFO - Reading CSV: /mnt/c/Work/Projects/MetroRetail/data/sample/pos_transactions_lines.csv
+2026-01-07 10:36:04,658 - INFO - Target table: Raw.pos_transactions_lines
+2026-01-07 10:36:04,659 - INFO - Reading CSV: /mnt/c/Work/Projects/MetroRetail/data/sample/pos_transactions_lines.csv
+2026-01-07 10:36:05,282 - INFO -   Rows read: 103,530
+2026-01-07 10:36:05,283 - INFO -   Columns: Transaction_Line_ID, Transaction_ID, Line_Number, Product_SKU, Store_ID, Quantity, Unit_Price, Cost_Price, Discount_Amount, Line_Sales_Amount, Promotion_ID, Batch_ID, Source_File
+2026-01-07 10:36:05,284 - INFO -   Rows read: 103,530
+2026-01-07 10:36:05,284 - INFO -   Columns: Transaction_Line_ID, Transaction_ID, Line_Number, Product_SKU, Store_ID, Quantity, Unit_Price, Cost_Price, Discount_Amount, Line_Sales_Amount, Promotion_ID, Batch_ID, Source_File
+2026-01-07 10:36:05,285 - INFO - ✓ Successfully processed pos_transactions_lines.csv
+2026-01-07 10:36:05,285 - INFO -   Ready for insertion: 103,530 rows
+2026-01-07 10:36:05,286 - INFO - ======================================================================
+2026-01-07 10:36:05,287 - INFO - ✓ Successfully processed pos_transactions_lines.csv
+2026-01-07 10:36:05,287 - INFO -   Ready for insertion: 103,530 rows
+2026-01-07 10:36:05,288 - INFO - ======================================================================
+2026-01-07 10:36:05,295 - INFO - ======================================================================
+2026-01-07 10:36:05,296 - INFO - Starting ingestion: erp_products.csv
+2026-01-07 10:36:05,296 - INFO - ======================================================================
+2026-01-07 10:36:05,297 - INFO - ======================================================================
+2026-01-07 10:36:05,297 - INFO - Starting ingestion: erp_products.csv
+2026-01-07 10:36:05,297 - INFO - ======================================================================
+2026-01-07 10:36:05,301 - INFO - Batch ID: erp_products_20260107_103605
+2026-01-07 10:36:05,302 - INFO - Target table: Raw.erp_products
+2026-01-07 10:36:05,303 - INFO - Reading CSV: /mnt/c/Work/Projects/MetroRetail/data/sample/erp_products.csv
+2026-01-07 10:36:05,303 - INFO - Batch ID: erp_products_20260107_103605
+2026-01-07 10:36:05,303 - INFO - Target table: Raw.erp_products
+2026-01-07 10:36:05,304 - INFO - Reading CSV: /mnt/c/Work/Projects/MetroRetail/data/sample/erp_products.csv
+2026-01-07 10:36:05,358 - INFO -   Rows read: 206
+2026-01-07 10:36:05,359 - INFO -   Columns: Product_SKU, Product_Name, Category, Sub_Category, Price, Cost_Price, Supplier_ID, Last_Updated, Batch_ID, Source_File
+2026-01-07 10:36:05,360 - INFO - ✓ Successfully processed erp_products.csv
+2026-01-07 10:36:05,360 - INFO -   Rows read: 206
+2026-01-07 10:36:05,360 - INFO -   Ready for insertion: 206 rows
+2026-01-07 10:36:05,361 - INFO -   Columns: Product_SKU, Product_Name, Category, Sub_Category, Price, Cost_Price, Supplier_ID, Last_Updated, Batch_ID, Source_File
+2026-01-07 10:36:05,361 - INFO - ======================================================================
+2026-01-07 10:36:05,362 - INFO - ======================================================================
+2026-01-07 10:36:05,362 - INFO - ✓ Successfully processed erp_products.csv
+2026-01-07 10:36:05,362 - INFO - Starting ingestion: erp_stores.csv
+2026-01-07 10:36:05,363 - INFO -   Ready for insertion: 206 rows
+2026-01-07 10:36:05,363 - INFO - ======================================================================
+2026-01-07 10:36:05,364 - INFO - ======================================================================
+2026-01-07 10:36:05,364 - INFO - ======================================================================
+2026-01-07 10:36:05,365 - INFO - Starting ingestion: erp_stores.csv
+2026-01-07 10:36:05,367 - INFO - ======================================================================
+2026-01-07 10:36:05,367 - INFO - Batch ID: erp_stores_20260107_103605
+2026-01-07 10:36:05,368 - INFO - Target table: Raw.erp_stores
+2026-01-07 10:36:05,369 - INFO - Reading CSV: /mnt/c/Work/Projects/MetroRetail/data/sample/erp_stores.csv
+2026-01-07 10:36:05,370 - INFO - Batch ID: erp_stores_20260107_103605
+2026-01-07 10:36:05,372 - INFO - Target table: Raw.erp_stores
+2026-01-07 10:36:05,373 - INFO - Reading CSV: /mnt/c/Work/Projects/MetroRetail/data/sample/erp_stores.csv
+2026-01-07 10:36:05,382 - INFO -   Rows read: 30
+2026-01-07 10:36:05,383 - INFO -   Columns: Store_ID, Store_Name, City, Region, Store_Manager, Store_Area_sqm, Open_Date, Batch_ID, Source_File
+2026-01-07 10:36:05,383 - INFO -   Rows read: 30
+2026-01-07 10:36:05,384 - INFO -   Columns: Store_ID, Store_Name, City, Region, Store_Manager, Store_Area_sqm, Open_Date, Batch_ID, Source_File
+2026-01-07 10:36:05,384 - INFO - ✓ Successfully processed erp_stores.csv
+2026-01-07 10:36:05,384 - INFO -   Ready for insertion: 30 rows
+2026-01-07 10:36:05,385 - INFO - ✓ Successfully processed erp_stores.csv
+2026-01-07 10:36:05,385 - INFO - ======================================================================
+2026-01-07 10:36:05,385 - INFO -   Ready for insertion: 30 rows
+2026-01-07 10:36:05,386 - INFO - ======================================================================
+2026-01-07 10:36:05,386 - INFO - ======================================================================
+2026-01-07 10:36:05,387 - INFO - ======================================================================
+2026-01-07 10:36:05,387 - INFO - Starting ingestion: erp_inventory.csv
+2026-01-07 10:36:05,389 - INFO - ======================================================================
+2026-01-07 10:36:05,389 - INFO - Starting ingestion: erp_inventory.csv
+2026-01-07 10:36:05,390 - INFO - ======================================================================
+2026-01-07 10:36:05,394 - INFO - Batch ID: erp_inventory_20260107_103605
+2026-01-07 10:36:05,395 - INFO - Target table: Raw.erp_inventory
+2026-01-07 10:36:05,396 - INFO - Reading CSV: /mnt/c/Work/Projects/MetroRetail/data/sample/erp_inventory.csv
+2026-01-07 10:36:05,397 - INFO - Batch ID: erp_inventory_20260107_103605
+2026-01-07 10:36:05,398 - INFO - Target table: Raw.erp_inventory
+2026-01-07 10:36:05,399 - INFO - Reading CSV: /mnt/c/Work/Projects/MetroRetail/data/sample/erp_inventory.csv
+2026-01-07 10:36:05,665 - INFO -   Rows read: 63,000
+2026-01-07 10:36:05,667 - INFO -   Columns: Inventory_ID, Product_SKU, Store_ID, Snapshot_Date, Quantity_On_Hand, Reorder_Level, Batch_ID, Source_File
+2026-01-07 10:36:05,670 - INFO - ✓ Successfully processed erp_inventory.csv
+2026-01-07 10:36:05,670 - INFO -   Rows read: 63,000
+2026-01-07 10:36:05,671 - INFO -   Ready for insertion: 63,000 rows
+2026-01-07 10:36:05,671 - INFO -   Columns: Inventory_ID, Product_SKU, Store_ID, Snapshot_Date, Quantity_On_Hand, Reorder_Level, Batch_ID, Source_File
+2026-01-07 10:36:05,672 - INFO - ======================================================================
+2026-01-07 10:36:05,674 - INFO - ✓ Successfully processed erp_inventory.csv
+2026-01-07 10:36:05,675 - INFO -   Ready for insertion: 63,000 rows
+2026-01-07 10:36:05,676 - INFO - ======================================================================
+2026-01-07 10:36:05,676 - INFO - ======================================================================
+2026-01-07 10:36:05,677 - INFO - Starting ingestion: crm_customers.csv
+2026-01-07 10:36:05,678 - INFO - ======================================================================
+2026-01-07 10:36:05,680 - INFO - ======================================================================
+2026-01-07 10:36:05,682 - INFO - Starting ingestion: crm_customers.csv
+2026-01-07 10:36:05,685 - INFO - ======================================================================
+2026-01-07 10:36:05,687 - INFO - Batch ID: crm_customers_20260107_103605
+2026-01-07 10:36:05,688 - INFO - Target table: Raw.crm_customers
+2026-01-07 10:36:05,689 - INFO - Reading CSV: /mnt/c/Work/Projects/MetroRetail/data/sample/crm_customers.csv
+2026-01-07 10:36:05,690 - INFO - Batch ID: crm_customers_20260107_103605
+2026-01-07 10:36:05,691 - INFO - Target table: Raw.crm_customers
+2026-01-07 10:36:05,692 - INFO - Reading CSV: /mnt/c/Work/Projects/MetroRetail/data/sample/crm_customers.csv
+2026-01-07 10:36:05,801 - INFO -   Rows read: 5,000
+2026-01-07 10:36:05,805 - INFO -   Columns: Customer_ID, Full_Name, Gender, Birthdate, Registration_Date, Email, Phone_Number, City, Preferred_Channel, Batch_ID, Source_File
+2026-01-07 10:36:05,806 - INFO -   Rows read: 5,000
+2026-01-07 10:36:05,807 - INFO - ✓ Successfully processed crm_customers.csv
+2026-01-07 10:36:05,807 - INFO -   Columns: Customer_ID, Full_Name, Gender, Birthdate, Registration_Date, Email, Phone_Number, City, Preferred_Channel, Batch_ID, Source_File
+2026-01-07 10:36:05,808 - INFO -   Ready for insertion: 5,000 rows
+2026-01-07 10:36:05,809 - INFO - ======================================================================
+2026-01-07 10:36:05,809 - INFO - ✓ Successfully processed crm_customers.csv
+2026-01-07 10:36:05,810 - INFO -   Ready for insertion: 5,000 rows
+2026-01-07 10:36:05,811 - INFO - ======================================================================
+2026-01-07 10:36:05,812 - INFO - ======================================================================
+2026-01-07 10:36:05,812 - INFO - Starting ingestion: mkt_promotions.csv
+2026-01-07 10:36:05,813 - INFO - ======================================================================
+2026-01-07 10:36:05,814 - INFO - ======================================================================
+2026-01-07 10:36:05,816 - INFO - Starting ingestion: mkt_promotions.csv
+2026-01-07 10:36:05,818 - INFO - ======================================================================
+2026-01-07 10:36:05,821 - INFO - Batch ID: mkt_promotions_20260107_103605
+2026-01-07 10:36:05,823 - INFO - Target table: Raw.mkt_promotions
+2026-01-07 10:36:05,824 - INFO - Batch ID: mkt_promotions_20260107_103605
+2026-01-07 10:36:05,824 - INFO - Reading CSV: /mnt/c/Work/Projects/MetroRetail/data/sample/mkt_promotions.csv
+2026-01-07 10:36:05,825 - INFO - Target table: Raw.mkt_promotions
+2026-01-07 10:36:05,826 - INFO - Reading CSV: /mnt/c/Work/Projects/MetroRetail/data/sample/mkt_promotions.csv
+2026-01-07 10:36:05,893 - INFO -   Rows read: 50
+2026-01-07 10:36:05,894 - INFO -   Columns: Promotion_ID, Promo_Name, Promo_Type, Start_Date, End_Date, Promo_Cost, Eligible_SKUs, Batch_ID, Source_File
+2026-01-07 10:36:05,895 - INFO - ✓ Successfully processed mkt_promotions.csv
+2026-01-07 10:36:05,898 - INFO -   Rows read: 50
+2026-01-07 10:36:05,898 - INFO -   Ready for insertion: 50 rows
+2026-01-07 10:36:05,899 - INFO - ======================================================================
+2026-01-07 10:36:05,899 - INFO -   Columns: Promotion_ID, Promo_Name, Promo_Type, Start_Date, End_Date, Promo_Cost, Eligible_SKUs, Batch_ID, Source_File
+2026-01-07 10:36:05,900 - INFO - ======================================================================
+2026-01-07 10:36:05,900 - INFO - ✓ Successfully processed mkt_promotions.csv
+2026-01-07 10:36:05,901 - INFO - Starting ingestion: api_weather.csv
+2026-01-07 10:36:05,901 - INFO -   Ready for insertion: 50 rows
+2026-01-07 10:36:05,901 - INFO - ======================================================================
+2026-01-07 10:36:05,901 - INFO - ======================================================================
+2026-01-07 10:36:05,902 - INFO - ======================================================================
+2026-01-07 10:36:05,902 - INFO - Starting ingestion: api_weather.csv
+2026-01-07 10:36:05,903 - INFO - ======================================================================
+2026-01-07 10:36:05,904 - INFO - Batch ID: api_weather_20260107_103605
+2026-01-07 10:36:05,905 - INFO - Target table: Raw.api_weather
+2026-01-07 10:36:05,905 - INFO - Batch ID: api_weather_20260107_103605
+2026-01-07 10:36:05,905 - INFO - Reading CSV: /mnt/c/Work/Projects/MetroRetail/data/sample/api_weather.csv
+2026-01-07 10:36:05,905 - INFO - Target table: Raw.api_weather
+2026-01-07 10:36:05,906 - INFO - Reading CSV: /mnt/c/Work/Projects/MetroRetail/data/sample/api_weather.csv
+2026-01-07 10:36:05,968 - INFO -   Rows read: 18,751
+2026-01-07 10:36:05,968 - INFO -   Columns: Weather_Date, Store_ID, Temperature_C, Precipitation_mm, Weather_Condition, Batch_ID, Source_File
+2026-01-07 10:36:05,971 - INFO -   Rows read: 18,751
+2026-01-07 10:36:05,971 - INFO -   Columns: Weather_Date, Store_ID, Temperature_C, Precipitation_mm, Weather_Condition, Batch_ID, Source_File
+2026-01-07 10:36:05,974 - INFO - ✓ Successfully processed api_weather.csv
+2026-01-07 10:36:05,976 - INFO -   Ready for insertion: 18,751 rows
+2026-01-07 10:36:05,977 - INFO - ✓ Successfully processed api_weather.csv
+2026-01-07 10:36:05,977 - INFO - ======================================================================
+2026-01-07 10:36:05,980 - INFO -   Ready for insertion: 18,751 rows
+2026-01-07 10:36:05,980 - INFO - 
+======================================================================
+2026-01-07 10:36:05,988 - INFO - INGESTION SUMMARY
+2026-01-07 10:36:05,986 - INFO - ======================================================================
+2026-01-07 10:36:05,991 - INFO - ======================================================================
+2026-01-07 10:36:05,992 - INFO -   [OK] SUCCESS: pos_transactions_header.csv
+2026-01-07 10:36:05,992 - INFO - 
+======================================================================
+2026-01-07 10:36:05,994 - INFO - INGESTION SUMMARY
+2026-01-07 10:36:05,994 - INFO -   [OK] SUCCESS: pos_transactions_lines.csv
+2026-01-07 10:36:05,996 - INFO - ======================================================================
+2026-01-07 10:36:05,996 - INFO -   [OK] SUCCESS: erp_products.csv
+2026-01-07 10:36:05,999 - INFO -   [OK] SUCCESS: pos_transactions_header.csv
+2026-01-07 10:36:05,999 - INFO -   [OK] SUCCESS: erp_stores.csv
+2026-01-07 10:36:06,001 - INFO -   [OK] SUCCESS: pos_transactions_lines.csv
+2026-01-07 10:36:06,001 - INFO -   [OK] SUCCESS: erp_inventory.csv
+2026-01-07 10:36:06,003 - INFO -   [OK] SUCCESS: erp_products.csv
+2026-01-07 10:36:06,003 - INFO -   [OK] SUCCESS: crm_customers.csv
+2026-01-07 10:36:06,005 - INFO -   [OK] SUCCESS: erp_stores.csv
+2026-01-07 10:36:06,005 - INFO -   [OK] SUCCESS: mkt_promotions.csv
+2026-01-07 10:36:06,017 - INFO -   [OK] SUCCESS: erp_inventory.csv
+2026-01-07 10:36:06,017 - INFO -   [OK] SUCCESS: api_weather.csv
+2026-01-07 10:36:06,021 - INFO - ----------------------------------------------------------------------
+2026-01-07 10:36:06,022 - INFO - Total files: 8
+2026-01-07 10:36:06,023 - INFO -   [OK] SUCCESS: crm_customers.csv
+2026-01-07 10:36:06,023 - INFO - Successful: 8
+2026-01-07 10:36:06,024 - INFO -   [OK] SUCCESS: mkt_promotions.csv
+2026-01-07 10:36:06,025 - INFO - Failed: 0
+2026-01-07 10:36:06,025 - INFO -   [OK] SUCCESS: api_weather.csv
+2026-01-07 10:36:06,026 - INFO - ======================================================================
+2026-01-07 10:36:06,028 - INFO - ----------------------------------------------------------------------
+2026-01-07 10:36:06,029 - INFO - Total files: 8
+2026-01-07 10:36:06,071 - INFO - Successful: 8
+2026-01-07 10:36:06,071 - INFO - Failed: 0
+2026-01-07 10:36:06,072 - INFO - ======================================================================
+2026-01-07 10:57:18,473 - INFO - 
+======================================================================
+2026-01-07 10:57:18,475 - INFO - BULK INGESTION - ALL CSV FILES
+2026-01-07 10:57:18,476 - INFO - ======================================================================
+2026-01-07 10:57:18,477 - INFO - ======================================================================
+2026-01-07 10:57:18,479 - INFO - Starting ingestion: pos_transactions_header.csv
+2026-01-07 10:57:18,479 - INFO - ======================================================================
+2026-01-07 10:57:18,487 - INFO - Batch ID: pos_transactions_header_20260107_105718
+2026-01-07 10:57:18,491 - INFO - Target table: Raw.pos_transactions_header
+2026-01-07 10:57:18,492 - INFO - Reading CSV: /mnt/c/Work/Projects/MetroRetail/data/sample/pos_transactions_header.csv
+2026-01-07 10:57:18,615 - INFO -   Rows read: 20,200
+2026-01-07 10:57:18,616 - INFO -   Columns: Transaction_ID, Transaction_Date, Transaction_TS, Store_ID, Customer_ID, Payment_Method, Total_Amount, Total_Discount, Line_Count, Batch_ID, Source_File
+2026-01-07 10:57:18,619 - INFO - ✓ Successfully processed pos_transactions_header.csv
+2026-01-07 10:57:18,620 - INFO -   Ready for insertion: 20,200 rows
+2026-01-07 10:57:18,621 - INFO - ======================================================================
+2026-01-07 10:57:18,622 - INFO - ======================================================================
+2026-01-07 10:57:18,622 - INFO - Starting ingestion: pos_transactions_lines.csv
+2026-01-07 10:57:18,623 - INFO - ======================================================================
+2026-01-07 10:57:18,628 - INFO - Batch ID: pos_transactions_lines_20260107_105718
+2026-01-07 10:57:18,628 - INFO - Target table: Raw.pos_transactions_lines
+2026-01-07 10:57:18,629 - INFO - Reading CSV: /mnt/c/Work/Projects/MetroRetail/data/sample/pos_transactions_lines.csv
+2026-01-07 10:57:19,086 - INFO -   Rows read: 103,530
+2026-01-07 10:57:19,089 - INFO -   Columns: Transaction_Line_ID, Transaction_ID, Line_Number, Product_SKU, Store_ID, Quantity, Unit_Price, Cost_Price, Discount_Amount, Line_Sales_Amount, Promotion_ID, Batch_ID, Source_File
+2026-01-07 10:57:19,092 - INFO - ✓ Successfully processed pos_transactions_lines.csv
+2026-01-07 10:57:19,092 - INFO -   Ready for insertion: 103,530 rows
+2026-01-07 10:57:19,093 - INFO - ======================================================================
+2026-01-07 10:57:19,100 - INFO - ======================================================================
+2026-01-07 10:57:19,103 - INFO - Starting ingestion: erp_products.csv
+2026-01-07 10:57:19,104 - INFO - ======================================================================
+2026-01-07 10:57:19,110 - INFO - Batch ID: erp_products_20260107_105719
+2026-01-07 10:57:19,111 - INFO - Target table: Raw.erp_products
+2026-01-07 10:57:19,112 - INFO - Reading CSV: /mnt/c/Work/Projects/MetroRetail/data/sample/erp_products.csv
+2026-01-07 10:57:19,126 - INFO -   Rows read: 206
+2026-01-07 10:57:19,127 - INFO -   Columns: Product_SKU, Product_Name, Category, Sub_Category, Price, Cost_Price, Supplier_ID, Last_Updated, Batch_ID, Source_File
+2026-01-07 10:57:19,128 - INFO - ✓ Successfully processed erp_products.csv
+2026-01-07 10:57:19,129 - INFO -   Ready for insertion: 206 rows
+2026-01-07 10:57:19,129 - INFO - ======================================================================
+2026-01-07 10:57:19,130 - INFO - ======================================================================
+2026-01-07 10:57:19,131 - INFO - Starting ingestion: erp_stores.csv
+2026-01-07 10:57:19,132 - INFO - ======================================================================
+2026-01-07 10:57:19,138 - INFO - Batch ID: erp_stores_20260107_105719
+2026-01-07 10:57:19,139 - INFO - Target table: Raw.erp_stores
+2026-01-07 10:57:19,139 - INFO - Reading CSV: /mnt/c/Work/Projects/MetroRetail/data/sample/erp_stores.csv
+2026-01-07 10:57:19,153 - INFO -   Rows read: 30
+2026-01-07 10:57:19,155 - INFO -   Columns: Store_ID, Store_Name, City, Region, Store_Manager, Store_Area_sqm, Open_Date, Batch_ID, Source_File
+2026-01-07 10:57:19,156 - INFO - ✓ Successfully processed erp_stores.csv
+2026-01-07 10:57:19,157 - INFO -   Ready for insertion: 30 rows
+2026-01-07 10:57:19,158 - INFO - ======================================================================
+2026-01-07 10:57:19,159 - INFO - ======================================================================
+2026-01-07 10:57:19,160 - INFO - Starting ingestion: erp_inventory.csv
+2026-01-07 10:57:19,161 - INFO - ======================================================================
+2026-01-07 10:57:19,167 - INFO - Batch ID: erp_inventory_20260107_105719
+2026-01-07 10:57:19,168 - INFO - Target table: Raw.erp_inventory
+2026-01-07 10:57:19,169 - INFO - Reading CSV: /mnt/c/Work/Projects/MetroRetail/data/sample/erp_inventory.csv
+2026-01-07 10:57:19,349 - INFO -   Rows read: 63,000
+2026-01-07 10:57:19,350 - INFO -   Columns: Inventory_ID, Product_SKU, Store_ID, Snapshot_Date, Quantity_On_Hand, Reorder_Level, Batch_ID, Source_File
+2026-01-07 10:57:19,352 - INFO - ✓ Successfully processed erp_inventory.csv
+2026-01-07 10:57:19,353 - INFO -   Ready for insertion: 63,000 rows
+2026-01-07 10:57:19,354 - INFO - ======================================================================
+2026-01-07 10:57:19,357 - INFO - ======================================================================
+2026-01-07 10:57:19,357 - INFO - Starting ingestion: crm_customers.csv
+2026-01-07 10:57:19,358 - INFO - ======================================================================
+2026-01-07 10:57:19,363 - INFO - Batch ID: crm_customers_20260107_105719
+2026-01-07 10:57:19,364 - INFO - Target table: Raw.crm_customers
+2026-01-07 10:57:19,364 - INFO - Reading CSV: /mnt/c/Work/Projects/MetroRetail/data/sample/crm_customers.csv
+2026-01-07 10:57:19,404 - INFO -   Rows read: 5,000
+2026-01-07 10:57:19,405 - INFO -   Columns: Customer_ID, Full_Name, Gender, Birthdate, Registration_Date, Email, Phone_Number, City, Preferred_Channel, Batch_ID, Source_File
+2026-01-07 10:57:19,406 - INFO - ✓ Successfully processed crm_customers.csv
+2026-01-07 10:57:19,407 - INFO -   Ready for insertion: 5,000 rows
+2026-01-07 10:57:19,408 - INFO - ======================================================================
+2026-01-07 10:57:19,409 - INFO - ======================================================================
+2026-01-07 10:57:19,409 - INFO - Starting ingestion: mkt_promotions.csv
+2026-01-07 10:57:19,410 - INFO - ======================================================================
+2026-01-07 10:57:19,417 - INFO - Batch ID: mkt_promotions_20260107_105719
+2026-01-07 10:57:19,418 - INFO - Target table: Raw.mkt_promotions
+2026-01-07 10:57:19,420 - INFO - Reading CSV: /mnt/c/Work/Projects/MetroRetail/data/sample/mkt_promotions.csv
+2026-01-07 10:57:19,436 - INFO -   Rows read: 50
+2026-01-07 10:57:19,437 - INFO -   Columns: Promotion_ID, Promo_Name, Promo_Type, Start_Date, End_Date, Promo_Cost, Eligible_SKUs, Batch_ID, Source_File
+2026-01-07 10:57:19,438 - INFO - ✓ Successfully processed mkt_promotions.csv
+2026-01-07 10:57:19,438 - INFO -   Ready for insertion: 50 rows
+2026-01-07 10:57:19,440 - INFO - ======================================================================
+2026-01-07 10:57:19,441 - INFO - ======================================================================
+2026-01-07 10:57:19,441 - INFO - Starting ingestion: api_weather.csv
+2026-01-07 10:57:19,442 - INFO - ======================================================================
+2026-01-07 10:57:19,449 - INFO - Batch ID: api_weather_20260107_105719
+2026-01-07 10:57:19,450 - INFO - Target table: Raw.api_weather
+2026-01-07 10:57:19,452 - INFO - Reading CSV: /mnt/c/Work/Projects/MetroRetail/data/sample/api_weather.csv
+2026-01-07 10:57:19,580 - INFO -   Rows read: 33,090
+2026-01-07 10:57:19,583 - INFO -   Columns: Weather_Date, Store_ID, Temperature_C, Precipitation_mm, Weather_Condition, Batch_ID, Source_File
+2026-01-07 10:57:19,590 - INFO - ✓ Successfully processed api_weather.csv
+2026-01-07 10:57:19,592 - INFO -   Ready for insertion: 33,090 rows
+2026-01-07 10:57:19,593 - INFO - ======================================================================
+2026-01-07 10:57:19,597 - INFO - 
+======================================================================
+2026-01-07 10:57:19,598 - INFO - INGESTION SUMMARY
+2026-01-07 10:57:19,600 - INFO - ======================================================================
+2026-01-07 10:57:19,601 - INFO -   [OK] SUCCESS: pos_transactions_header.csv
+2026-01-07 10:57:19,602 - INFO -   [OK] SUCCESS: pos_transactions_lines.csv
+2026-01-07 10:57:19,603 - INFO -   [OK] SUCCESS: erp_products.csv
+2026-01-07 10:57:19,604 - INFO -   [OK] SUCCESS: erp_stores.csv
+2026-01-07 10:57:19,606 - INFO -   [OK] SUCCESS: erp_inventory.csv
+2026-01-07 10:57:19,608 - INFO -   [OK] SUCCESS: crm_customers.csv
+2026-01-07 10:57:19,609 - INFO -   [OK] SUCCESS: mkt_promotions.csv
+2026-01-07 10:57:19,610 - INFO -   [OK] SUCCESS: api_weather.csv
+2026-01-07 10:57:19,612 - INFO - ----------------------------------------------------------------------
+2026-01-07 10:57:19,613 - INFO - Total files: 8
+2026-01-07 10:57:19,615 - INFO - Successful: 8
+2026-01-07 10:57:19,617 - INFO - Failed: 0
+2026-01-07 10:57:19,619 - INFO - ======================================================================
