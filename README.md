@@ -21,19 +21,65 @@ MetroRetail is an end-to-end retail analytics & data engineering project that de
 ## Project Structure
 
 📁 MetroRetail  
-├── 📁 dags               # Airflow DAGs  
-├── 📁 pipelines          # Python ingestion scripts  
-├── 📁 dbt/metro_dbt      # dbt models (staging, silver, gold)  
-├── 📁 sqlserver          # SQL Server DDL scripts  
-├── 📁 data  
-│   └── 📁 sample         # Sample CSV files  
-├── 📁 Report  
-│   └── 📄 MetroRetail.pbix  # Power BI report  
-├── 📁 airflow_home  
-├── 📁 logs  
-├── 📄 requirements.txt  
-├── 📄 .env.sample  
-└── 📄 README.md
+├── 📁 dags                        # Airflow DAGs  
+│   ├── 📄 metro_retail_pipeline.py   # Main pipeline DAG  
+│   └── 📁 config/  
+│       └── 📄 dag_config.py          # DAG configuration  
+│  
+├── 📁 pipelines/                   # Python ingestion scripts  
+│   ├── 📄 pull_weather_data.py       # Fetch weather from API  
+│   ├── 📄 ingest_csv.py              # Load CSV to Raw layer  
+│   ├── 📄 config.py                  # Database config  
+│   ├── 📄 db_utils.py                # Database utilities  
+│   └── 📄 schema.py                  # Data models  
+│  
+├── 📁 dbt/metro_dbt/               # dbt project  
+│   ├── 📁 models/  
+│   │   ├── 📁 staging/               # Staging models (cleanse)  
+│   │   ├── 📁 silver/                # Silver models (aggregate)  
+│   │   └── 📁 gold/                  # Gold models (analytics-ready)  
+│   ├── 📁 macros/                    # dbt macros  
+│   ├── 📄 profiles.yml               # dbt configuration  
+│   └── 📄 dbt_project.yml            # dbt project config  
+│  
+├── 📁 sqlserver/                   # SQL Server DDL  
+│   ├── 📄 01_create_schemas.sql      # Create Raw, Staging, Silver, Gold schemas  
+│   ├── 📄 02_create_raw_tables_ddl.sql  
+│   ├── 📄 03_test_load.sql  
+│   ├── 📄 04_create_staging_tables_ddl.sql  
+│   ├── 📄 05_staging_layer_template.sql  
+│   ├── 📄 06_create_silver_tables_ddl.sql  
+│   ├── 📄 07_create_gold_tables_ddl.sql  
+│   └── 📁 validation_checklist/  
+│       └── 📄 master_staging_validation.sql  
+│  
+├── 📁 data/  
+│   └── 📁 sample/                  # Sample CSV files  
+│       ├── 📄 erp_products.csv  
+│       ├── 📄 erp_stores.csv  
+│       ├── 📄 erp_inventory.csv  
+│       ├── 📄 crm_customers.csv  
+│       ├── 📄 mkt_promotions.csv  
+│       ├── 📄 pos_transactions_header.csv  
+│       ├── 📄 pos_transactions_lines.csv  
+│       └── 📄 api_weather.csv  
+│  
+├── 📁 airflow_home/                # Airflow configuration  
+│   ├── 📄 airflow.cfg              # Airflow settings  
+│   └── 📁 dags/                    # Symbolic link to dags/  
+│  
+├── 📁 logs/                        # Pipeline logs  
+│  
+├── 📁 Report/                      # Power BI  
+│   └── 📄 MetroRetail.pbix           # Our Report  
+│  
+├── 📄 requirements.txt             # Python dependencies  
+├── 📄 .env.sample                  # Environment variables template  
+├── 📄 README.md                    # Quick start guide  
+├── 📄 WSL2_SETUP.md                # WSL2 setup instructions  
+├── 📄 start_airflow_wsl2.ps1       # Start Airflow in WSL2  
+├── 📄 stop_airflow_wsl2.ps1        # Stop Airflow in WSL2  
+└── 📄 init_airflow.sh               # Initialize Airflow environment
 
 
 
@@ -104,6 +150,7 @@ pip install -r requirements.txt
 .\start_airflow_wsl2.ps1
 ```
 <img width="1486" height="633" alt="image" src="https://github.com/user-attachments/assets/49e31db0-21e1-4d4a-90b6-bbf2d99f170c" />
+
 
 
 
