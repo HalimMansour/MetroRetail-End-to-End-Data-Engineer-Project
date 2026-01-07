@@ -103,7 +103,7 @@ pip install -r requirements.txt
 ```powershell
 .\start_airflow_wsl2.ps1
 ```
-<img width="1812" height="910" alt="image" src="https://github.com/user-attachments/assets/51d10c53-fdde-49a2-b053-5bc68a342edd" />
 <img width="1486" height="633" alt="image" src="https://github.com/user-attachments/assets/49e31db0-21e1-4d4a-90b6-bbf2d99f170c" />
+
 
 
